@@ -1,0 +1,56 @@
+/*
+ * USART_Config.h
+ *
+ *  Created on: Mar 2, 2024
+ *      Author: Abdelrahman (Ta'laab) Mohammed
+ *		Github: https://github.com/AbdelrahmanMohammed002
+ */
+
+#ifndef MCAL_USART_DRIVER_USART_CONFIG_H_
+#define MCAL_USART_DRIVER_USART_CONFIG_H_
+
+/*
+ * 				USART MODE
+ *
+ * OPTIONS:-
+ * 			1-	USART_MODE_ASYNC
+ * 			2-	USART_MODE_SYNC
+ */
+
+#define USART_MODE	USART_MODE_ASYNC
+
+/*
+ * 				USART PARITY MODE
+ *
+ * OPTIONS:-
+ * 			1-	USART_PARITY_MODE_DISABLED
+ * 			2-	USART_PARITY_MODE_EVEN
+ * 			3-	USART_PARITY_MODE_ODD
+ */
+
+#define USART_PARITY_MODE	USART_PARITY_MODE_DISABLED
+
+/*
+ * 				USART STOP BITS
+ *
+ * OPTIONS:-
+ * 			1-	USART_STOP_BIT_1
+ * 			2-	USART_STOP_BIT_2
+ */
+
+#define USART_STOP_BIT	USART_STOP_BIT_1
+
+/*
+ * 				USART CHARACTER SIZE
+ *
+ * OPTIONS:-
+ * 			1-	USART_CHARACTER_SIZE_5BITS
+ * 			2-	USART_CHARACTER_SIZE_6BITS
+ * 			3-	USART_CHARACTER_SIZE_7BITS
+ * 			3-	USART_CHARACTER_SIZE_8BITS
+ * 			3-	USART_CHARACTER_SIZE_9BITS
+ */
+
+#define USART_CHARACTER_SIZE	USART_CHARACTER_SIZE_8BITS
+
+#endif /* MCAL_USART_DRIVER_USART_CONFIG_H_ */
