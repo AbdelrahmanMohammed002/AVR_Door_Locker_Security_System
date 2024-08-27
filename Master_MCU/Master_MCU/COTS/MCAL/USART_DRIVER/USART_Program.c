@@ -138,6 +138,17 @@ u8 MUSART_u8UnreadDate(void){
 	return GET_BIT(UCSRA, RXC);
 }
 
+void MUSART_vTransmitString(u8 *A_u8StringArray, u8 A_u8StringLength) {
+	for (u8 local_u8Counter = 0; local_u8Counter < A_u8StringLength; local_u8Counter++) {
+		MUSART_vTransmit(*(A_u8StringArray+local_u8Counter));
+	}
+}
+
+void MUSART_vRecieveString(u8 *A_u8StringArray, u8 A_u8StringLength) {
+	for (u8 local_u8Counter = 0; local_u8Counter < A_u8StringLength; local_u8Counter++) {
+		A_u8StringArray[local_u8Counter] = MUSART_u8Receive();
+	}
+}
 
 void MUSART_RXC_INTEnable(void) {
 	SET_BIT(UCSRB, RXCIE);

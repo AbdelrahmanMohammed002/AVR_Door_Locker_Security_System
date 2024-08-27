@@ -20,11 +20,19 @@
 #include <util/delay.h>
 
 #define F_CPU 8000000UL
-
-#define POLL 0xAA
 #define PASSWORD_SIZE 5
 
-u8 global_u8Availability = 0;
+typedef enum {
+	MASTER_READY ,
+	SLAVE_READY,
+	IDLE,
+	CREATE_PASSWORD,
+	CHECK_PASSWORD,
+	CHANGE_PASSWORD,
+	SUCCEEDED,
+	ERROR,
+	OPEN_DOOR,
+} SystemStatus;
 
 
 /**
@@ -80,6 +88,7 @@ void Function_vGetPassword(u8 *A_ScreenString, u8 *A_PointerToPassword) {
 		// Check if the '=' key was pressed to exit the loop
 		local_u8PressedKey = HKPD_u8GetPressedKey();
 	}
+	// Display Clear for next use
 	HLCD_vDisplayClear();
 }
 
@@ -107,34 +116,23 @@ void Function_vWaitingScreen(void) {
 
 }
 
-void UART_Transmit_String(u8 *A_u8StringArray) {
-	for (u8 local_u8Counter = 0; local_u8Counter < PASSWORD_SIZE; local_u8Counter++) {
-		MUSART_vTransmit(*(A_u8StringArray+local_u8Counter));
+
+
+
+void Function_vGetOption(u8 * A_u8Option){
+	
+	u8 * local_u8PressedKey = NOT_PRESSED;
+	
+	while(*local_u8PressedKey != '1' && *local_u8PressedKey != '2'){
+		local_u8PressedKey= HKPD_u8GetPressedKey();
 	}
+	
+	*A_u8Option = *local_u8PressedKey;
+	*local_u8PressedKey = NOT_PRESSED;
 }
 
-u8 Function_u8PollSlaveMCU(){
-	MUSART_vTransmit(POLL);
-	u8 local_u8Response = MUSART_u8Receive();
-	if (local_u8Response == 0xBB)
-	{
-		global_u8Availability=1;
-		return 1;
-		}else{
-		return 0;
-	}
-}
 
-typedef enum {
-	MASTER_READY ,
-	SLAVE_READY,
-	IDLE,
-	CREATE_PASSWORD,
-	CHECK_PASSWORD,
-	SUCCEEDED,
-	ERROR,
-	OPEN_DOOR,
-} SystemStatus;
+
 
 
 int main(void) {
@@ -152,20 +150,23 @@ int main(void) {
 	u8 local_u8MasterStatus,  local_u8SlaveStatus;
 	
 	
-	u8 local_u8LCDScreens[7][16] ={
+	u8 local_u8LCDScreens[10][16] ={
 		{"Enter Password:"},
 		{"Re-Enter Pass:"},
 		{"Slave is Busy"},
 		{"Create Success!"},
 		{"Create Error!"},
-		{"1 : Open Door"}, 
-		{"2 : Change Pass"}
+		{"1 : Open Door"},
+		{"2 : Change Pass"},
+		{"Door Opening!"},
+		{"Door is Open!"},
+		{"Door Closing!"}
 	};
 	
 
 	while (1) {
 		
-		while(MUSART_u8UnreadDate());
+		while(!MUSART_u8UnreadDate());
 		local_u8SlaveStatus = MUSART_u8Receive();
 		
 		if (local_u8SlaveStatus == 0xFF)//create new password
@@ -174,9 +175,8 @@ int main(void) {
 			Function_vGetPassword(local_u8LCDScreens[0], local_u8EnteredPassword);
 			Function_vGetPassword(local_u8LCDScreens[1], local_u8ReEnteredPassword);
 			MUSART_vTransmit(CREATE_PASSWORD);
-			while (MUSART_u8Receive()!=IDLE);
-			UART_Transmit_String(local_u8EnteredPassword);
-			UART_Transmit_String(local_u8ReEnteredPassword);
+			MUSART_vTransmitString(local_u8EnteredPassword, PASSWORD_SIZE);
+			MUSART_vTransmitString(local_u8ReEnteredPassword, PASSWORD_SIZE);
 			while(!MUSART_u8UnreadDate());
 			local_u8SlaveStatus = MUSART_u8Receive();
 			if (local_u8SlaveStatus == SUCCEEDED)
@@ -184,16 +184,18 @@ int main(void) {
 				Function_vWaitingScreen();
 				HLCD_vMoveTo(1, 0);
 				HLCD_vSendString(local_u8LCDScreens[3]);
-				_delay_ms(2000);
+				_delay_ms(5000);
 				HLCD_vDisplayClear();
+				
 			}
 			else if(local_u8SlaveStatus == ERROR)
 			{
 				Function_vWaitingScreen();
 				HLCD_vMoveTo(1, 0);
 				HLCD_vSendString(local_u8LCDScreens[4]);
-				_delay_ms(2000);
+				_delay_ms(5000);
 				HLCD_vDisplayClear();
+
 			}
 			
 			
@@ -204,6 +206,52 @@ int main(void) {
 			HLCD_vSendString(local_u8LCDScreens[5]);
 			HLCD_vMoveTo(1, 0);
 			HLCD_vSendString(local_u8LCDScreens[6]);
+			
+			u8 local_u8Option[1];
+			Function_vGetOption(local_u8Option);
+			
+			HLCD_vDisplayClear();
+			u8 local_u8EnterPassword[5];
+			Function_vGetPassword(local_u8LCDScreens[0], local_u8EnterPassword);
+			
+			if (*local_u8Option == '1')
+			{
+				MUSART_vTransmit(OPEN_DOOR);
+			}else if(*local_u8Option == '2')
+			{
+				MUSART_vTransmit(CHANGE_PASSWORD);
+			}
+			MUSART_vTransmitString(local_u8EnterPassword, PASSWORD_SIZE);
+			while(!MUSART_u8UnreadDate());
+			local_u8SlaveStatus = MUSART_u8Receive();
+			if (local_u8SlaveStatus == ERROR)
+			{
+				HLCD_vSendString(local_u8LCDScreens[2]);
+				
+			}
+			
+			
+			if (*local_u8Option == '1' && local_u8SlaveStatus == SUCCEEDED)
+			{
+				// Open Door CW for 15 seconds
+				HLCD_vSendString(local_u8LCDScreens[7]);
+				_delay_ms(15000);
+				HLCD_vDisplayClear();
+				// Wait for 3 seconds
+				HLCD_vSendString(local_u8LCDScreens[8]);
+				_delay_ms(3000);
+				HLCD_vDisplayClear();
+				// Close Door ACW for 15 seconds
+				HLCD_vSendString(local_u8LCDScreens[9]);
+				_delay_ms(15000);
+				HLCD_vDisplayClear();
+
+			}
+			if(*local_u8Option == '2' )
+			{
+				
+				
+			}
 			
 			
 			

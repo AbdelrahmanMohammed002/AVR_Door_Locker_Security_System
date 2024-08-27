@@ -17,6 +17,8 @@ u8 MUSART_u8Receive(void);
 u16 MUSART_u16Receive_9bit(void);
 
 u8 MUSART_u8UnreadDate(void);
+void MUSART_vTransmitString(u8 *A_u8StringArray, u8 A_u8StringLength);
+void MUSART_vRecieveString(u8 *A_u8StringArray, u8 A_u8StringLength);
 
 void MUSART_RXC_INTEnable(void);
 void MUSART_RXC_INTDisable(void);
@@ -28,5 +30,4 @@ void MUSART_UDRE_INTDisable(void);
 void MUSART_vSetRXCCallBack(void (*CallBack)(void));
 void MUSART_vSetTXCCallBack(void (*CallBack)(void));
 void MUSART_vSetUDRECallBack(void (*CallBack)(void));
-
 #endif /* MCAL_USART_DRIVER_USART_INTERFACE_H_ */

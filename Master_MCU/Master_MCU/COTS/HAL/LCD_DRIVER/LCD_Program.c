@@ -133,5 +133,5 @@ void HLCD_vDisplayClear(void)
 {
     // Send clear display command
     HLCD_vSendCommand(DISPLAY_CLEAR);
-    _delay_ms(1); // Delay for command execution
+    _delay_ms(20); // Delay for command execution
 }
