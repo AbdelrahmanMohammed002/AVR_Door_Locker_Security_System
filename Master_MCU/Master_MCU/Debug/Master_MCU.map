@@ -5,7 +5,7 @@ d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/av
 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
                               COTS/APP/Master_main.o (__do_copy_data)
 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                              COTS/HAL/KPD_DRIVER/KPD_Program.o (__do_clear_bss)
+                              COTS/APP/Master_main.o (__do_clear_bss)
 
 Discarded input sections
 
@@ -153,16 +153,8 @@ Discarded input sections
  .text          0x00000000        0x0 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .data          0x00000000        0x0 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .bss           0x00000000        0x0 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .text.MGIE_vEnableInterrupts
-                0x00000000        0x8 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .text.MGIE_vDisableInterrupts
                 0x00000000        0x8 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_info    0x00000000       0xc6 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_abbrev  0x00000000       0x54 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_aranges
-                0x00000000       0x28 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_ranges  0x00000000       0x18 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_macro   0x00000000       0x7f COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .debug_macro   0x00000000      0xa4e COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .debug_macro   0x00000000      0x1c9 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .debug_macro   0x00000000      0x2fc COTS/MCAL/GIE_DRIVER/GIE_Program.o
@@ -171,11 +163,61 @@ Discarded input sections
  .debug_macro   0x00000000       0x97 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .debug_macro   0x00000000       0xf2 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .debug_macro   0x00000000       0x22 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_macro   0x00000000       0x16 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_line    0x00000000      0x1bf COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_str     0x00000000     0x4018 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .comment       0x00000000       0x31 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_frame   0x00000000       0x34 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .group         0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .group         0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .group         0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .group         0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .group         0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .group         0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .group         0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .group         0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .group         0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .group         0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text          0x00000000        0x0 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .data          0x00000000        0x0 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .bss           0x00000000        0x0 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vSetOVFRegister
+                0x00000000        0x6 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vChannelBSetCTCRegister
+                0x00000000        0x6 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vSetICR1Value
+                0x00000000        0x6 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_u16InputCaptureValue
+                0x00000000        0x6 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vSetInputCaptureEdge
+                0x00000000       0x18 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vEnableOVFINT
+                0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vDisableOVFINT
+                0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vChannelADisableCTCINT
+                0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vChannelBEnableCTCINT
+                0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vChannelBDisableCTCINT
+                0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vEnableInputCaptureINT
+                0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vDisableInputCaptureINT
+                0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vChannelAForceOutputCompare
+                0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vChannelBForceOutputCompare
+                0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vSetOVFCallBack
+                0x00000000        0xe COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vChannelBSetCTCCallBack
+                0x00000000        0xe COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .text.MTIMER1_vSetInputCaptureCallBack
+                0x00000000        0xe COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x00000000      0xa4e COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x00000000      0x1c9 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x00000000      0x2fc COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x00000000       0x58 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x00000000       0x10 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x00000000       0x97 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x00000000       0xf2 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x00000000       0x22 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
  .group         0x00000000        0x8 COTS/MCAL/USART_DRIVER/USART_Program.o
  .group         0x00000000        0x8 COTS/MCAL/USART_DRIVER/USART_Program.o
  .group         0x00000000        0x8 COTS/MCAL/USART_DRIVER/USART_Program.o
@@ -287,6 +329,7 @@ LOAD COTS/HAL/LCD_DRIVER/LCD_Program.o
 LOAD COTS/MCAL/DIO_DRIVER/DIO_Program.o
 LOAD COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
 LOAD COTS/MCAL/GIE_DRIVER/GIE_Program.o
+LOAD COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
 LOAD COTS/MCAL/USART_DRIVER/USART_Program.o
 START GROUP
 LOAD d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
@@ -397,7 +440,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xad8
+.text           0x00000000      0xd7c
  *(.vectors)
  .vectors       0x00000000       0x54 D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
                 0x00000000                __vector_default
@@ -459,104 +502,154 @@ END GROUP
                 0x0000008e                __vector_1
                 0x0000008e                __vector_12
                 0x0000008e                __bad_interrupt
-                0x0000008e                __vector_6
                 0x0000008e                __vector_3
                 0x0000008e                __vector_11
                 0x0000008e                __vector_19
-                0x0000008e                __vector_7
                 0x0000008e                __vector_5
                 0x0000008e                __vector_4
-                0x0000008e                __vector_9
                 0x0000008e                __vector_2
-                0x0000008e                __vector_8
                 0x0000008e                __vector_10
                 0x0000008e                __vector_16
                 0x0000008e                __vector_18
                 0x0000008e                __vector_20
                 0x00000092                . = ALIGN (0x2)
  *(.text.*)
+ .text.TIMER1_CTC_INT_ISR
+                0x00000092       0x20 COTS/APP/Master_main.o
+                0x00000092                TIMER1_CTC_INT_ISR
  .text.Function_vGetPassword
-                0x00000092       0x8c COTS/APP/Master_main.o
-                0x00000092                Function_vGetPassword
+                0x000000b2       0x94 COTS/APP/Master_main.o
+                0x000000b2                Function_vGetPassword
  .text.Function_vWaitingScreen
-                0x0000011e       0xc0 COTS/APP/Master_main.o
-                0x0000011e                Function_vWaitingScreen
+                0x00000146       0x6e COTS/APP/Master_main.o
+                0x00000146                Function_vWaitingScreen
  .text.Function_vGetOption
-                0x000001de       0x26 COTS/APP/Master_main.o
-                0x000001de                Function_vGetOption
- .text.main     0x00000204      0x210 COTS/APP/Master_main.o
-                0x00000204                main
+                0x000001b4       0x26 COTS/APP/Master_main.o
+                0x000001b4                Function_vGetOption
+ .text.Function_vCreatePassword
+                0x000001da       0x5c COTS/APP/Master_main.o
+                0x000001da                Function_vCreatePassword
+ .text.Function_vSystemFreeze
+                0x00000236       0x4a COTS/APP/Master_main.o
+                0x00000236                Function_vSystemFreeze
+ .text.Function_vOpenDoor
+                0x00000280       0x72 COTS/APP/Master_main.o
+                0x00000280                Function_vOpenDoor
+ .text.main     0x000002f2      0x1ec COTS/APP/Master_main.o
+                0x000002f2                main
  .text.HKPD_vInit
-                0x00000414       0xa2 COTS/HAL/KPD_DRIVER/KPD_Program.o
-                0x00000414                HKPD_vInit
+                0x000004de       0xa2 COTS/HAL/KPD_DRIVER/KPD_Program.o
+                0x000004de                HKPD_vInit
  .text.HKPD_u8GetPressedKey
-                0x000004b6       0x8c COTS/HAL/KPD_DRIVER/KPD_Program.o
-                0x000004b6                HKPD_u8GetPressedKey
+                0x00000580       0x8c COTS/HAL/KPD_DRIVER/KPD_Program.o
+                0x00000580                HKPD_u8GetPressedKey
  .text.HLCD_vSendCommand
-                0x00000542       0x50 COTS/HAL/LCD_DRIVER/LCD_Program.o
-                0x00000542                HLCD_vSendCommand
+                0x0000060c       0x50 COTS/HAL/LCD_DRIVER/LCD_Program.o
+                0x0000060c                HLCD_vSendCommand
  .text.HLCD_vInit
-                0x00000592       0x7c COTS/HAL/LCD_DRIVER/LCD_Program.o
-                0x00000592                HLCD_vInit
+                0x0000065c       0x7c COTS/HAL/LCD_DRIVER/LCD_Program.o
+                0x0000065c                HLCD_vInit
  .text.HLCD_vSendData
-                0x0000060e       0x50 COTS/HAL/LCD_DRIVER/LCD_Program.o
-                0x0000060e                HLCD_vSendData
+                0x000006d8       0x50 COTS/HAL/LCD_DRIVER/LCD_Program.o
+                0x000006d8                HLCD_vSendData
  .text.HLCD_vSendString
-                0x0000065e       0x26 COTS/HAL/LCD_DRIVER/LCD_Program.o
-                0x0000065e                HLCD_vSendString
+                0x00000728       0x26 COTS/HAL/LCD_DRIVER/LCD_Program.o
+                0x00000728                HLCD_vSendString
  .text.HLCD_vMoveTo
-                0x00000684       0x1e COTS/HAL/LCD_DRIVER/LCD_Program.o
-                0x00000684                HLCD_vMoveTo
+                0x0000074e       0x1e COTS/HAL/LCD_DRIVER/LCD_Program.o
+                0x0000074e                HLCD_vMoveTo
  .text.HLCD_vDisplayClear
-                0x000006a2       0x14 COTS/HAL/LCD_DRIVER/LCD_Program.o
-                0x000006a2                HLCD_vDisplayClear
+                0x0000076c       0x14 COTS/HAL/LCD_DRIVER/LCD_Program.o
+                0x0000076c                HLCD_vDisplayClear
  .text.MDIO_vSetPinDirection
-                0x000006b6       0xe0 COTS/MCAL/DIO_DRIVER/DIO_Program.o
-                0x000006b6                MDIO_vSetPinDirection
+                0x00000780       0xe0 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+                0x00000780                MDIO_vSetPinDirection
  .text.MDIO_vSetPortDirection
-                0x00000796       0x20 COTS/MCAL/DIO_DRIVER/DIO_Program.o
-                0x00000796                MDIO_vSetPortDirection
+                0x00000860       0x20 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+                0x00000860                MDIO_vSetPortDirection
  .text.MDIO_vSetPinValue
-                0x000007b6       0xe0 COTS/MCAL/DIO_DRIVER/DIO_Program.o
-                0x000007b6                MDIO_vSetPinValue
+                0x00000880       0xe0 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+                0x00000880                MDIO_vSetPinValue
  .text.MDIO_vSetPortValue
-                0x00000896       0x20 COTS/MCAL/DIO_DRIVER/DIO_Program.o
-                0x00000896                MDIO_vSetPortValue
+                0x00000960       0x20 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+                0x00000960                MDIO_vSetPortValue
  .text.MDIO_u8GetPinValue
-                0x000008b6       0x5c COTS/MCAL/DIO_DRIVER/DIO_Program.o
-                0x000008b6                MDIO_u8GetPinValue
+                0x00000980       0x5c COTS/MCAL/DIO_DRIVER/DIO_Program.o
+                0x00000980                MDIO_u8GetPinValue
  .text.__vector_17
-                0x00000912       0x52 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
-                0x00000912                __vector_17
+                0x000009dc       0x52 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+                0x000009dc                __vector_17
+ .text.MGIE_vEnableInterrupts
+                0x00000a2e        0x8 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+                0x00000a2e                MGIE_vEnableInterrupts
+ .text.MTIMER1_vInit
+                0x00000a36       0x38 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000a36                MTIMER1_vInit
+ .text.MTIMER1_vDisInit
+                0x00000a6e        0x6 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000a6e                MTIMER1_vDisInit
+ .text.MTIMER1_vChannelASetCTCRegister
+                0x00000a74        0x6 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000a74                MTIMER1_vChannelASetCTCRegister
+ .text.MTIMER1_vClearOVFFlag
+                0x00000a7a        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000a7a                MTIMER1_vClearOVFFlag
+ .text.MTIMER1_vChannelAEnableCTCINT
+                0x00000a82        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000a82                MTIMER1_vChannelAEnableCTCINT
+ .text.MTIMER1_vChannelAClearCTCFlag
+                0x00000a8a        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000a8a                MTIMER1_vChannelAClearCTCFlag
+ .text.MTIMER1_vChannelBClearCTCFlag
+                0x00000a92        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000a92                MTIMER1_vChannelBClearCTCFlag
+ .text.MTIMER1_vClearInputCaptureFlag
+                0x00000a9a        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000a9a                MTIMER1_vClearInputCaptureFlag
+ .text.MTIMER1_vChannelASetCTCCallBack
+                0x00000aa2        0xe COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000aa2                MTIMER1_vChannelASetCTCCallBack
+ .text.__vector_6
+                0x00000ab0       0x56 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000ab0                __vector_6
+ .text.__vector_7
+                0x00000b06       0x56 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000b06                __vector_7
+ .text.__vector_8
+                0x00000b5c       0x56 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000b5c                __vector_8
+ .text.__vector_9
+                0x00000bb2       0x56 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000bb2                __vector_9
  .text.MUSART_vInit
-                0x00000964       0x1c COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x00000964                MUSART_vInit
+                0x00000c08       0x1c COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000c08                MUSART_vInit
  .text.MUSART_vTransmit
-                0x00000980        0x8 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x00000980                MUSART_vTransmit
+                0x00000c24        0x8 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000c24                MUSART_vTransmit
  .text.MUSART_u8Receive
-                0x00000988       0x20 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x00000988                MUSART_u8Receive
+                0x00000c2c       0x20 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000c2c                MUSART_u8Receive
  .text.MUSART_u8UnreadDate
-                0x000009a8        0xa COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x000009a8                MUSART_u8UnreadDate
+                0x00000c4c        0xa COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000c4c                MUSART_u8UnreadDate
  .text.MUSART_vTransmitString
-                0x000009b2       0x2c COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x000009b2                MUSART_vTransmitString
+                0x00000c56       0x2c COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000c56                MUSART_vTransmitString
  .text.__vector_13
-                0x000009de       0x52 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x000009de                __vector_13
+                0x00000c82       0x52 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000c82                __vector_13
  .text.__vector_14
-                0x00000a30       0x52 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x00000a30                __vector_14
+                0x00000cd4       0x52 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000cd4                __vector_14
  .text.__vector_15
-                0x00000a82       0x52 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x00000a82                __vector_15
-                0x00000ad4                . = ALIGN (0x2)
+                0x00000d26       0x52 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000d26                __vector_15
+                0x00000d78                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000ad4        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00000ad4                _exit
-                0x00000ad4                exit
+ .fini9         0x00000d78        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000d78                _exit
+                0x00000d78                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -575,56 +668,77 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000ad4        0x4 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000d78        0x4 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000ad8                _etext = .
+                0x00000d7c                _etext = .
 
-.data           0x00800060       0xbe load address 0x00000ad8
+.data           0x00800060       0xee load address 0x00000d7c
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
  *(.gnu.linkonce.d*)
  *(.rodata)
- .rodata        0x00800060       0xa0 COTS/APP/Master_main.o
+ .rodata        0x00800060       0xd0 COTS/APP/Master_main.o
  *(.rodata*)
  .rodata.str1.1
-                0x00800100        0xd COTS/APP/Master_main.o
+                0x00800130        0xd COTS/APP/Master_main.o
  .rodata.KPD_Buttions
-                0x0080010d       0x10 COTS/HAL/KPD_DRIVER/KPD_Program.o
+                0x0080013d       0x10 COTS/HAL/KPD_DRIVER/KPD_Program.o
  *(.gnu.linkonce.r*)
-                0x0080011e                . = ALIGN (0x2)
- *fill*         0x0080011d        0x1 
-                0x0080011e                _edata = .
-                0x0080011e                PROVIDE (__data_end, .)
+                0x0080014e                . = ALIGN (0x2)
+ *fill*         0x0080014d        0x1 
+                0x0080014e                _edata = .
+                0x0080014e                PROVIDE (__data_end, .)
 
-.bss            0x0080011e        0x9
-                0x0080011e                PROVIDE (__bss_start, .)
+.bss            0x0080014e       0x14
+                0x0080014e                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
+ .bss.global_u8FailureCounter
+                0x0080014e        0x1 COTS/APP/Master_main.o
+                0x0080014e                global_u8FailureCounter
+ .bss.global_u8TicksCounter
+                0x0080014f        0x1 COTS/APP/Master_main.o
+                0x0080014f                global_u8TicksCounter
+ .bss.global_u8SecondsCounter
+                0x00800150        0x1 COTS/APP/Master_main.o
+                0x00800150                global_u8SecondsCounter
  .bss.local_u8Value.1968
-                0x0080011e        0x1 COTS/HAL/KPD_DRIVER/KPD_Program.o
+                0x00800151        0x1 COTS/HAL/KPD_DRIVER/KPD_Program.o
  .bss.EEPROM_Call_Back
-                0x0080011f        0x2 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
-                0x0080011f                EEPROM_Call_Back
+                0x00800152        0x2 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+                0x00800152                EEPROM_Call_Back
+ .bss.TIMER1_ICU_Call_Back
+                0x00800154        0x2 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00800154                TIMER1_ICU_Call_Back
+ .bss.TIMER1B_CTC_Call_Back
+                0x00800156        0x2 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00800156                TIMER1B_CTC_Call_Back
+ .bss.TIMER1_OVF_Call_Back
+                0x00800158        0x2 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00800158                TIMER1_OVF_Call_Back
+ .bss.TIMER1A_CTC_Call_Back
+                0x0080015a        0x2 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x0080015a                TIMER1A_CTC_Call_Back
  .bss.USART_UDRE_Call_Back
-                0x00800121        0x2 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x00800121                USART_UDRE_Call_Back
+                0x0080015c        0x2 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x0080015c                USART_UDRE_Call_Back
  .bss.USART_TXC_Call_Back
-                0x00800123        0x2 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x00800123                USART_TXC_Call_Back
+                0x0080015e        0x2 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x0080015e                USART_TXC_Call_Back
  .bss.USART_RXC_Call_Back
-                0x00800125        0x2 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x00800125                USART_RXC_Call_Back
+                0x00800160        0x2 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00800160                USART_RXC_Call_Back
  *(COMMON)
-                0x00800127                PROVIDE (__bss_end, .)
-                0x00000ad8                __data_load_start = LOADADDR (.data)
-                0x00000b96                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800162                PROVIDE (__bss_end, .)
+                0x00000d7c                __data_load_start = LOADADDR (.data)
+                0x00000e6a                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800127        0x0
+.noinit         0x00800162        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800127                _end = .
+                0x00800162                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -672,6 +786,8 @@ END GROUP
  .comment       0x00000030       0x31 COTS/HAL/LCD_DRIVER/LCD_Program.o
  .comment       0x00000030       0x31 COTS/MCAL/DIO_DRIVER/DIO_Program.o
  .comment       0x00000030       0x31 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .comment       0x00000030       0x31 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .comment       0x00000030       0x31 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
  .comment       0x00000030       0x31 COTS/MCAL/USART_DRIVER/USART_Program.o
 
 .note.gnu.avr.deviceinfo
@@ -694,87 +810,104 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x1f0
+.debug_aranges  0x00000000      0x340
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x38 COTS/APP/Master_main.o
+                0x00000000       0x58 COTS/APP/Master_main.o
  .debug_aranges
-                0x00000038       0x28 COTS/HAL/KPD_DRIVER/KPD_Program.o
+                0x00000058       0x28 COTS/HAL/KPD_DRIVER/KPD_Program.o
  .debug_aranges
-                0x00000060       0x48 COTS/HAL/LCD_DRIVER/LCD_Program.o
+                0x00000080       0x48 COTS/HAL/LCD_DRIVER/LCD_Program.o
  .debug_aranges
-                0x000000a8       0x50 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+                0x000000c8       0x50 COTS/MCAL/DIO_DRIVER/DIO_Program.o
  .debug_aranges
-                0x000000f8       0x50 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+                0x00000118       0x50 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
  .debug_aranges
-                0x00000148       0xa8 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000168       0x28 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_aranges
+                0x00000190      0x108 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_aranges
+                0x00000298       0xa8 COTS/MCAL/USART_DRIVER/USART_Program.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x21c7
+.debug_info     0x00000000     0x2839
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_info    0x000004e6      0xa4a COTS/APP/Master_main.o
- .debug_info    0x00000f30      0x477 COTS/HAL/KPD_DRIVER/KPD_Program.o
- .debug_info    0x000013a7      0x667 COTS/HAL/LCD_DRIVER/LCD_Program.o
- .debug_info    0x00001a0e      0x246 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_info    0x00001c54      0x1f4 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_info    0x00001e48      0x37f COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_info    0x000004e6      0xb24 COTS/APP/Master_main.o
+ .debug_info    0x0000100a      0x477 COTS/HAL/KPD_DRIVER/KPD_Program.o
+ .debug_info    0x00001481      0x667 COTS/HAL/LCD_DRIVER/LCD_Program.o
+ .debug_info    0x00001ae8      0x246 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_info    0x00001d2e      0x1f4 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_info    0x00001f22       0xc6 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_info    0x00001fe8      0x4d2 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_info    0x000024ba      0x37f COTS/MCAL/USART_DRIVER/USART_Program.o
 
-.debug_abbrev   0x00000000      0xbee
+.debug_abbrev   0x00000000      0xddb
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4a3 D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_abbrev  0x000004a3      0x196 COTS/APP/Master_main.o
- .debug_abbrev  0x00000639      0x168 COTS/HAL/KPD_DRIVER/KPD_Program.o
- .debug_abbrev  0x000007a1      0x14d COTS/HAL/LCD_DRIVER/LCD_Program.o
- .debug_abbrev  0x000008ee       0xb7 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_abbrev  0x000009a5      0x11e COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_abbrev  0x00000ac3      0x12b COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_abbrev  0x000004a3      0x1dd COTS/APP/Master_main.o
+ .debug_abbrev  0x00000680      0x168 COTS/HAL/KPD_DRIVER/KPD_Program.o
+ .debug_abbrev  0x000007e8      0x14d COTS/HAL/LCD_DRIVER/LCD_Program.o
+ .debug_abbrev  0x00000935       0xb7 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_abbrev  0x000009ec      0x11e COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_abbrev  0x00000b0a       0x54 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_abbrev  0x00000b5e      0x152 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_abbrev  0x00000cb0      0x12b COTS/MCAL/USART_DRIVER/USART_Program.o
 
-.debug_line     0x00000000     0x1870
+.debug_line     0x00000000     0x20c6
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x116 D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_line    0x00000116      0x5e7 COTS/APP/Master_main.o
- .debug_line    0x000006fd      0x34a COTS/HAL/KPD_DRIVER/KPD_Program.o
- .debug_line    0x00000a47      0x3dd COTS/HAL/LCD_DRIVER/LCD_Program.o
- .debug_line    0x00000e24      0x355 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_line    0x00001179      0x2c9 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_line    0x00001442      0x42e COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_line    0x00000116      0x769 COTS/APP/Master_main.o
+ .debug_line    0x0000087f      0x34a COTS/HAL/KPD_DRIVER/KPD_Program.o
+ .debug_line    0x00000bc9      0x3dd COTS/HAL/LCD_DRIVER/LCD_Program.o
+ .debug_line    0x00000fa6      0x355 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_line    0x000012fb      0x2c9 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_line    0x000015c4      0x1bf COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_line    0x00001783      0x515 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_line    0x00001c98      0x42e COTS/MCAL/USART_DRIVER/USART_Program.o
 
-.debug_frame    0x00000000      0x520
+.debug_frame    0x00000000      0x8e4
  *(.debug_frame)
- .debug_frame   0x00000000       0xa0 COTS/APP/Master_main.o
- .debug_frame   0x000000a0       0x40 COTS/HAL/KPD_DRIVER/KPD_Program.o
- .debug_frame   0x000000e0       0x94 COTS/HAL/LCD_DRIVER/LCD_Program.o
- .debug_frame   0x00000174       0x84 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_frame   0x000001f8       0xe8 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_frame   0x000002e0      0x240 COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_frame   0x00000000      0x11c COTS/APP/Master_main.o
+ .debug_frame   0x0000011c       0x40 COTS/HAL/KPD_DRIVER/KPD_Program.o
+ .debug_frame   0x0000015c       0x94 COTS/HAL/LCD_DRIVER/LCD_Program.o
+ .debug_frame   0x000001f0       0x84 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_frame   0x00000274       0xe8 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_frame   0x0000035c       0x34 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_frame   0x00000390      0x314 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_frame   0x000006a4      0x240 COTS/MCAL/USART_DRIVER/USART_Program.o
 
-.debug_str      0x00000000     0x53f0
+.debug_str      0x00000000     0x5f35
  *(.debug_str)
  .debug_str     0x00000000      0x196 D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_str     0x00000196     0x4720 COTS/APP/Master_main.o
-                               0x47f1 (size before relaxing)
- .debug_str     0x000048b6      0x12a COTS/HAL/KPD_DRIVER/KPD_Program.o
+ .debug_str     0x00000196     0x4887 COTS/APP/Master_main.o
+                               0x4958 (size before relaxing)
+ .debug_str     0x00004a1d      0x12a COTS/HAL/KPD_DRIVER/KPD_Program.o
                                0x459a (size before relaxing)
- .debug_str     0x000049e0       0xf1 COTS/HAL/LCD_DRIVER/LCD_Program.o
+ .debug_str     0x00004b47       0xf1 COTS/HAL/LCD_DRIVER/LCD_Program.o
                                0x45f1 (size before relaxing)
- .debug_str     0x00004ad1      0x234 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_str     0x00004c38      0x234 COTS/MCAL/DIO_DRIVER/DIO_Program.o
                                0x4267 (size before relaxing)
- .debug_str     0x00004d05      0x1c8 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_str     0x00004e6c      0x1c8 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
                                0x4166 (size before relaxing)
- .debug_str     0x00004ecd      0x523 COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_str     0x00005034       0x7f COTS/MCAL/GIE_DRIVER/GIE_Program.o
+                               0x4018 (size before relaxing)
+ .debug_str     0x000050b3      0x95f COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                               0x4979 (size before relaxing)
+ .debug_str     0x00005a12      0x523 COTS/MCAL/USART_DRIVER/USART_Program.o
                                0x4520 (size before relaxing)
 
-.debug_loc      0x00000000     0x152e
+.debug_loc      0x00000000     0x18da
  *(.debug_loc)
- .debug_loc     0x00000000      0x56c COTS/APP/Master_main.o
- .debug_loc     0x0000056c      0x10c COTS/HAL/KPD_DRIVER/KPD_Program.o
- .debug_loc     0x00000678      0x45d COTS/HAL/LCD_DRIVER/LCD_Program.o
- .debug_loc     0x00000ad5      0x416 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_loc     0x00000eeb      0x20e COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_loc     0x000010f9      0x435 COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_loc     0x00000000      0x5b2 COTS/APP/Master_main.o
+ .debug_loc     0x000005b2      0x10c COTS/HAL/KPD_DRIVER/KPD_Program.o
+ .debug_loc     0x000006be      0x45d COTS/HAL/LCD_DRIVER/LCD_Program.o
+ .debug_loc     0x00000b1b      0x416 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_loc     0x00000f31      0x20e COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_loc     0x0000113f      0x366 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_loc     0x000014a5      0x435 COTS/MCAL/USART_DRIVER/USART_Program.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -794,41 +927,48 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x190
+.debug_ranges   0x00000000      0x2c0
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x28 COTS/APP/Master_main.o
- .debug_ranges  0x00000028       0x18 COTS/HAL/KPD_DRIVER/KPD_Program.o
- .debug_ranges  0x00000040       0x38 COTS/HAL/LCD_DRIVER/LCD_Program.o
- .debug_ranges  0x00000078       0x40 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_ranges  0x000000b8       0x40 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_ranges  0x000000f8       0x98 COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_ranges  0x00000000       0x48 COTS/APP/Master_main.o
+ .debug_ranges  0x00000048       0x18 COTS/HAL/KPD_DRIVER/KPD_Program.o
+ .debug_ranges  0x00000060       0x38 COTS/HAL/LCD_DRIVER/LCD_Program.o
+ .debug_ranges  0x00000098       0x40 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_ranges  0x000000d8       0x40 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_ranges  0x00000118       0x18 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_ranges  0x00000130       0xf8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_ranges  0x00000228       0x98 COTS/MCAL/USART_DRIVER/USART_Program.o
 
-.debug_macro    0x00000000     0x18fa
+.debug_macro    0x00000000     0x1bb5
  *(.debug_macro)
- .debug_macro   0x00000000       0xd3 COTS/APP/Master_main.o
- .debug_macro   0x000000d3      0xa4e COTS/APP/Master_main.o
- .debug_macro   0x00000b21       0x22 COTS/APP/Master_main.o
- .debug_macro   0x00000b43      0x1c9 COTS/APP/Master_main.o
- .debug_macro   0x00000d0c      0x2fc COTS/APP/Master_main.o
- .debug_macro   0x00001008       0x58 COTS/APP/Master_main.o
- .debug_macro   0x00001060       0x10 COTS/APP/Master_main.o
- .debug_macro   0x00001070       0x97 COTS/APP/Master_main.o
- .debug_macro   0x00001107       0xf2 COTS/APP/Master_main.o
- .debug_macro   0x000011f9       0x40 COTS/APP/Master_main.o
- .debug_macro   0x00001239       0x10 COTS/APP/Master_main.o
- .debug_macro   0x00001249       0x22 COTS/APP/Master_main.o
- .debug_macro   0x0000126b       0x10 COTS/APP/Master_main.o
- .debug_macro   0x0000127b      0x166 COTS/APP/Master_main.o
- .debug_macro   0x000013e1       0xa9 COTS/HAL/KPD_DRIVER/KPD_Program.o
- .debug_macro   0x0000148a       0x4c COTS/HAL/KPD_DRIVER/KPD_Program.o
- .debug_macro   0x000014d6       0xa9 COTS/HAL/LCD_DRIVER/LCD_Program.o
- .debug_macro   0x0000157f       0x28 COTS/HAL/LCD_DRIVER/LCD_Program.o
- .debug_macro   0x000015a7       0x88 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_macro   0x0000162f       0x52 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_macro   0x00001681       0x89 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_macro   0x0000170a       0x3a COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_macro   0x00001744       0x88 COTS/MCAL/USART_DRIVER/USART_Program.o
- .debug_macro   0x000017cc      0x10c COTS/MCAL/USART_DRIVER/USART_Program.o
- .debug_macro   0x000018d8       0x22 COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_macro   0x00000000       0xdd COTS/APP/Master_main.o
+ .debug_macro   0x000000dd      0xa4e COTS/APP/Master_main.o
+ .debug_macro   0x00000b2b       0x22 COTS/APP/Master_main.o
+ .debug_macro   0x00000b4d      0x1c9 COTS/APP/Master_main.o
+ .debug_macro   0x00000d16      0x2fc COTS/APP/Master_main.o
+ .debug_macro   0x00001012       0x58 COTS/APP/Master_main.o
+ .debug_macro   0x0000106a       0x10 COTS/APP/Master_main.o
+ .debug_macro   0x0000107a       0x97 COTS/APP/Master_main.o
+ .debug_macro   0x00001111       0xf2 COTS/APP/Master_main.o
+ .debug_macro   0x00001203       0x40 COTS/APP/Master_main.o
+ .debug_macro   0x00001243       0x10 COTS/APP/Master_main.o
+ .debug_macro   0x00001253       0x22 COTS/APP/Master_main.o
+ .debug_macro   0x00001275       0x10 COTS/APP/Master_main.o
+ .debug_macro   0x00001285      0x166 COTS/APP/Master_main.o
+ .debug_macro   0x000013eb       0xa9 COTS/HAL/KPD_DRIVER/KPD_Program.o
+ .debug_macro   0x00001494       0x4c COTS/HAL/KPD_DRIVER/KPD_Program.o
+ .debug_macro   0x000014e0       0xa9 COTS/HAL/LCD_DRIVER/LCD_Program.o
+ .debug_macro   0x00001589       0x28 COTS/HAL/LCD_DRIVER/LCD_Program.o
+ .debug_macro   0x000015b1       0x88 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_macro   0x00001639       0x52 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_macro   0x0000168b       0x89 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_macro   0x00001714       0x3a COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_macro   0x0000174e       0x7f COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_macro   0x000017cd       0x16 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_macro   0x000017e3       0x88 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x0000186b      0x166 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x000019d1       0x2e COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x000019ff       0x88 COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_macro   0x00001a87      0x10c COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_macro   0x00001b93       0x22 COTS/MCAL/USART_DRIVER/USART_Program.o
 OUTPUT(Master_MCU.elf elf32-avr)
 LOAD linker stubs

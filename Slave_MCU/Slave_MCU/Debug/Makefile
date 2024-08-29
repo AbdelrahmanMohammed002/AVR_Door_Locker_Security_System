@@ -44,7 +44,6 @@ SUBDIRS :=  \
 ../COTS/MCAL/DIO_DRIVER/ \
 ../COTS/MCAL/EEPROM_DRIVER/ \
 ../COTS/MCAL/GIE_DRIVER/ \
-../COTS/MCAL/I2C_DRIVER/ \
 ../COTS/MCAL/TIMER0_DRIVER/ \
 ../COTS/MCAL/TIMER1_DRIVER/ \
 ../COTS/MCAL/USART_DRIVER/
@@ -59,7 +58,6 @@ C_SRCS +=  \
 ../COTS/MCAL/DIO_DRIVER/DIO_Program.c \
 ../COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.c \
 ../COTS/MCAL/GIE_DRIVER/GIE_Program.c \
-../COTS/MCAL/I2C_DRIVER/I2C_Program.c \
 ../COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.c \
 ../COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.c \
 ../COTS/MCAL/USART_DRIVER/USART_Program.c
@@ -79,7 +77,6 @@ COTS/HAL/LCD_DRIVER/LCD_Program.o \
 COTS/MCAL/DIO_DRIVER/DIO_Program.o \
 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o \
 COTS/MCAL/GIE_DRIVER/GIE_Program.o \
-COTS/MCAL/I2C_DRIVER/I2C_Program.o \
 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o \
 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o \
 COTS/MCAL/USART_DRIVER/USART_Program.o
@@ -92,7 +89,6 @@ COTS/HAL/LCD_DRIVER/LCD_Program.o \
 COTS/MCAL/DIO_DRIVER/DIO_Program.o \
 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o \
 COTS/MCAL/GIE_DRIVER/GIE_Program.o \
-COTS/MCAL/I2C_DRIVER/I2C_Program.o \
 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o \
 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o \
 COTS/MCAL/USART_DRIVER/USART_Program.o
@@ -105,7 +101,6 @@ COTS/HAL/LCD_DRIVER/LCD_Program.d \
 COTS/MCAL/DIO_DRIVER/DIO_Program.d \
 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.d \
 COTS/MCAL/GIE_DRIVER/GIE_Program.d \
-COTS/MCAL/I2C_DRIVER/I2C_Program.d \
 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.d \
 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.d \
 COTS/MCAL/USART_DRIVER/USART_Program.d
@@ -118,7 +113,6 @@ COTS/HAL/LCD_DRIVER/LCD_Program.d \
 COTS/MCAL/DIO_DRIVER/DIO_Program.d \
 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.d \
 COTS/MCAL/GIE_DRIVER/GIE_Program.d \
-COTS/MCAL/I2C_DRIVER/I2C_Program.d \
 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.d \
 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.d \
 COTS/MCAL/USART_DRIVER/USART_Program.d
@@ -180,13 +174,6 @@ COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o: ../COTS/MCAL/EEPROM_DRIVER/EEPROM_Prog
 	
 
 COTS/MCAL/GIE_DRIVER/GIE_Program.o: ../COTS/MCAL/GIE_DRIVER/GIE_Program.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\Programs\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\Programs\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g3 -Wall -mmcu=atmega32 -B "D:\Programs\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
-	@echo Finished building: $<
-	
-
-COTS/MCAL/I2C_DRIVER/I2C_Program.o: ../COTS/MCAL/I2C_DRIVER/I2C_Program.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)D:\Programs\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\Programs\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g3 -Wall -mmcu=atmega32 -B "D:\Programs\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

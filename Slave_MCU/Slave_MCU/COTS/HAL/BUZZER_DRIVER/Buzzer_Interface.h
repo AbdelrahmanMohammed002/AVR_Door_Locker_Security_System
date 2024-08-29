@@ -10,7 +10,7 @@
 #define HAL_BUZZER_DRIVER_BUZZER_INTERFACE_H_
 
 #define BUZZER_PORT PORT_A
-#define BUZZER_PIN	3
+#define BUZZER_PIN	4
 
 void HBuzzer_vInit(void);
 

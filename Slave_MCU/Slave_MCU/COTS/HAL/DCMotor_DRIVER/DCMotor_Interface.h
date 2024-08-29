@@ -33,13 +33,13 @@ typedef struct {
  *
  * @param Motor: Structure containing DC motor configuration.
  */
-void HDCMotor_vInit(DCMotor Motor);
+void HDCMotor_vInit(DCMotor *Motor);
 
 /**
  * @brief Set the direction and speed of the DC motor.
  *
  * @param Motor: Structure containing DC motor configuration.
  */
-void HDCMotor_RotateDirection_Speed(DCMotor Motor);
+void HDCMotor_RotateDirection_Speed(DCMotor *Motor);
 
 #endif /* HAL_DCMOTOR_DRIVER_DCMOTOR_INTERFACE_H_ */

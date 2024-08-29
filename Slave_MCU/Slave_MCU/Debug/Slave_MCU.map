@@ -1,17 +1,7 @@
 Archive member included to satisfy reference by file (symbol)
 
-d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
-                              COTS/MCAL/I2C_DRIVER/I2C_Program.o (__fixunssfsi)
-d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
-                              COTS/MCAL/I2C_DRIVER/I2C_Program.o (__floatunsisf)
-d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
-                              d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o) (__fp_splitA)
-d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
-                              d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o) (__fp_zero)
 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
                               COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o (__divmodhi4)
-d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                              COTS/MCAL/I2C_DRIVER/I2C_Program.o (__udivmodsi4)
 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
                               D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o (exit)
 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
@@ -23,10 +13,6 @@ Discarded input sections
 
  .data          0x00000000        0x0 D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
  .bss           0x00000000        0x0 D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
- .group         0x00000000        0x8 COTS/APP/Slave_main.o
- .group         0x00000000        0x8 COTS/APP/Slave_main.o
- .group         0x00000000        0x8 COTS/APP/Slave_main.o
- .group         0x00000000        0x8 COTS/APP/Slave_main.o
  .group         0x00000000        0x8 COTS/APP/Slave_main.o
  .group         0x00000000        0x8 COTS/APP/Slave_main.o
  .group         0x00000000        0x8 COTS/APP/Slave_main.o
@@ -55,18 +41,6 @@ Discarded input sections
  .text          0x00000000        0x0 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
  .data          0x00000000        0x0 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
  .bss           0x00000000        0x0 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
- .text.HBuzzer_vInit
-                0x00000000       0x16 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
- .text.HBuzzer_vOn
-                0x00000000        0xc COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
- .text.HBuzzer_vOFF
-                0x00000000        0xc COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
- .debug_info    0x00000000      0x163 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
- .debug_abbrev  0x00000000       0x7f COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
- .debug_aranges
-                0x00000000       0x30 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
- .debug_ranges  0x00000000       0x20 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
- .debug_macro   0x00000000       0x7e COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
  .debug_macro   0x00000000      0xa4e COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
  .debug_macro   0x00000000      0x1c9 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
  .debug_macro   0x00000000      0x2fc COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
@@ -77,10 +51,6 @@ Discarded input sections
  .debug_macro   0x00000000       0x22 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
  .debug_macro   0x00000000       0x40 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
  .debug_macro   0x00000000       0x16 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
- .debug_line    0x00000000      0x217 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
- .debug_str     0x00000000     0x408a COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
- .comment       0x00000000       0x31 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
- .debug_frame   0x00000000       0x44 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
  .group         0x00000000        0x8 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
  .group         0x00000000        0x8 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
  .group         0x00000000        0x8 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
@@ -227,16 +197,8 @@ Discarded input sections
  .text          0x00000000        0x0 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .data          0x00000000        0x0 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .bss           0x00000000        0x0 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .text.MGIE_vEnableInterrupts
-                0x00000000        0x8 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .text.MGIE_vDisableInterrupts
                 0x00000000        0x8 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_info    0x00000000       0xc6 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_abbrev  0x00000000       0x54 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_aranges
-                0x00000000       0x28 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_ranges  0x00000000       0x18 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_macro   0x00000000       0x7f COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .debug_macro   0x00000000      0xa4e COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .debug_macro   0x00000000      0x1c9 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .debug_macro   0x00000000      0x2fc COTS/MCAL/GIE_DRIVER/GIE_Program.o
@@ -245,65 +207,6 @@ Discarded input sections
  .debug_macro   0x00000000       0x97 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .debug_macro   0x00000000       0xf2 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .debug_macro   0x00000000       0x22 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_macro   0x00000000       0x16 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_line    0x00000000      0x1bf COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_str     0x00000000     0x4013 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .comment       0x00000000       0x31 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .debug_frame   0x00000000       0x34 COTS/MCAL/GIE_DRIVER/GIE_Program.o
- .group         0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .group         0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .group         0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .group         0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .group         0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .group         0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .group         0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .group         0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .group         0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .group         0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .group         0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .group         0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text          0x00000000        0x0 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .data          0x00000000        0x0 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .bss           0x00000000        0x0 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_vMasterInit
-                0x00000000       0x44 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_vSlaveInit
-                0x00000000       0x12 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_u8StartCondition
-                0x00000000       0x3a COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_u8RepeatedStartCondition
-                0x00000000       0x3c COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_vStopCondition
-                0x00000000       0x1a COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_MasterTransmitterMode
-                0x00000000       0x72 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_u8MasterSendByteToSlave
-                0x00000000       0x6a COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_u8MasterRecieverMode
-                0x00000000       0x72 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_u8MasterReadByteFromSlave
-                0x00000000       0x84 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_u8SlaveCheckAddress
-                0x00000000       0x52 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_u8SlaveReciverMode
-                0x00000000       0x76 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_u8RecieveSendByteToMaster
-                0x00000000       0x60 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_vInterruptEnable
-                0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_vInterruptDisable
-                0x00000000        0x8 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .text.MI2C_vSetCallBack
-                0x00000000        0xa COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x00000000      0xa4e COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x00000000      0x1c9 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x00000000      0x2fc COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x00000000       0x58 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x00000000       0x10 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x00000000       0x97 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x00000000       0xf2 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x00000000       0x22 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x00000000      0x166 COTS/MCAL/I2C_DRIVER/I2C_Program.o
  .group         0x00000000        0x8 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
  .group         0x00000000        0x8 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
  .group         0x00000000        0x8 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
@@ -356,13 +259,7 @@ Discarded input sections
  .text          0x00000000        0x0 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
  .data          0x00000000        0x0 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
  .bss           0x00000000        0x0 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .text.MTIMER1_vInit
-                0x00000000       0x38 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .text.MTIMER1_vDisInit
-                0x00000000        0x6 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
  .text.MTIMER1_vSetOVFRegister
-                0x00000000        0x6 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .text.MTIMER1_vChannelASetCTCRegister
                 0x00000000        0x6 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
  .text.MTIMER1_vChannelBSetCTCRegister
                 0x00000000        0x6 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
@@ -375,8 +272,6 @@ Discarded input sections
  .text.MTIMER1_vEnableOVFINT
                 0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
  .text.MTIMER1_vDisableOVFINT
-                0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .text.MTIMER1_vChannelAEnableCTCINT
                 0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
  .text.MTIMER1_vChannelADisableCTCINT
                 0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
@@ -393,8 +288,6 @@ Discarded input sections
  .text.MTIMER1_vChannelBForceOutputCompare
                 0x00000000        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
  .text.MTIMER1_vSetOVFCallBack
-                0x00000000        0xe COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .text.MTIMER1_vChannelASetCTCCallBack
                 0x00000000        0xe COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
  .text.MTIMER1_vChannelBSetCTCCallBack
                 0x00000000        0xe COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
@@ -449,26 +342,6 @@ Discarded input sections
  .debug_macro   0x00000000       0x97 COTS/MCAL/USART_DRIVER/USART_Program.o
  .debug_macro   0x00000000       0xf2 COTS/MCAL/USART_DRIVER/USART_Program.o
  .debug_macro   0x00000000       0x22 COTS/MCAL/USART_DRIVER/USART_Program.o
- .text          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
- .data          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
- .bss           0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
- .text.avr-libc.fplib
-                0x00000000       0x5e d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
- .text          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
- .data          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
- .bss           0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
- .text.avr-libc.fplib
-                0x00000000       0x7a d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
- .text          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
- .data          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
- .bss           0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
- .text.avr-libc.fplib
-                0x00000000       0x44 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
- .text          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
- .data          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
- .bss           0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
- .text.avr-libc.fplib
-                0x00000000        0xe d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
  .text          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
  .data          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
  .bss           0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
@@ -483,22 +356,6 @@ Discarded input sections
                 0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
  .text.libgcc.fixed
                 0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
- .text          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
- .data          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
- .bss           0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
- .text.libgcc.mul
-                0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
- .text.libgcc.div
-                0x00000000       0x44 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
- .text.libgcc   0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
  .text          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  .data          0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  .bss           0x00000000        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
@@ -568,7 +425,6 @@ LOAD COTS/HAL/LCD_DRIVER/LCD_Program.o
 LOAD COTS/MCAL/DIO_DRIVER/DIO_Program.o
 LOAD COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
 LOAD COTS/MCAL/GIE_DRIVER/GIE_Program.o
-LOAD COTS/MCAL/I2C_DRIVER/I2C_Program.o
 LOAD COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
 LOAD COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
 LOAD COTS/MCAL/USART_DRIVER/USART_Program.o
@@ -681,7 +537,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xa96
+.text           0x00000000      0xb8c
  *(.vectors)
  .vectors       0x00000000       0x54 D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
                 0x00000000                __vector_default
@@ -742,6 +598,7 @@ END GROUP
                 0x00000078                __vector_12
                 0x00000078                __bad_interrupt
                 0x00000078                __vector_3
+                0x00000078                __vector_19
                 0x00000078                __vector_5
                 0x00000078                __vector_4
                 0x00000078                __vector_2
@@ -750,113 +607,161 @@ END GROUP
                 0x00000078                __vector_20
                 0x0000007c                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x0000007c      0x246 COTS/APP/Slave_main.o
-                0x0000007c                main
+ .text.TIMER1_CTC_INT_ISR
+                0x0000007c       0x20 COTS/APP/Slave_main.o
+                0x0000007c                TIMER1_CTC_INT_ISR
+ .text.Function_vReceivePassword
+                0x0000009c       0x14 COTS/APP/Slave_main.o
+                0x0000009c                Function_vReceivePassword
+ .text.Function_u8ComparePasswords
+                0x000000b0       0x2c COTS/APP/Slave_main.o
+                0x000000b0                Function_u8ComparePasswords
+ .text.Function_vStorePasswordInEEPROM
+                0x000000dc       0x4c COTS/APP/Slave_main.o
+                0x000000dc                Function_vStorePasswordInEEPROM
+ .text.Function_vReadPasswordFromEEPROM
+                0x00000128       0x44 COTS/APP/Slave_main.o
+                0x00000128                Function_vReadPasswordFromEEPROM
+ .text.Function_vSystemFreeze
+                0x0000016c       0x3e COTS/APP/Slave_main.o
+                0x0000016c                Function_vSystemFreeze
+ .text.Function_vOpenDoor
+                0x000001aa       0x6c COTS/APP/Slave_main.o
+                0x000001aa                Function_vOpenDoor
+ .text.Function_vCheckFirstUse
+                0x00000216       0x14 COTS/APP/Slave_main.o
+                0x00000216                Function_vCheckFirstUse
+ .text.main     0x0000022a      0x19c COTS/APP/Slave_main.o
+                0x0000022a                main
+ .text.HBuzzer_vInit
+                0x000003c6       0x16 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
+                0x000003c6                HBuzzer_vInit
+ .text.HBuzzer_vOn
+                0x000003dc        0xc COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
+                0x000003dc                HBuzzer_vOn
+ .text.HBuzzer_vOFF
+                0x000003e8        0xc COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
+                0x000003e8                HBuzzer_vOFF
  .text.HDCMotor_vInit
-                0x000002c2       0x74 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
-                0x000002c2                HDCMotor_vInit
+                0x000003f4       0x4c COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
+                0x000003f4                HDCMotor_vInit
  .text.HDCMotor_RotateDirection_Speed
-                0x00000336       0xa0 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
-                0x00000336                HDCMotor_RotateDirection_Speed
+                0x00000440       0x7c COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
+                0x00000440                HDCMotor_RotateDirection_Speed
  .text.MDIO_vSetPinDirection
-                0x000003d6       0xe0 COTS/MCAL/DIO_DRIVER/DIO_Program.o
-                0x000003d6                MDIO_vSetPinDirection
+                0x000004bc       0xe0 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+                0x000004bc                MDIO_vSetPinDirection
  .text.MDIO_vSetPinValue
-                0x000004b6       0xe0 COTS/MCAL/DIO_DRIVER/DIO_Program.o
-                0x000004b6                MDIO_vSetPinValue
+                0x0000059c       0xe0 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+                0x0000059c                MDIO_vSetPinValue
  .text.MEEPROM_vWriteByte
-                0x00000596       0x16 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
-                0x00000596                MEEPROM_vWriteByte
+                0x0000067c       0x16 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+                0x0000067c                MEEPROM_vWriteByte
  .text.MEEPROM_u8ReadByte
-                0x000005ac       0x10 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
-                0x000005ac                MEEPROM_u8ReadByte
+                0x00000692       0x10 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+                0x00000692                MEEPROM_u8ReadByte
  .text.__vector_17
-                0x000005bc       0x52 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
-                0x000005bc                __vector_17
- .text.__vector_19
-                0x0000060e       0x52 COTS/MCAL/I2C_DRIVER/I2C_Program.o
-                0x0000060e                __vector_19
+                0x000006a2       0x52 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+                0x000006a2                __vector_17
+ .text.MGIE_vEnableInterrupts
+                0x000006f4        0x8 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+                0x000006f4                MGIE_vEnableInterrupts
  .text.MTIMER0_vInit
-                0x00000660       0x2c COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
-                0x00000660                MTIMER0_vInit
+                0x000006fc       0x2c COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+                0x000006fc                MTIMER0_vInit
  .text.MTIMER0_vSetCTCRegister
-                0x0000068c        0x4 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
-                0x0000068c                MTIMER0_vSetCTCRegister
+                0x00000728        0x4 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+                0x00000728                MTIMER0_vSetCTCRegister
  .text.MTIMER0_vClearCTCRegister
-                0x00000690        0x4 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
-                0x00000690                MTIMER0_vClearCTCRegister
+                0x0000072c        0x4 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+                0x0000072c                MTIMER0_vClearCTCRegister
  .text.MTIMER0_vClearOVFFlag
-                0x00000694        0x8 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
-                0x00000694                MTIMER0_vClearOVFFlag
+                0x00000730        0x8 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+                0x00000730                MTIMER0_vClearOVFFlag
  .text.MTIMER0_vClearCTCFlag
-                0x0000069c        0x8 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
-                0x0000069c                MTIMER0_vClearCTCFlag
+                0x00000738        0x8 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+                0x00000738                MTIMER0_vClearCTCFlag
  .text.__vector_11
-                0x000006a4       0x56 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
-                0x000006a4                __vector_11
+                0x00000740       0x56 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+                0x00000740                __vector_11
  .text.__vector_10
-                0x000006fa       0x56 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
-                0x000006fa                __vector_10
+                0x00000796       0x56 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+                0x00000796                __vector_10
+ .text.MTIMER1_vInit
+                0x000007ec       0x38 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x000007ec                MTIMER1_vInit
+ .text.MTIMER1_vDisInit
+                0x00000824        0x6 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000824                MTIMER1_vDisInit
+ .text.MTIMER1_vChannelASetCTCRegister
+                0x0000082a        0x6 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x0000082a                MTIMER1_vChannelASetCTCRegister
  .text.MTIMER1_vClearOVFFlag
-                0x00000750        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
-                0x00000750                MTIMER1_vClearOVFFlag
+                0x00000830        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000830                MTIMER1_vClearOVFFlag
+ .text.MTIMER1_vChannelAEnableCTCINT
+                0x00000838        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000838                MTIMER1_vChannelAEnableCTCINT
  .text.MTIMER1_vChannelAClearCTCFlag
-                0x00000758        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
-                0x00000758                MTIMER1_vChannelAClearCTCFlag
+                0x00000840        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000840                MTIMER1_vChannelAClearCTCFlag
  .text.MTIMER1_vChannelBClearCTCFlag
-                0x00000760        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
-                0x00000760                MTIMER1_vChannelBClearCTCFlag
+                0x00000848        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000848                MTIMER1_vChannelBClearCTCFlag
  .text.MTIMER1_vClearInputCaptureFlag
-                0x00000768        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
-                0x00000768                MTIMER1_vClearInputCaptureFlag
+                0x00000850        0x8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000850                MTIMER1_vClearInputCaptureFlag
+ .text.MTIMER1_vChannelASetCTCCallBack
+                0x00000858        0xe COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000858                MTIMER1_vChannelASetCTCCallBack
  .text.__vector_6
-                0x00000770       0x56 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
-                0x00000770                __vector_6
+                0x00000866       0x56 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000866                __vector_6
  .text.__vector_7
-                0x000007c6       0x56 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
-                0x000007c6                __vector_7
+                0x000008bc       0x56 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x000008bc                __vector_7
  .text.__vector_8
-                0x0000081c       0x56 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
-                0x0000081c                __vector_8
+                0x00000912       0x56 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000912                __vector_8
  .text.__vector_9
-                0x00000872       0x56 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
-                0x00000872                __vector_9
+                0x00000968       0x56 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+                0x00000968                __vector_9
  .text.MUSART_vInit
-                0x000008c8       0x1c COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x000008c8                MUSART_vInit
+                0x000009be       0x1c COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x000009be                MUSART_vInit
  .text.MUSART_vTransmit
-                0x000008e4        0x8 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x000008e4                MUSART_vTransmit
+                0x000009da        0x8 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x000009da                MUSART_vTransmit
  .text.MUSART_u8Receive
-                0x000008ec       0x20 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x000008ec                MUSART_u8Receive
+                0x000009e2       0x20 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x000009e2                MUSART_u8Receive
  .text.MUSART_u8UnreadDate
-                0x0000090c        0xa COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x0000090c                MUSART_u8UnreadDate
+                0x00000a02        0xa COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000a02                MUSART_u8UnreadDate
  .text.MUSART_vRecieveString
-                0x00000916       0x36 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x00000916                MUSART_vRecieveString
+                0x00000a0c       0x36 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000a0c                MUSART_vRecieveString
  .text.__vector_13
-                0x0000094c       0x52 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x0000094c                __vector_13
+                0x00000a42       0x52 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000a42                __vector_13
  .text.__vector_14
-                0x0000099e       0x52 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x0000099e                __vector_14
+                0x00000a94       0x52 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000a94                __vector_14
  .text.__vector_15
-                0x000009f0       0x52 COTS/MCAL/USART_DRIVER/USART_Program.o
-                0x000009f0                __vector_15
+                0x00000ae6       0x52 COTS/MCAL/USART_DRIVER/USART_Program.o
+                0x00000ae6                __vector_15
  .text.libgcc.div
-                0x00000a42       0x28 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
-                0x00000a42                _div
-                0x00000a42                __divmodhi4
+                0x00000b38       0x28 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x00000b38                _div
+                0x00000b38                __divmodhi4
  .text.libgcc.div
-                0x00000a6a       0x28 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
-                0x00000a6a                __udivmodhi4
-                0x00000a92                . = ALIGN (0x2)
+                0x00000b60       0x28 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x00000b60                __udivmodhi4
+                0x00000b88                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000a92        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00000a92                _exit
-                0x00000a92                exit
+ .fini9         0x00000b88        0x0 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000b88                _exit
+                0x00000b88                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -875,11 +780,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000a92        0x4 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000b88        0x4 d:/programs/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000a96                _etext = .
+                0x00000b8c                _etext = .
 
-.data           0x00800060        0x0 load address 0x00000a96
+.data           0x00800060        0x0 load address 0x00000b8c
                 [!provide]                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -895,13 +800,18 @@ END GROUP
                 0x00800060                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.local_u8ErrorCounter.2305
+ .bss.global_u8FailureCounter
                 0x00800060        0x1 COTS/APP/Slave_main.o
+                0x00800060                global_u8FailureCounter
+ .bss.global_u8TicksCounter
+                0x00800061        0x1 COTS/APP/Slave_main.o
+                0x00800061                global_u8TicksCounter
+ .bss.global_u8SecondsCounter
+                0x00800062        0x1 COTS/APP/Slave_main.o
+                0x00800062                global_u8SecondsCounter
  .bss.EEPROM_Call_Back
-                0x00800061        0x2 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
-                0x00800061                EEPROM_Call_Back
- .bss.ptr_to_I2CINT
-                0x00800063        0x2 COTS/MCAL/I2C_DRIVER/I2C_Program.o
+                0x00800063        0x2 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+                0x00800063                EEPROM_Call_Back
  .bss.TIMER0_OVF_Call_Back
                 0x00800065        0x2 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
                 0x00800065                TIMER0_OVF_Call_Back
@@ -931,8 +841,8 @@ END GROUP
                 0x00800075                USART_RXC_Call_Back
  *(COMMON)
                 0x00800077                PROVIDE (__bss_end, .)
-                0x00000a96                __data_load_start = LOADADDR (.data)
-                0x00000a96                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000b8c                __data_load_start = LOADADDR (.data)
+                0x00000b8c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800077        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -982,10 +892,11 @@ END GROUP
  *(.comment)
  .comment       0x00000000       0x30 COTS/APP/Slave_main.o
                                  0x31 (size before relaxing)
+ .comment       0x00000030       0x31 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
  .comment       0x00000030       0x31 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
  .comment       0x00000030       0x31 COTS/MCAL/DIO_DRIVER/DIO_Program.o
  .comment       0x00000030       0x31 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .comment       0x00000030       0x31 COTS/MCAL/I2C_DRIVER/I2C_Program.o
+ .comment       0x00000030       0x31 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .comment       0x00000030       0x31 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
  .comment       0x00000030       0x31 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
  .comment       0x00000030       0x31 COTS/MCAL/USART_DRIVER/USART_Program.o
@@ -1013,15 +924,17 @@ END GROUP
 .debug_aranges  0x00000000      0x3c8
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x20 COTS/APP/Slave_main.o
+                0x00000000       0x60 COTS/APP/Slave_main.o
  .debug_aranges
-                0x00000020       0x28 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
+                0x00000060       0x30 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
  .debug_aranges
-                0x00000048       0x50 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+                0x00000090       0x28 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
  .debug_aranges
-                0x00000098       0x50 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+                0x000000b8       0x50 COTS/MCAL/DIO_DRIVER/DIO_Program.o
  .debug_aranges
-                0x000000e8       0x98 COTS/MCAL/I2C_DRIVER/I2C_Program.o
+                0x00000108       0x50 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_aranges
+                0x00000158       0x28 COTS/MCAL/GIE_DRIVER/GIE_Program.o
  .debug_aranges
                 0x00000180       0x98 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
  .debug_aranges
@@ -1032,83 +945,88 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x21aa
+.debug_info     0x00000000     0x2350
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
- .debug_info    0x000004e6      0x664 COTS/APP/Slave_main.o
- .debug_info    0x00000b4a      0x36a COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
- .debug_info    0x00000eb4      0x246 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_info    0x000010fa      0x1f4 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_info    0x000012ee      0x3d7 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_info    0x000016c5      0x294 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
- .debug_info    0x00001959      0x4d2 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .debug_info    0x00001e2b      0x37f COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_info    0x000004e6      0xa40 COTS/APP/Slave_main.o
+ .debug_info    0x00000f26      0x163 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
+ .debug_info    0x00001089      0x2e2 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
+ .debug_info    0x0000136b      0x246 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_info    0x000015b1      0x1f4 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_info    0x000017a5       0xc6 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_info    0x0000186b      0x294 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+ .debug_info    0x00001aff      0x4d2 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_info    0x00001fd1      0x37f COTS/MCAL/USART_DRIVER/USART_Program.o
 
-.debug_abbrev   0x00000000      0xdbb
+.debug_abbrev   0x00000000      0xdbc
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4a3 D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
- .debug_abbrev  0x000004a3      0x1a1 COTS/APP/Slave_main.o
- .debug_abbrev  0x00000644       0xf6 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
- .debug_abbrev  0x0000073a       0xb7 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_abbrev  0x000007f1      0x11e COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_abbrev  0x0000090f      0x16c COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_abbrev  0x00000a7b       0xc3 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
- .debug_abbrev  0x00000b3e      0x152 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .debug_abbrev  0x00000c90      0x12b COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_abbrev  0x000004a3      0x232 COTS/APP/Slave_main.o
+ .debug_abbrev  0x000006d5       0x7f COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
+ .debug_abbrev  0x00000754       0xff COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
+ .debug_abbrev  0x00000853       0xb7 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_abbrev  0x0000090a      0x11e COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_abbrev  0x00000a28       0x54 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_abbrev  0x00000a7c       0xc3 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+ .debug_abbrev  0x00000b3f      0x152 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_abbrev  0x00000c91      0x12b COTS/MCAL/USART_DRIVER/USART_Program.o
 
-.debug_line     0x00000000     0x23c6
+.debug_line     0x00000000     0x2197
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x116 D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
- .debug_line    0x00000116      0x5b3 COTS/APP/Slave_main.o
- .debug_line    0x000006c9      0x2d0 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
- .debug_line    0x00000999      0x355 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_line    0x00000cee      0x2c0 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_line    0x00000fae      0x75c COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_line    0x0000170a      0x378 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
- .debug_line    0x00001a82      0x516 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .debug_line    0x00001f98      0x42e COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_line    0x00000116      0x6ff COTS/APP/Slave_main.o
+ .debug_line    0x00000815      0x217 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
+ .debug_line    0x00000a2c      0x2dc COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
+ .debug_line    0x00000d08      0x355 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_line    0x0000105d      0x2c0 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_line    0x0000131d      0x1bf COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_line    0x000014dc      0x378 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+ .debug_line    0x00001854      0x515 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_line    0x00001d69      0x42e COTS/MCAL/USART_DRIVER/USART_Program.o
 
-.debug_frame    0x00000000      0xa60
+.debug_frame    0x00000000      0xa20
  *(.debug_frame)
- .debug_frame   0x00000000       0x34 COTS/APP/Slave_main.o
- .debug_frame   0x00000034       0x6c COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
- .debug_frame   0x000000a0       0x84 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_frame   0x00000124       0xe8 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_frame   0x0000020c      0x15c COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_frame   0x00000368      0x1a4 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
- .debug_frame   0x0000050c      0x314 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .debug_frame   0x00000820      0x240 COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_frame   0x00000000       0xf8 COTS/APP/Slave_main.o
+ .debug_frame   0x000000f8       0x44 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
+ .debug_frame   0x0000013c       0x4c COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
+ .debug_frame   0x00000188       0x84 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_frame   0x0000020c       0xe8 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_frame   0x000002f4       0x34 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_frame   0x00000328      0x1a4 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+ .debug_frame   0x000004cc      0x314 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_frame   0x000007e0      0x240 COTS/MCAL/USART_DRIVER/USART_Program.o
 
-.debug_str      0x00000000     0x6b78
+.debug_str      0x00000000     0x632d
  *(.debug_str)
  .debug_str     0x00000000      0x196 D:/Programs/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
- .debug_str     0x00000196     0x49c5 COTS/APP/Slave_main.o
-                               0x4acd (size before relaxing)
- .debug_str     0x00004b5b       0xfc COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
+ .debug_str     0x00000196     0x48b4 COTS/APP/Slave_main.o
+                               0x499b (size before relaxing)
+ .debug_str     0x00004a4a       0x3d COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
+                               0x408a (size before relaxing)
+ .debug_str     0x00004a87       0xea COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
                                0x41ae (size before relaxing)
- .debug_str     0x00004c57      0x271 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_str     0x00004b71      0x271 COTS/MCAL/DIO_DRIVER/DIO_Program.o
                                0x4262 (size before relaxing)
- .debug_str     0x00004ec8      0x18f COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_str     0x00004de2      0x19f COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
                                0x4143 (size before relaxing)
- .debug_str     0x00005057      0x780 COTS/MCAL/I2C_DRIVER/I2C_Program.o
-                               0x4a8f (size before relaxing)
- .debug_str     0x000057d7      0x4de COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+ .debug_str     0x00004f81       0x7f COTS/MCAL/GIE_DRIVER/GIE_Program.o
+                               0x4013 (size before relaxing)
+ .debug_str     0x00005000      0x4de COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
                                0x44af (size before relaxing)
- .debug_str     0x00005cb5      0x99f COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_str     0x000054de      0x922 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
                                0x4974 (size before relaxing)
- .debug_str     0x00006654      0x524 COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_str     0x00005e00      0x52d COTS/MCAL/USART_DRIVER/USART_Program.o
                                0x451b (size before relaxing)
 
-.debug_loc      0x00000000     0x1759
+.debug_loc      0x00000000     0x1433
  *(.debug_loc)
- .debug_loc     0x00000000      0x2d1 COTS/APP/Slave_main.o
- .debug_loc     0x000002d1       0xd7 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
- .debug_loc     0x000003a8      0x416 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_loc     0x000007be      0x20e COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_loc     0x000009cc      0x45c COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_loc     0x00000e28      0x196 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
- .debug_loc     0x00000fbe      0x366 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .debug_loc     0x00001324      0x435 COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_loc     0x00000000      0x3f6 COTS/APP/Slave_main.o
+ .debug_loc     0x000003f6       0xe8 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
+ .debug_loc     0x000004de      0x416 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_loc     0x000008f4      0x20e COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_loc     0x00000b02      0x196 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+ .debug_loc     0x00000c98      0x366 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_loc     0x00000ffe      0x435 COTS/MCAL/USART_DRIVER/USART_Program.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1128,54 +1046,50 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x378
+.debug_ranges   0x00000000      0x350
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x40 COTS/APP/Slave_main.o
- .debug_ranges  0x00000040       0x18 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
- .debug_ranges  0x00000058       0x40 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_ranges  0x00000098       0x40 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_ranges  0x000000d8       0x88 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_ranges  0x00000160       0x88 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
- .debug_ranges  0x000001e8       0xf8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .debug_ranges  0x000002e0       0x98 COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_ranges  0x00000000       0x68 COTS/APP/Slave_main.o
+ .debug_ranges  0x00000068       0x20 COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
+ .debug_ranges  0x00000088       0x18 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
+ .debug_ranges  0x000000a0       0x40 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_ranges  0x000000e0       0x40 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_ranges  0x00000120       0x18 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_ranges  0x00000138       0x88 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+ .debug_ranges  0x000001c0       0xf8 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_ranges  0x000002b8       0x98 COTS/MCAL/USART_DRIVER/USART_Program.o
 
-.debug_macro    0x00000000     0x1f02
+.debug_macro    0x00000000     0x1c94
  *(.debug_macro)
- .debug_macro   0x00000000      0x10e COTS/APP/Slave_main.o
- .debug_macro   0x0000010e      0xa4e COTS/APP/Slave_main.o
- .debug_macro   0x00000b5c       0x22 COTS/APP/Slave_main.o
- .debug_macro   0x00000b7e      0x1c9 COTS/APP/Slave_main.o
- .debug_macro   0x00000d47      0x2fc COTS/APP/Slave_main.o
- .debug_macro   0x00001043       0x58 COTS/APP/Slave_main.o
- .debug_macro   0x0000109b       0x10 COTS/APP/Slave_main.o
- .debug_macro   0x000010ab       0x97 COTS/APP/Slave_main.o
- .debug_macro   0x00001142       0xf2 COTS/APP/Slave_main.o
- .debug_macro   0x00001234       0x40 COTS/APP/Slave_main.o
- .debug_macro   0x00001274       0x16 COTS/APP/Slave_main.o
- .debug_macro   0x0000128a       0x22 COTS/APP/Slave_main.o
- .debug_macro   0x000012ac       0x10 COTS/APP/Slave_main.o
- .debug_macro   0x000012bc      0x166 COTS/APP/Slave_main.o
- .debug_macro   0x00001422       0x1c COTS/APP/Slave_main.o
- .debug_macro   0x0000143e       0x97 COTS/APP/Slave_main.o
- .debug_macro   0x000014d5       0x60 COTS/APP/Slave_main.o
- .debug_macro   0x00001535       0x96 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
- .debug_macro   0x000015cb       0x1c COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
- .debug_macro   0x000015e7       0x88 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_macro   0x0000166f       0x52 COTS/MCAL/DIO_DRIVER/DIO_Program.o
- .debug_macro   0x000016c1       0x89 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_macro   0x0000174a       0x34 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
- .debug_macro   0x0000177e       0xa0 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x0000181e       0x16 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x00001834       0x64 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x00001898      0x118 COTS/MCAL/I2C_DRIVER/I2C_Program.o
- .debug_macro   0x000019b0       0x8e COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
- .debug_macro   0x00001a3e       0xd0 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
- .debug_macro   0x00001b0e       0x22 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
- .debug_macro   0x00001b30       0x88 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .debug_macro   0x00001bb8      0x166 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .debug_macro   0x00001d1e       0x2e COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
- .debug_macro   0x00001d4c       0x88 COTS/MCAL/USART_DRIVER/USART_Program.o
- .debug_macro   0x00001dd4      0x10c COTS/MCAL/USART_DRIVER/USART_Program.o
- .debug_macro   0x00001ee0       0x22 COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_macro   0x00000000       0xf4 COTS/APP/Slave_main.o
+ .debug_macro   0x000000f4      0xa4e COTS/APP/Slave_main.o
+ .debug_macro   0x00000b42       0x22 COTS/APP/Slave_main.o
+ .debug_macro   0x00000b64      0x1c9 COTS/APP/Slave_main.o
+ .debug_macro   0x00000d2d      0x2fc COTS/APP/Slave_main.o
+ .debug_macro   0x00001029       0x58 COTS/APP/Slave_main.o
+ .debug_macro   0x00001081       0x10 COTS/APP/Slave_main.o
+ .debug_macro   0x00001091       0x97 COTS/APP/Slave_main.o
+ .debug_macro   0x00001128       0xf2 COTS/APP/Slave_main.o
+ .debug_macro   0x0000121a       0x40 COTS/APP/Slave_main.o
+ .debug_macro   0x0000125a       0x16 COTS/APP/Slave_main.o
+ .debug_macro   0x00001270       0x10 COTS/APP/Slave_main.o
+ .debug_macro   0x00001280      0x166 COTS/APP/Slave_main.o
+ .debug_macro   0x000013e6       0x7e COTS/HAL/BUZZER_DRIVER/Buzzer_Program.o
+ .debug_macro   0x00001464       0x96 COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
+ .debug_macro   0x000014fa       0x1c COTS/HAL/DCMotor_DRIVER/DCMotor_Program.o
+ .debug_macro   0x00001516       0x88 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_macro   0x0000159e       0x52 COTS/MCAL/DIO_DRIVER/DIO_Program.o
+ .debug_macro   0x000015f0       0x89 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_macro   0x00001679       0x34 COTS/MCAL/EEPROM_DRIVER/EEPROM_Program.o
+ .debug_macro   0x000016ad       0x7f COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_macro   0x0000172c       0x16 COTS/MCAL/GIE_DRIVER/GIE_Program.o
+ .debug_macro   0x00001742       0x8e COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+ .debug_macro   0x000017d0       0xd0 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+ .debug_macro   0x000018a0       0x22 COTS/MCAL/TIMER0_DRIVER/TIMER0_Program.o
+ .debug_macro   0x000018c2       0x88 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x0000194a      0x166 COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x00001ab0       0x2e COTS/MCAL/TIMER1_DRIVER/TIMER1_Program.o
+ .debug_macro   0x00001ade       0x88 COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_macro   0x00001b66      0x10c COTS/MCAL/USART_DRIVER/USART_Program.o
+ .debug_macro   0x00001c72       0x22 COTS/MCAL/USART_DRIVER/USART_Program.o
 OUTPUT(Slave_MCU.elf elf32-avr)
 LOAD linker stubs

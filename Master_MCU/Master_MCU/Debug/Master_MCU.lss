@@ -3,33 +3,33 @@ Master_MCU.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         00000ad8  00000000  00000000  00000094  2**1
+  0 .text         00000d7c  00000000  00000000  00000094  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         000000be  00800060  00000ad8  00000b6c  2**0
+  1 .data         000000ee  00800060  00000d7c  00000e10  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  2 .bss          00000009  0080011e  0080011e  00000c2a  2**0
+  2 .bss          00000014  0080014e  0080014e  00000efe  2**0
                   ALLOC
-  3 .comment      00000030  00000000  00000000  00000c2a  2**0
+  3 .comment      00000030  00000000  00000000  00000efe  2**0
                   CONTENTS, READONLY
-  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000c5c  2**2
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000f30  2**2
                   CONTENTS, READONLY
-  5 .debug_aranges 000001f0  00000000  00000000  00000c98  2**0
+  5 .debug_aranges 00000340  00000000  00000000  00000f6c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_info   000021c7  00000000  00000000  00000e88  2**0
+  6 .debug_info   00002839  00000000  00000000  000012ac  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_abbrev 00000bee  00000000  00000000  0000304f  2**0
+  7 .debug_abbrev 00000ddb  00000000  00000000  00003ae5  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_line   00001870  00000000  00000000  00003c3d  2**0
+  8 .debug_line   000020c6  00000000  00000000  000048c0  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_frame  00000520  00000000  00000000  000054b0  2**2
+  9 .debug_frame  000008e4  00000000  00000000  00006988  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    000053f0  00000000  00000000  000059d0  2**0
+ 10 .debug_str    00005f35  00000000  00000000  0000726c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    0000152e  00000000  00000000  0000adc0  2**0
+ 11 .debug_loc    000018da  00000000  00000000  0000d1a1  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 00000190  00000000  00000000  0000c2ee  2**0
+ 12 .debug_ranges 000002c0  00000000  00000000  0000ea7b  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_macro  000018fa  00000000  00000000  0000c47e  2**0
+ 13 .debug_macro  00001bb5  00000000  00000000  0000ed3b  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -41,18 +41,18 @@ Disassembly of section .text:
    c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
   10:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
   14:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
-  18:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
-  1c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
-  20:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
-  24:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  18:	0c 94 58 05 	jmp	0xab0	; 0xab0 <__vector_6>
+  1c:	0c 94 83 05 	jmp	0xb06	; 0xb06 <__vector_7>
+  20:	0c 94 ae 05 	jmp	0xb5c	; 0xb5c <__vector_8>
+  24:	0c 94 d9 05 	jmp	0xbb2	; 0xbb2 <__vector_9>
   28:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
   2c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
   30:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
-  34:	0c 94 ef 04 	jmp	0x9de	; 0x9de <__vector_13>
-  38:	0c 94 18 05 	jmp	0xa30	; 0xa30 <__vector_14>
-  3c:	0c 94 41 05 	jmp	0xa82	; 0xa82 <__vector_15>
+  34:	0c 94 41 06 	jmp	0xc82	; 0xc82 <__vector_13>
+  38:	0c 94 6a 06 	jmp	0xcd4	; 0xcd4 <__vector_14>
+  3c:	0c 94 93 06 	jmp	0xd26	; 0xd26 <__vector_15>
   40:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
-  44:	0c 94 89 04 	jmp	0x912	; 0x912 <__vector_17>
+  44:	0c 94 ee 04 	jmp	0x9dc	; 0x9dc <__vector_17>
   48:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
   4c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
   50:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
@@ -69,18 +69,18 @@ Disassembly of section .text:
   60:	11 e0       	ldi	r17, 0x01	; 1
   62:	a0 e6       	ldi	r26, 0x60	; 96
   64:	b0 e0       	ldi	r27, 0x00	; 0
-  66:	e8 ed       	ldi	r30, 0xD8	; 216
-  68:	fa e0       	ldi	r31, 0x0A	; 10
+  66:	ec e7       	ldi	r30, 0x7C	; 124
+  68:	fd e0       	ldi	r31, 0x0D	; 13
   6a:	02 c0       	rjmp	.+4      	; 0x70 <__do_copy_data+0x10>
   6c:	05 90       	lpm	r0, Z+
   6e:	0d 92       	st	X+, r0
-  70:	ae 31       	cpi	r26, 0x1E	; 30
+  70:	ae 34       	cpi	r26, 0x4E	; 78
   72:	b1 07       	cpc	r27, r17
   74:	d9 f7       	brne	.-10     	; 0x6c <__do_copy_data+0xc>
 
 00000076 <__do_clear_bss>:
   76:	21 e0       	ldi	r18, 0x01	; 1
-  78:	ae e1       	ldi	r26, 0x1E	; 30
+  78:	ae e4       	ldi	r26, 0x4E	; 78
   7a:	b1 e0       	ldi	r27, 0x01	; 1
   7c:	01 c0       	rjmp	.+2      	; 0x80 <.do_clear_bss_start>
 
@@ -88,1804 +88,2223 @@ Disassembly of section .text:
   7e:	1d 92       	st	X+, r1
 
 00000080 <.do_clear_bss_start>:
-  80:	a7 32       	cpi	r26, 0x27	; 39
+  80:	a2 36       	cpi	r26, 0x62	; 98
   82:	b2 07       	cpc	r27, r18
   84:	e1 f7       	brne	.-8      	; 0x7e <.do_clear_bss_loop>
-  86:	0e 94 02 01 	call	0x204	; 0x204 <main>
-  8a:	0c 94 6a 05 	jmp	0xad4	; 0xad4 <_exit>
+  86:	0e 94 79 01 	call	0x2f2	; 0x2f2 <main>
+  8a:	0c 94 bc 06 	jmp	0xd78	; 0xd78 <_exit>
 
 0000008e <__bad_interrupt>:
   8e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
 
-00000092 <Function_vGetPassword>:
+00000092 <TIMER1_CTC_INT_ISR>:
+	MUSART_vTransmitString(local_u8ReEnteredPassword, PASSWORD_SIZE);
+
+}
+
+void TIMER1_CTC_INT_ISR() {
+	if (global_u8TicksCounter == 15) {
+  92:	80 91 4f 01 	lds	r24, 0x014F	; 0x80014f <global_u8TicksCounter>
+  96:	8f 30       	cpi	r24, 0x0F	; 15
+  98:	41 f4       	brne	.+16     	; 0xaa <TIMER1_CTC_INT_ISR+0x18>
+		global_u8SecondsCounter++;
+  9a:	80 91 50 01 	lds	r24, 0x0150	; 0x800150 <global_u8SecondsCounter>
+  9e:	8f 5f       	subi	r24, 0xFF	; 255
+  a0:	80 93 50 01 	sts	0x0150, r24	; 0x800150 <global_u8SecondsCounter>
+		global_u8TicksCounter = 0;
+  a4:	10 92 4f 01 	sts	0x014F, r1	; 0x80014f <global_u8TicksCounter>
+  a8:	08 95       	ret
+		} else {
+		global_u8TicksCounter++;
+  aa:	8f 5f       	subi	r24, 0xFF	; 255
+  ac:	80 93 4f 01 	sts	0x014F, r24	; 0x80014f <global_u8TicksCounter>
+  b0:	08 95       	ret
+
+000000b2 <Function_vGetPassword>:
 * Function_vGetPassword: Gets a password from the user.
 *
 * @param A_ScreenString: The string to display on the screen.
 * @param A_PointerToPassword: A pointer to the buffer where the password will be stored.
 */
 void Function_vGetPassword(u8 *A_ScreenString, u8 *A_PointerToPassword) {
-  92:	ef 92       	push	r14
-  94:	ff 92       	push	r15
-  96:	0f 93       	push	r16
-  98:	1f 93       	push	r17
-  9a:	cf 93       	push	r28
-  9c:	7b 01       	movw	r14, r22
-	// Initialize variables
+  b2:	ef 92       	push	r14
+  b4:	ff 92       	push	r15
+  b6:	0f 93       	push	r16
+  b8:	1f 93       	push	r17
+  ba:	cf 93       	push	r28
+  bc:	7b 01       	movw	r14, r22
 	u8 *local_u8PressedKey = NOT_PRESSED;
 	u8 local_u8Counter = 0;
 
-	// Display the prompt on the LCD
-	HLCD_vSendString(A_ScreenString);
-  9e:	0e 94 2f 03 	call	0x65e	; 0x65e <HLCD_vSendString>
-* @param A_PointerToPassword: A pointer to the buffer where the password will be stored.
-*/
-void Function_vGetPassword(u8 *A_ScreenString, u8 *A_PointerToPassword) {
-	// Initialize variables
-	u8 *local_u8PressedKey = NOT_PRESSED;
-	u8 local_u8Counter = 0;
-  a2:	c0 e0       	ldi	r28, 0x00	; 0
+	HLCD_vSendString(A_ScreenString); // Display the prompt on the LCD
+  be:	0e 94 94 03 	call	0x728	; 0x728 <HLCD_vSendString>
 * @param A_ScreenString: The string to display on the screen.
 * @param A_PointerToPassword: A pointer to the buffer where the password will be stored.
 */
 void Function_vGetPassword(u8 *A_ScreenString, u8 *A_PointerToPassword) {
-	// Initialize variables
 	u8 *local_u8PressedKey = NOT_PRESSED;
-  a4:	80 e0       	ldi	r24, 0x00	; 0
-  a6:	90 e0       	ldi	r25, 0x00	; 0
+	u8 local_u8Counter = 0;
+  c2:	c0 e0       	ldi	r28, 0x00	; 0
+*
+* @param A_ScreenString: The string to display on the screen.
+* @param A_PointerToPassword: A pointer to the buffer where the password will be stored.
+*/
+void Function_vGetPassword(u8 *A_ScreenString, u8 *A_PointerToPassword) {
+	u8 *local_u8PressedKey = NOT_PRESSED;
+  c4:	80 e0       	ldi	r24, 0x00	; 0
+  c6:	90 e0       	ldi	r25, 0x00	; 0
+	u8 local_u8Counter = 0;
 
-	// Display the prompt on the LCD
-	HLCD_vSendString(A_ScreenString);
+	HLCD_vSendString(A_ScreenString); // Display the prompt on the LCD
 
 	// Main loop to get the password
 	while (*local_u8PressedKey != '=') {
-  a8:	2e c0       	rjmp	.+92     	; 0x106 <Function_vGetPassword+0x74>
+  c8:	2e c0       	rjmp	.+92     	; 0x126 <Function_vGetPassword+0x74>
 		// Inner loop to get each character of the password
-		while (local_u8Counter < 5) {
-			// Get the pressed key from the keypad
-			local_u8PressedKey = HKPD_u8GetPressedKey();
-  aa:	0e 94 5b 02 	call	0x4b6	; 0x4b6 <HKPD_u8GetPressedKey>
-  ae:	8c 01       	movw	r16, r24
+		while (local_u8Counter < PASSWORD_SIZE - 1) { // Ensure space for null terminator
+			local_u8PressedKey = HKPD_u8GetPressedKey(); // Get the pressed key from the keypad
+  ca:	0e 94 c0 02 	call	0x580	; 0x580 <HKPD_u8GetPressedKey>
+  ce:	8c 01       	movw	r16, r24
 
-			// Move the cursor to the current position
-			HLCD_vMoveTo(1, local_u8Counter);
-  b0:	6c 2f       	mov	r22, r28
-  b2:	81 e0       	ldi	r24, 0x01	; 1
-  b4:	0e 94 42 03 	call	0x684	; 0x684 <HLCD_vMoveTo>
+			HLCD_vMoveTo(1, local_u8Counter); // Move the cursor to the current position
+  d0:	6c 2f       	mov	r22, r28
+  d2:	81 e0       	ldi	r24, 0x01	; 1
+  d4:	0e 94 a7 03 	call	0x74e	; 0x74e <HLCD_vMoveTo>
 
 			// Check if a valid key was pressed
 			if (*local_u8PressedKey != NOT_PRESSED && *local_u8PressedKey != '=') {
-  b8:	f8 01       	movw	r30, r16
-  ba:	80 81       	ld	r24, Z
-  bc:	88 23       	and	r24, r24
-  be:	f9 f0       	breq	.+62     	; 0xfe <Function_vGetPassword+0x6c>
-  c0:	8d 33       	cpi	r24, 0x3D	; 61
-  c2:	e9 f0       	breq	.+58     	; 0xfe <Function_vGetPassword+0x6c>
-				// Store the character in the password buffer
-				*(A_PointerToPassword + local_u8Counter) = *local_u8PressedKey;
-  c4:	f7 01       	movw	r30, r14
-  c6:	ec 0f       	add	r30, r28
-  c8:	f1 1d       	adc	r31, r1
-  ca:	80 83       	st	Z, r24
+  d8:	f8 01       	movw	r30, r16
+  da:	80 81       	ld	r24, Z
+  dc:	88 23       	and	r24, r24
+  de:	f9 f0       	breq	.+62     	; 0x11e <Function_vGetPassword+0x6c>
+  e0:	8d 33       	cpi	r24, 0x3D	; 61
+  e2:	e9 f0       	breq	.+58     	; 0x11e <Function_vGetPassword+0x6c>
+				*(A_PointerToPassword + local_u8Counter) = *local_u8PressedKey; // Store the character in the password buffer
+  e4:	f7 01       	movw	r30, r14
+  e6:	ec 0f       	add	r30, r28
+  e8:	f1 1d       	adc	r31, r1
+  ea:	80 83       	st	Z, r24
 
-				// Display the character on the LCD
-				HLCD_vSendData(*(A_PointerToPassword + local_u8Counter));
-  cc:	0e 94 07 03 	call	0x60e	; 0x60e <HLCD_vSendData>
+				HLCD_vSendData(*(A_PointerToPassword + local_u8Counter)); // Display the character on the LCD
+  ec:	0e 94 6c 03 	call	0x6d8	; 0x6d8 <HLCD_vSendData>
 	#else
 		//round up by default
 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
 	#endif
 
 	__builtin_avr_delay_cycles(__ticks_dc);
-  d0:	ff e3       	ldi	r31, 0x3F	; 63
-  d2:	2d e0       	ldi	r18, 0x0D	; 13
-  d4:	83 e0       	ldi	r24, 0x03	; 3
-  d6:	f1 50       	subi	r31, 0x01	; 1
-  d8:	20 40       	sbci	r18, 0x00	; 0
-  da:	80 40       	sbci	r24, 0x00	; 0
-  dc:	e1 f7       	brne	.-8      	; 0xd6 <Function_vGetPassword+0x44>
-  de:	00 c0       	rjmp	.+0      	; 0xe0 <Function_vGetPassword+0x4e>
-  e0:	00 00       	nop
+  f0:	ff e3       	ldi	r31, 0x3F	; 63
+  f2:	2d e0       	ldi	r18, 0x0D	; 13
+  f4:	83 e0       	ldi	r24, 0x03	; 3
+  f6:	f1 50       	subi	r31, 0x01	; 1
+  f8:	20 40       	sbci	r18, 0x00	; 0
+  fa:	80 40       	sbci	r24, 0x00	; 0
+  fc:	e1 f7       	brne	.-8      	; 0xf6 <Function_vGetPassword+0x44>
+  fe:	00 c0       	rjmp	.+0      	; 0x100 <Function_vGetPassword+0x4e>
+ 100:	00 00       	nop
 
-				// Delay for readability
-				_delay_ms(1000);
+				_delay_ms(1000); // Delay for readability
 
-				// Clear the character on the LCD
-				HLCD_vMoveTo(1, local_u8Counter);
-  e2:	6c 2f       	mov	r22, r28
-  e4:	81 e0       	ldi	r24, 0x01	; 1
-  e6:	0e 94 42 03 	call	0x684	; 0x684 <HLCD_vMoveTo>
+				HLCD_vMoveTo(1, local_u8Counter); // Clear the character on the LCD
+ 102:	6c 2f       	mov	r22, r28
+ 104:	81 e0       	ldi	r24, 0x01	; 1
+ 106:	0e 94 a7 03 	call	0x74e	; 0x74e <HLCD_vMoveTo>
 				HLCD_vSendData(0x2A);
-  ea:	8a e2       	ldi	r24, 0x2A	; 42
-  ec:	0e 94 07 03 	call	0x60e	; 0x60e <HLCD_vSendData>
+ 10a:	8a e2       	ldi	r24, 0x2A	; 42
+ 10c:	0e 94 6c 03 	call	0x6d8	; 0x6d8 <HLCD_vSendData>
 
-				// Increment the counter
-				local_u8Counter++;
-  f0:	cf 5f       	subi	r28, 0xFF	; 255
-
-				// Move the cursor to the next position
-				HLCD_vMoveTo(1, local_u8Counter);
-  f2:	6c 2f       	mov	r22, r28
-  f4:	81 e0       	ldi	r24, 0x01	; 1
-  f6:	0e 94 42 03 	call	0x684	; 0x684 <HLCD_vMoveTo>
-
-				// Clear the pressed key flag
-				*local_u8PressedKey = NOT_PRESSED;
-  fa:	f8 01       	movw	r30, r16
-  fc:	10 82       	st	Z, r1
-	HLCD_vSendString(A_ScreenString);
+				local_u8Counter++; // Increment the counter
+ 110:	cf 5f       	subi	r28, 0xFF	; 255
+				HLCD_vMoveTo(1, local_u8Counter); // Move the cursor to the next position
+ 112:	6c 2f       	mov	r22, r28
+ 114:	81 e0       	ldi	r24, 0x01	; 1
+ 116:	0e 94 a7 03 	call	0x74e	; 0x74e <HLCD_vMoveTo>
+				*local_u8PressedKey = NOT_PRESSED; // Clear the pressed key flag
+ 11a:	f8 01       	movw	r30, r16
+ 11c:	10 82       	st	Z, r1
+	HLCD_vSendString(A_ScreenString); // Display the prompt on the LCD
 
 	// Main loop to get the password
 	while (*local_u8PressedKey != '=') {
 		// Inner loop to get each character of the password
-		while (local_u8Counter < 5) {
-  fe:	c5 30       	cpi	r28, 0x05	; 5
- 100:	a0 f2       	brcs	.-88     	; 0xaa <Function_vGetPassword+0x18>
-				*local_u8PressedKey = NOT_PRESSED;
+		while (local_u8Counter < PASSWORD_SIZE - 1) { // Ensure space for null terminator
+ 11e:	c5 30       	cpi	r28, 0x05	; 5
+ 120:	a0 f2       	brcs	.-88     	; 0xca <Function_vGetPassword+0x18>
+				local_u8Counter++; // Increment the counter
+				HLCD_vMoveTo(1, local_u8Counter); // Move the cursor to the next position
+				*local_u8PressedKey = NOT_PRESSED; // Clear the pressed key flag
 			}
 		}
+		local_u8PressedKey = HKPD_u8GetPressedKey(); // Check if the '=' key was pressed to exit the loop
+ 122:	0e 94 c0 02 	call	0x580	; 0x580 <HKPD_u8GetPressedKey>
+	u8 local_u8Counter = 0;
 
-		// Check if the '=' key was pressed to exit the loop
-		local_u8PressedKey = HKPD_u8GetPressedKey();
- 102:	0e 94 5b 02 	call	0x4b6	; 0x4b6 <HKPD_u8GetPressedKey>
-
-	// Display the prompt on the LCD
-	HLCD_vSendString(A_ScreenString);
+	HLCD_vSendString(A_ScreenString); // Display the prompt on the LCD
 
 	// Main loop to get the password
 	while (*local_u8PressedKey != '=') {
- 106:	fc 01       	movw	r30, r24
- 108:	80 81       	ld	r24, Z
- 10a:	8d 33       	cpi	r24, 0x3D	; 61
- 10c:	c1 f7       	brne	.-16     	; 0xfe <Function_vGetPassword+0x6c>
+ 126:	fc 01       	movw	r30, r24
+ 128:	80 81       	ld	r24, Z
+ 12a:	8d 33       	cpi	r24, 0x3D	; 61
+ 12c:	c1 f7       	brne	.-16     	; 0x11e <Function_vGetPassword+0x6c>
+				*local_u8PressedKey = NOT_PRESSED; // Clear the pressed key flag
+			}
+		}
+		local_u8PressedKey = HKPD_u8GetPressedKey(); // Check if the '=' key was pressed to exit the loop
+	}
+	*(A_PointerToPassword + local_u8Counter) = '\0'; // Null-terminate the password string
+ 12e:	f7 01       	movw	r30, r14
+ 130:	ec 0f       	add	r30, r28
+ 132:	f1 1d       	adc	r31, r1
+ 134:	10 82       	st	Z, r1
+	HLCD_vDisplayClear(); // Clear the display for next use
+ 136:	0e 94 b6 03 	call	0x76c	; 0x76c <HLCD_vDisplayClear>
+}
+ 13a:	cf 91       	pop	r28
+ 13c:	1f 91       	pop	r17
+ 13e:	0f 91       	pop	r16
+ 140:	ff 90       	pop	r15
+ 142:	ef 90       	pop	r14
+ 144:	08 95       	ret
 
-		// Check if the '=' key was pressed to exit the loop
+00000146 <Function_vWaitingScreen>:
+
+/**
+* Function_vWaitingScreen: Displays a "Please Wait!" message with a loading effect.
+*/
+void Function_vWaitingScreen(void) {
+ 146:	1f 93       	push	r17
+ 148:	cf 93       	push	r28
+ 14a:	df 93       	push	r29
+ 14c:	cd b7       	in	r28, 0x3d	; 61
+ 14e:	de b7       	in	r29, 0x3e	; 62
+ 150:	2d 97       	sbiw	r28, 0x0d	; 13
+ 152:	0f b6       	in	r0, 0x3f	; 63
+ 154:	f8 94       	cli
+ 156:	de bf       	out	0x3e, r29	; 62
+ 158:	0f be       	out	0x3f, r0	; 63
+ 15a:	cd bf       	out	0x3d, r28	; 61
+	u8 local_u8Waiting[] = "PLEASE WAIT!";
+ 15c:	8d e0       	ldi	r24, 0x0D	; 13
+ 15e:	e0 e3       	ldi	r30, 0x30	; 48
+ 160:	f1 e0       	ldi	r31, 0x01	; 1
+ 162:	de 01       	movw	r26, r28
+ 164:	11 96       	adiw	r26, 0x01	; 1
+ 166:	01 90       	ld	r0, Z+
+ 168:	0d 92       	st	X+, r0
+ 16a:	8a 95       	dec	r24
+ 16c:	e1 f7       	brne	.-8      	; 0x166 <Function_vWaitingScreen+0x20>
+	HLCD_vSendString(local_u8Waiting);
+ 16e:	ce 01       	movw	r24, r28
+ 170:	01 96       	adiw	r24, 0x01	; 1
+ 172:	0e 94 94 03 	call	0x728	; 0x728 <HLCD_vSendString>
+
+	for (u8 i = 13; i <= 16; i++) {
+ 176:	1d e0       	ldi	r17, 0x0D	; 13
+ 178:	11 c0       	rjmp	.+34     	; 0x19c <Function_vWaitingScreen+0x56>
+		HLCD_vMoveTo(0, i);
+ 17a:	61 2f       	mov	r22, r17
+ 17c:	80 e0       	ldi	r24, 0x00	; 0
+ 17e:	0e 94 a7 03 	call	0x74e	; 0x74e <HLCD_vMoveTo>
+		HLCD_vSendData(0xFF);
+ 182:	8f ef       	ldi	r24, 0xFF	; 255
+ 184:	0e 94 6c 03 	call	0x6d8	; 0x6d8 <HLCD_vSendData>
+ 188:	2f e9       	ldi	r18, 0x9F	; 159
+ 18a:	86 e8       	ldi	r24, 0x86	; 134
+ 18c:	91 e0       	ldi	r25, 0x01	; 1
+ 18e:	21 50       	subi	r18, 0x01	; 1
+ 190:	80 40       	sbci	r24, 0x00	; 0
+ 192:	90 40       	sbci	r25, 0x00	; 0
+ 194:	e1 f7       	brne	.-8      	; 0x18e <Function_vWaitingScreen+0x48>
+ 196:	00 c0       	rjmp	.+0      	; 0x198 <Function_vWaitingScreen+0x52>
+ 198:	00 00       	nop
+*/
+void Function_vWaitingScreen(void) {
+	u8 local_u8Waiting[] = "PLEASE WAIT!";
+	HLCD_vSendString(local_u8Waiting);
+
+	for (u8 i = 13; i <= 16; i++) {
+ 19a:	1f 5f       	subi	r17, 0xFF	; 255
+ 19c:	11 31       	cpi	r17, 0x11	; 17
+ 19e:	68 f3       	brcs	.-38     	; 0x17a <Function_vWaitingScreen+0x34>
+		HLCD_vMoveTo(0, i);
+		HLCD_vSendData(0xFF);
+		_delay_ms(500);
+	}
+}
+ 1a0:	2d 96       	adiw	r28, 0x0d	; 13
+ 1a2:	0f b6       	in	r0, 0x3f	; 63
+ 1a4:	f8 94       	cli
+ 1a6:	de bf       	out	0x3e, r29	; 62
+ 1a8:	0f be       	out	0x3f, r0	; 63
+ 1aa:	cd bf       	out	0x3d, r28	; 61
+ 1ac:	df 91       	pop	r29
+ 1ae:	cf 91       	pop	r28
+ 1b0:	1f 91       	pop	r17
+ 1b2:	08 95       	ret
+
+000001b4 <Function_vGetOption>:
+/**
+* Function_vGetOption: Retrieves the user's option ('1' or '2') via the keypad.
+*
+* @param A_u8Option: A pointer to the variable where the selected option will be stored.
+*/
+void Function_vGetOption(u8 *A_u8Option) {
+ 1b4:	cf 93       	push	r28
+ 1b6:	df 93       	push	r29
+ 1b8:	ec 01       	movw	r28, r24
+	u8 *local_u8PressedKey = NOT_PRESSED;
+ 1ba:	80 e0       	ldi	r24, 0x00	; 0
+ 1bc:	90 e0       	ldi	r25, 0x00	; 0
+
+	// Loop until a valid option ('1' or '2') is selected
+	while (*local_u8PressedKey != '1' && *local_u8PressedKey != '2') {
+ 1be:	02 c0       	rjmp	.+4      	; 0x1c4 <Function_vGetOption+0x10>
+		local_u8PressedKey = HKPD_u8GetPressedKey();
+ 1c0:	0e 94 c0 02 	call	0x580	; 0x580 <HKPD_u8GetPressedKey>
+*/
+void Function_vGetOption(u8 *A_u8Option) {
+	u8 *local_u8PressedKey = NOT_PRESSED;
+
+	// Loop until a valid option ('1' or '2') is selected
+	while (*local_u8PressedKey != '1' && *local_u8PressedKey != '2') {
+ 1c4:	fc 01       	movw	r30, r24
+ 1c6:	20 81       	ld	r18, Z
+ 1c8:	3f ec       	ldi	r19, 0xCF	; 207
+ 1ca:	32 0f       	add	r19, r18
+ 1cc:	32 30       	cpi	r19, 0x02	; 2
+ 1ce:	c0 f7       	brcc	.-16     	; 0x1c0 <Function_vGetOption+0xc>
 		local_u8PressedKey = HKPD_u8GetPressedKey();
 	}
-	// Display Clear for next use
-	HLCD_vDisplayClear();
- 10e:	0e 94 51 03 	call	0x6a2	; 0x6a2 <HLCD_vDisplayClear>
+
+	*A_u8Option = *local_u8PressedKey; // Store the selected option
+ 1d0:	28 83       	st	Y, r18
+	*local_u8PressedKey = NOT_PRESSED; // Clear the pressed key flag
+ 1d2:	10 82       	st	Z, r1
 }
- 112:	cf 91       	pop	r28
- 114:	1f 91       	pop	r17
- 116:	0f 91       	pop	r16
- 118:	ff 90       	pop	r15
- 11a:	ef 90       	pop	r14
- 11c:	08 95       	ret
+ 1d4:	df 91       	pop	r29
+ 1d6:	cf 91       	pop	r28
+ 1d8:	08 95       	ret
 
-0000011e <Function_vWaitingScreen>:
+000001da <Function_vCreatePassword>:
 
 
-
-void Function_vWaitingScreen(void) {
- 11e:	cf 93       	push	r28
- 120:	df 93       	push	r29
- 122:	cd b7       	in	r28, 0x3d	; 61
- 124:	de b7       	in	r29, 0x3e	; 62
- 126:	2d 97       	sbiw	r28, 0x0d	; 13
- 128:	0f b6       	in	r0, 0x3f	; 63
- 12a:	f8 94       	cli
- 12c:	de bf       	out	0x3e, r29	; 62
- 12e:	0f be       	out	0x3f, r0	; 63
- 130:	cd bf       	out	0x3d, r28	; 61
-	u8 local_u8Waiting[] = "PLEASE WAIT!";
- 132:	8d e0       	ldi	r24, 0x0D	; 13
- 134:	e0 e0       	ldi	r30, 0x00	; 0
- 136:	f1 e0       	ldi	r31, 0x01	; 1
- 138:	de 01       	movw	r26, r28
- 13a:	11 96       	adiw	r26, 0x01	; 1
- 13c:	01 90       	ld	r0, Z+
- 13e:	0d 92       	st	X+, r0
- 140:	8a 95       	dec	r24
- 142:	e1 f7       	brne	.-8      	; 0x13c <Function_vWaitingScreen+0x1e>
-	HLCD_vSendString(local_u8Waiting);
- 144:	ce 01       	movw	r24, r28
- 146:	01 96       	adiw	r24, 0x01	; 1
- 148:	0e 94 2f 03 	call	0x65e	; 0x65e <HLCD_vSendString>
-
-	HLCD_vSendData(0xFF);
- 14c:	8f ef       	ldi	r24, 0xFF	; 255
- 14e:	0e 94 07 03 	call	0x60e	; 0x60e <HLCD_vSendData>
-	HLCD_vMoveTo(0, 13);
- 152:	6d e0       	ldi	r22, 0x0D	; 13
- 154:	80 e0       	ldi	r24, 0x00	; 0
- 156:	0e 94 42 03 	call	0x684	; 0x684 <HLCD_vMoveTo>
- 15a:	2f e9       	ldi	r18, 0x9F	; 159
- 15c:	86 e8       	ldi	r24, 0x86	; 134
- 15e:	91 e0       	ldi	r25, 0x01	; 1
- 160:	21 50       	subi	r18, 0x01	; 1
- 162:	80 40       	sbci	r24, 0x00	; 0
- 164:	90 40       	sbci	r25, 0x00	; 0
- 166:	e1 f7       	brne	.-8      	; 0x160 <Function_vWaitingScreen+0x42>
- 168:	00 c0       	rjmp	.+0      	; 0x16a <Function_vWaitingScreen+0x4c>
- 16a:	00 00       	nop
-	_delay_ms(500);
-
-	HLCD_vSendData(0xFF);
- 16c:	8f ef       	ldi	r24, 0xFF	; 255
- 16e:	0e 94 07 03 	call	0x60e	; 0x60e <HLCD_vSendData>
-	HLCD_vMoveTo(0, 14);
- 172:	6e e0       	ldi	r22, 0x0E	; 14
- 174:	80 e0       	ldi	r24, 0x00	; 0
- 176:	0e 94 42 03 	call	0x684	; 0x684 <HLCD_vMoveTo>
- 17a:	2f e9       	ldi	r18, 0x9F	; 159
- 17c:	86 e8       	ldi	r24, 0x86	; 134
- 17e:	91 e0       	ldi	r25, 0x01	; 1
- 180:	21 50       	subi	r18, 0x01	; 1
- 182:	80 40       	sbci	r24, 0x00	; 0
- 184:	90 40       	sbci	r25, 0x00	; 0
- 186:	e1 f7       	brne	.-8      	; 0x180 <Function_vWaitingScreen+0x62>
- 188:	00 c0       	rjmp	.+0      	; 0x18a <Function_vWaitingScreen+0x6c>
- 18a:	00 00       	nop
-	_delay_ms(500);
-
-	HLCD_vSendData(0xFF);
- 18c:	8f ef       	ldi	r24, 0xFF	; 255
- 18e:	0e 94 07 03 	call	0x60e	; 0x60e <HLCD_vSendData>
-	HLCD_vMoveTo(0, 15);
- 192:	6f e0       	ldi	r22, 0x0F	; 15
- 194:	80 e0       	ldi	r24, 0x00	; 0
- 196:	0e 94 42 03 	call	0x684	; 0x684 <HLCD_vMoveTo>
- 19a:	2f e9       	ldi	r18, 0x9F	; 159
- 19c:	86 e8       	ldi	r24, 0x86	; 134
- 19e:	91 e0       	ldi	r25, 0x01	; 1
- 1a0:	21 50       	subi	r18, 0x01	; 1
- 1a2:	80 40       	sbci	r24, 0x00	; 0
- 1a4:	90 40       	sbci	r25, 0x00	; 0
- 1a6:	e1 f7       	brne	.-8      	; 0x1a0 <Function_vWaitingScreen+0x82>
- 1a8:	00 c0       	rjmp	.+0      	; 0x1aa <Function_vWaitingScreen+0x8c>
- 1aa:	00 00       	nop
-	_delay_ms(500);
-
-	HLCD_vSendData(0xFF);
- 1ac:	8f ef       	ldi	r24, 0xFF	; 255
- 1ae:	0e 94 07 03 	call	0x60e	; 0x60e <HLCD_vSendData>
-	HLCD_vMoveTo(0, 16);
- 1b2:	60 e1       	ldi	r22, 0x10	; 16
- 1b4:	80 e0       	ldi	r24, 0x00	; 0
- 1b6:	0e 94 42 03 	call	0x684	; 0x684 <HLCD_vMoveTo>
- 1ba:	2f e9       	ldi	r18, 0x9F	; 159
- 1bc:	86 e8       	ldi	r24, 0x86	; 134
- 1be:	91 e0       	ldi	r25, 0x01	; 1
- 1c0:	21 50       	subi	r18, 0x01	; 1
- 1c2:	80 40       	sbci	r24, 0x00	; 0
- 1c4:	90 40       	sbci	r25, 0x00	; 0
- 1c6:	e1 f7       	brne	.-8      	; 0x1c0 <Function_vWaitingScreen+0xa2>
- 1c8:	00 c0       	rjmp	.+0      	; 0x1ca <Function_vWaitingScreen+0xac>
- 1ca:	00 00       	nop
-	_delay_ms(500);
-
-}
- 1cc:	2d 96       	adiw	r28, 0x0d	; 13
- 1ce:	0f b6       	in	r0, 0x3f	; 63
- 1d0:	f8 94       	cli
- 1d2:	de bf       	out	0x3e, r29	; 62
- 1d4:	0f be       	out	0x3f, r0	; 63
- 1d6:	cd bf       	out	0x3d, r28	; 61
- 1d8:	df 91       	pop	r29
- 1da:	cf 91       	pop	r28
- 1dc:	08 95       	ret
-
-000001de <Function_vGetOption>:
-
-
-
-
-void Function_vGetOption(u8 * A_u8Option){
+void Function_vCreatePassword(u8 (*A_u8LCDScreens)[16]){
+ 1da:	0f 93       	push	r16
+ 1dc:	1f 93       	push	r17
  1de:	cf 93       	push	r28
  1e0:	df 93       	push	r29
- 1e2:	ec 01       	movw	r28, r24
-	
-	u8 * local_u8PressedKey = NOT_PRESSED;
- 1e4:	80 e0       	ldi	r24, 0x00	; 0
- 1e6:	90 e0       	ldi	r25, 0x00	; 0
-	
-	while(*local_u8PressedKey != '1' && *local_u8PressedKey != '2'){
- 1e8:	02 c0       	rjmp	.+4      	; 0x1ee <Function_vGetOption+0x10>
-		local_u8PressedKey= HKPD_u8GetPressedKey();
- 1ea:	0e 94 5b 02 	call	0x4b6	; 0x4b6 <HKPD_u8GetPressedKey>
+ 1e2:	cd b7       	in	r28, 0x3d	; 61
+ 1e4:	de b7       	in	r29, 0x3e	; 62
+ 1e6:	2c 97       	sbiw	r28, 0x0c	; 12
+ 1e8:	0f b6       	in	r0, 0x3f	; 63
+ 1ea:	f8 94       	cli
+ 1ec:	de bf       	out	0x3e, r29	; 62
+ 1ee:	0f be       	out	0x3f, r0	; 63
+ 1f0:	cd bf       	out	0x3d, r28	; 61
+ 1f2:	8c 01       	movw	r16, r24
+	u8 local_u8EnteredPassword[PASSWORD_SIZE], local_u8ReEnteredPassword[PASSWORD_SIZE];
 
-void Function_vGetOption(u8 * A_u8Option){
-	
-	u8 * local_u8PressedKey = NOT_PRESSED;
-	
-	while(*local_u8PressedKey != '1' && *local_u8PressedKey != '2'){
- 1ee:	fc 01       	movw	r30, r24
- 1f0:	20 81       	ld	r18, Z
- 1f2:	3f ec       	ldi	r19, 0xCF	; 207
- 1f4:	32 0f       	add	r19, r18
- 1f6:	32 30       	cpi	r19, 0x02	; 2
- 1f8:	c0 f7       	brcc	.-16     	; 0x1ea <Function_vGetOption+0xc>
-		local_u8PressedKey= HKPD_u8GetPressedKey();
-	}
-	
-	*A_u8Option = *local_u8PressedKey;
- 1fa:	28 83       	st	Y, r18
-	*local_u8PressedKey = NOT_PRESSED;
- 1fc:	10 82       	st	Z, r1
+	// Get the new password from the user
+	Function_vGetPassword(A_u8LCDScreens[0], local_u8EnteredPassword);
+ 1f4:	be 01       	movw	r22, r28
+ 1f6:	6f 5f       	subi	r22, 0xFF	; 255
+ 1f8:	7f 4f       	sbci	r23, 0xFF	; 255
+ 1fa:	0e 94 59 00 	call	0xb2	; 0xb2 <Function_vGetPassword>
+	Function_vGetPassword(A_u8LCDScreens[1], local_u8ReEnteredPassword);
+ 1fe:	be 01       	movw	r22, r28
+ 200:	69 5f       	subi	r22, 0xF9	; 249
+ 202:	7f 4f       	sbci	r23, 0xFF	; 255
+ 204:	c8 01       	movw	r24, r16
+ 206:	40 96       	adiw	r24, 0x10	; 16
+ 208:	0e 94 59 00 	call	0xb2	; 0xb2 <Function_vGetPassword>
+
+	// Transmit the password creation request to the Slave MCU
+	MUSART_vTransmitString(local_u8EnteredPassword, PASSWORD_SIZE);
+ 20c:	66 e0       	ldi	r22, 0x06	; 6
+ 20e:	ce 01       	movw	r24, r28
+ 210:	01 96       	adiw	r24, 0x01	; 1
+ 212:	0e 94 2b 06 	call	0xc56	; 0xc56 <MUSART_vTransmitString>
+	MUSART_vTransmitString(local_u8ReEnteredPassword, PASSWORD_SIZE);
+ 216:	66 e0       	ldi	r22, 0x06	; 6
+ 218:	ce 01       	movw	r24, r28
+ 21a:	07 96       	adiw	r24, 0x07	; 7
+ 21c:	0e 94 2b 06 	call	0xc56	; 0xc56 <MUSART_vTransmitString>
+
 }
- 1fe:	df 91       	pop	r29
- 200:	cf 91       	pop	r28
- 202:	08 95       	ret
+ 220:	2c 96       	adiw	r28, 0x0c	; 12
+ 222:	0f b6       	in	r0, 0x3f	; 63
+ 224:	f8 94       	cli
+ 226:	de bf       	out	0x3e, r29	; 62
+ 228:	0f be       	out	0x3f, r0	; 63
+ 22a:	cd bf       	out	0x3d, r28	; 61
+ 22c:	df 91       	pop	r29
+ 22e:	cf 91       	pop	r28
+ 230:	1f 91       	pop	r17
+ 232:	0f 91       	pop	r16
+ 234:	08 95       	ret
 
-00000204 <main>:
+00000236 <Function_vSystemFreeze>:
+		} else {
+		global_u8TicksCounter++;
+	}
+}
 
+void Function_vSystemFreeze(u8 (*A_u8LCDScreens)[16]){
+ 236:	cf 93       	push	r28
+ 238:	df 93       	push	r29
+ 23a:	ec 01       	movw	r28, r24
+	// Initialize Timer1 and set callback for channel A CTC interrupt
+	MTIMER1_vInit();
+ 23c:	0e 94 1b 05 	call	0xa36	; 0xa36 <MTIMER1_vInit>
+	MTIMER1_vChannelASetCTCCallBack(&TIMER1_CTC_INT_ISR);
+ 240:	89 e4       	ldi	r24, 0x49	; 73
+ 242:	90 e0       	ldi	r25, 0x00	; 0
+ 244:	0e 94 51 05 	call	0xaa2	; 0xaa2 <MTIMER1_vChannelASetCTCCallBack>
+	MTIMER1_vChannelASetCTCRegister(62500);
+ 248:	84 e2       	ldi	r24, 0x24	; 36
+ 24a:	94 ef       	ldi	r25, 0xF4	; 244
+ 24c:	0e 94 3a 05 	call	0xa74	; 0xa74 <MTIMER1_vChannelASetCTCRegister>
+	MTIMER1_vChannelAEnableCTCINT();
+ 250:	0e 94 41 05 	call	0xa82	; 0xa82 <MTIMER1_vChannelAEnableCTCINT>
+	
+	// Enable global interrupts
+	MGIE_vEnableInterrupts();
+ 254:	0e 94 17 05 	call	0xa2e	; 0xa2e <MGIE_vEnableInterrupts>
+	
+	HLCD_vSendString(A_u8LCDScreens[12]);
+ 258:	ce 01       	movw	r24, r28
+ 25a:	80 54       	subi	r24, 0x40	; 64
+ 25c:	9f 4f       	sbci	r25, 0xFF	; 255
+ 25e:	0e 94 94 03 	call	0x728	; 0x728 <HLCD_vSendString>
+	while(global_u8SecondsCounter<60);
+ 262:	80 91 50 01 	lds	r24, 0x0150	; 0x800150 <global_u8SecondsCounter>
+ 266:	8c 33       	cpi	r24, 0x3C	; 60
+ 268:	e0 f3       	brcs	.-8      	; 0x262 <Function_vSystemFreeze+0x2c>
+	HLCD_vDisplayClear();
+ 26a:	0e 94 b6 03 	call	0x76c	; 0x76c <HLCD_vDisplayClear>
+	global_u8FailureCounter= 0;
+ 26e:	10 92 4e 01 	sts	0x014E, r1	; 0x80014e <__data_end>
+	global_u8SecondsCounter =0;
+ 272:	10 92 50 01 	sts	0x0150, r1	; 0x800150 <global_u8SecondsCounter>
+	MTIMER1_vDisInit();
+ 276:	0e 94 37 05 	call	0xa6e	; 0xa6e <MTIMER1_vDisInit>
+}
+ 27a:	df 91       	pop	r29
+ 27c:	cf 91       	pop	r28
+ 27e:	08 95       	ret
 
+00000280 <Function_vOpenDoor>:
+
+void Function_vOpenDoor(u8 (*A_u8LCDScreens)[16]){
+ 280:	cf 93       	push	r28
+ 282:	df 93       	push	r29
+ 284:	ec 01       	movw	r28, r24
+	
+	// Initialize Timer1 and set callback for channel A CTC interrupt
+	MTIMER1_vInit();
+ 286:	0e 94 1b 05 	call	0xa36	; 0xa36 <MTIMER1_vInit>
+	MTIMER1_vChannelASetCTCCallBack(&TIMER1_CTC_INT_ISR);
+ 28a:	89 e4       	ldi	r24, 0x49	; 73
+ 28c:	90 e0       	ldi	r25, 0x00	; 0
+ 28e:	0e 94 51 05 	call	0xaa2	; 0xaa2 <MTIMER1_vChannelASetCTCCallBack>
+	MTIMER1_vChannelASetCTCRegister(62500);
+ 292:	84 e2       	ldi	r24, 0x24	; 36
+ 294:	94 ef       	ldi	r25, 0xF4	; 244
+ 296:	0e 94 3a 05 	call	0xa74	; 0xa74 <MTIMER1_vChannelASetCTCRegister>
+	MTIMER1_vChannelAEnableCTCINT();
+ 29a:	0e 94 41 05 	call	0xa82	; 0xa82 <MTIMER1_vChannelAEnableCTCINT>
+		
+	// Enable global interrupts
+	MGIE_vEnableInterrupts();
+ 29e:	0e 94 17 05 	call	0xa2e	; 0xa2e <MGIE_vEnableInterrupts>
+	
+	// Open the door and display status messages
+	HLCD_vSendString(A_u8LCDScreens[7]);
+ 2a2:	ce 01       	movw	r24, r28
+ 2a4:	80 59       	subi	r24, 0x90	; 144
+ 2a6:	9f 4f       	sbci	r25, 0xFF	; 255
+ 2a8:	0e 94 94 03 	call	0x728	; 0x728 <HLCD_vSendString>
+		while(global_u8SecondsCounter<15);
+ 2ac:	80 91 50 01 	lds	r24, 0x0150	; 0x800150 <global_u8SecondsCounter>
+ 2b0:	8f 30       	cpi	r24, 0x0F	; 15
+ 2b2:	e0 f3       	brcs	.-8      	; 0x2ac <Function_vOpenDoor+0x2c>
+
+	HLCD_vDisplayClear();
+ 2b4:	0e 94 b6 03 	call	0x76c	; 0x76c <HLCD_vDisplayClear>
+	HLCD_vSendString(A_u8LCDScreens[8]);
+ 2b8:	ce 01       	movw	r24, r28
+ 2ba:	80 58       	subi	r24, 0x80	; 128
+ 2bc:	9f 4f       	sbci	r25, 0xFF	; 255
+ 2be:	0e 94 94 03 	call	0x728	; 0x728 <HLCD_vSendString>
+		while(global_u8SecondsCounter<19);
+ 2c2:	80 91 50 01 	lds	r24, 0x0150	; 0x800150 <global_u8SecondsCounter>
+ 2c6:	83 31       	cpi	r24, 0x13	; 19
+ 2c8:	e0 f3       	brcs	.-8      	; 0x2c2 <Function_vOpenDoor+0x42>
+
+	HLCD_vDisplayClear();
+ 2ca:	0e 94 b6 03 	call	0x76c	; 0x76c <HLCD_vDisplayClear>
+	HLCD_vSendString(A_u8LCDScreens[9]);
+ 2ce:	ce 01       	movw	r24, r28
+ 2d0:	80 57       	subi	r24, 0x70	; 112
+ 2d2:	9f 4f       	sbci	r25, 0xFF	; 255
+ 2d4:	0e 94 94 03 	call	0x728	; 0x728 <HLCD_vSendString>
+		while(global_u8SecondsCounter<34);
+ 2d8:	80 91 50 01 	lds	r24, 0x0150	; 0x800150 <global_u8SecondsCounter>
+ 2dc:	82 32       	cpi	r24, 0x22	; 34
+ 2de:	e0 f3       	brcs	.-8      	; 0x2d8 <Function_vOpenDoor+0x58>
+
+	HLCD_vDisplayClear();
+ 2e0:	0e 94 b6 03 	call	0x76c	; 0x76c <HLCD_vDisplayClear>
+	global_u8SecondsCounter =0;
+ 2e4:	10 92 50 01 	sts	0x0150, r1	; 0x800150 <global_u8SecondsCounter>
+	MTIMER1_vDisInit();
+ 2e8:	0e 94 37 05 	call	0xa6e	; 0xa6e <MTIMER1_vDisInit>
+}
+ 2ec:	df 91       	pop	r29
+ 2ee:	cf 91       	pop	r28
+ 2f0:	08 95       	ret
+
+000002f2 <main>:
 
 
 
 int main(void) {
- 204:	cf 93       	push	r28
- 206:	df 93       	push	r29
- 208:	cd b7       	in	r28, 0x3d	; 61
- 20a:	de b7       	in	r29, 0x3e	; 62
- 20c:	ca 5a       	subi	r28, 0xAA	; 170
- 20e:	d1 09       	sbc	r29, r1
- 210:	0f b6       	in	r0, 0x3f	; 63
- 212:	f8 94       	cli
- 214:	de bf       	out	0x3e, r29	; 62
- 216:	0f be       	out	0x3f, r0	; 63
- 218:	cd bf       	out	0x3d, r28	; 61
-	
-	MDIO_vSetPinDirection(PORT_D, 0, INPUT);//RX
- 21a:	40 e0       	ldi	r20, 0x00	; 0
- 21c:	60 e0       	ldi	r22, 0x00	; 0
- 21e:	83 e0       	ldi	r24, 0x03	; 3
- 220:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
-	MDIO_vSetPinDirection(PORT_D, 1, OUTPUT);//\TX
- 224:	41 e0       	ldi	r20, 0x01	; 1
- 226:	61 e0       	ldi	r22, 0x01	; 1
- 228:	83 e0       	ldi	r24, 0x03	; 3
- 22a:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
+ 2f2:	cf 93       	push	r28
+ 2f4:	df 93       	push	r29
+ 2f6:	cd b7       	in	r28, 0x3d	; 61
+ 2f8:	de b7       	in	r29, 0x3e	; 62
+ 2fa:	c7 5d       	subi	r28, 0xD7	; 215
+ 2fc:	d1 09       	sbc	r29, r1
+ 2fe:	0f b6       	in	r0, 0x3f	; 63
+ 300:	f8 94       	cli
+ 302:	de bf       	out	0x3e, r29	; 62
+ 304:	0f be       	out	0x3f, r0	; 63
+ 306:	cd bf       	out	0x3d, r28	; 61
+	// Initialize MCU peripherals
+	MDIO_vSetPinDirection(PORT_D, 0, INPUT);  // RX
+ 308:	40 e0       	ldi	r20, 0x00	; 0
+ 30a:	60 e0       	ldi	r22, 0x00	; 0
+ 30c:	83 e0       	ldi	r24, 0x03	; 3
+ 30e:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
+	MDIO_vSetPinDirection(PORT_D, 1, OUTPUT); // TX
+ 312:	41 e0       	ldi	r20, 0x01	; 1
+ 314:	61 e0       	ldi	r22, 0x01	; 1
+ 316:	83 e0       	ldi	r24, 0x03	; 3
+ 318:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
 
 	HLCD_vInit();
- 22e:	0e 94 c9 02 	call	0x592	; 0x592 <HLCD_vInit>
+ 31c:	0e 94 2e 03 	call	0x65c	; 0x65c <HLCD_vInit>
 	HKPD_vInit();
- 232:	0e 94 0a 02 	call	0x414	; 0x414 <HKPD_vInit>
+ 320:	0e 94 6f 02 	call	0x4de	; 0x4de <HKPD_vInit>
 	MUSART_vInit(51);
- 236:	83 e3       	ldi	r24, 0x33	; 51
- 238:	90 e0       	ldi	r25, 0x00	; 0
- 23a:	0e 94 b2 04 	call	0x964	; 0x964 <MUSART_vInit>
-	
+ 324:	83 e3       	ldi	r24, 0x33	; 51
+ 326:	90 e0       	ldi	r25, 0x00	; 0
+ 328:	0e 94 04 06 	call	0xc08	; 0xc08 <MUSART_vInit>
+
+	// Initial handshake with Slave MCU
 	MUSART_vTransmit(MASTER_READY);
- 23e:	80 e0       	ldi	r24, 0x00	; 0
- 240:	0e 94 c0 04 	call	0x980	; 0x980 <MUSART_vTransmit>
-	while (MUSART_u8Receive()!=SLAVE_READY);
- 244:	0e 94 c4 04 	call	0x988	; 0x988 <MUSART_u8Receive>
- 248:	81 30       	cpi	r24, 0x01	; 1
- 24a:	e1 f7       	brne	.-8      	; 0x244 <main+0x40>
-	
-	u8 local_u8MasterStatus,  local_u8SlaveStatus;
-	
-	
-	u8 local_u8LCDScreens[10][16] ={
- 24c:	80 ea       	ldi	r24, 0xA0	; 160
- 24e:	e0 e6       	ldi	r30, 0x60	; 96
- 250:	f0 e0       	ldi	r31, 0x00	; 0
- 252:	de 01       	movw	r26, r28
- 254:	11 96       	adiw	r26, 0x01	; 1
- 256:	01 90       	ld	r0, Z+
- 258:	0d 92       	st	X+, r0
- 25a:	8a 95       	dec	r24
- 25c:	e1 f7       	brne	.-8      	; 0x256 <main+0x52>
+ 32c:	80 e0       	ldi	r24, 0x00	; 0
+ 32e:	0e 94 12 06 	call	0xc24	; 0xc24 <MUSART_vTransmit>
+	while (MUSART_u8Receive() != SLAVE_READY);
+ 332:	0e 94 16 06 	call	0xc2c	; 0xc2c <MUSART_u8Receive>
+ 336:	81 30       	cpi	r24, 0x01	; 1
+ 338:	e1 f7       	brne	.-8      	; 0x332 <main+0x40>
+
+	u8 local_u8MasterStatus, local_u8SlaveStatus;
+
+	// LCD screen messages
+	u8 local_u8LCDScreens[13][16] = {
+ 33a:	80 ed       	ldi	r24, 0xD0	; 208
+ 33c:	e0 e6       	ldi	r30, 0x60	; 96
+ 33e:	f0 e0       	ldi	r31, 0x00	; 0
+ 340:	de 01       	movw	r26, r28
+ 342:	11 96       	adiw	r26, 0x01	; 1
+ 344:	01 90       	ld	r0, Z+
+ 346:	0d 92       	st	X+, r0
+ 348:	8a 95       	dec	r24
+ 34a:	e1 f7       	brne	.-8      	; 0x344 <main+0x52>
+		{"System is Locked"}
 	};
-	
 
 	while (1) {
-		
-		while(!MUSART_u8UnreadDate());
- 25e:	0e 94 d4 04 	call	0x9a8	; 0x9a8 <MUSART_u8UnreadDate>
- 262:	88 23       	and	r24, r24
- 264:	e1 f3       	breq	.-8      	; 0x25e <main+0x5a>
+		// Wait for incoming data from Slave MCU
+		while (!MUSART_u8UnreadDate());
+ 34c:	0e 94 26 06 	call	0xc4c	; 0xc4c <MUSART_u8UnreadDate>
+ 350:	88 23       	and	r24, r24
+ 352:	e1 f3       	breq	.-8      	; 0x34c <main+0x5a>
 		local_u8SlaveStatus = MUSART_u8Receive();
- 266:	0e 94 c4 04 	call	0x988	; 0x988 <MUSART_u8Receive>
-		
-		if (local_u8SlaveStatus == 0xFF)//create new password
- 26a:	8f 3f       	cpi	r24, 0xFF	; 255
- 26c:	09 f0       	breq	.+2      	; 0x270 <main+0x6c>
- 26e:	55 c0       	rjmp	.+170    	; 0x31a <main+0x116>
-		{
-			u8 local_u8EnteredPassword[5], local_u8ReEnteredPassword[5];
-			Function_vGetPassword(local_u8LCDScreens[0], local_u8EnteredPassword);
- 270:	be 01       	movw	r22, r28
- 272:	6a 55       	subi	r22, 0x5A	; 90
- 274:	7f 4f       	sbci	r23, 0xFF	; 255
- 276:	ce 01       	movw	r24, r28
- 278:	01 96       	adiw	r24, 0x01	; 1
- 27a:	0e 94 49 00 	call	0x92	; 0x92 <Function_vGetPassword>
-			Function_vGetPassword(local_u8LCDScreens[1], local_u8ReEnteredPassword);
- 27e:	be 01       	movw	r22, r28
- 280:	6f 55       	subi	r22, 0x5F	; 95
- 282:	7f 4f       	sbci	r23, 0xFF	; 255
- 284:	ce 01       	movw	r24, r28
- 286:	41 96       	adiw	r24, 0x11	; 17
- 288:	0e 94 49 00 	call	0x92	; 0x92 <Function_vGetPassword>
-			MUSART_vTransmit(CREATE_PASSWORD);
- 28c:	83 e0       	ldi	r24, 0x03	; 3
- 28e:	0e 94 c0 04 	call	0x980	; 0x980 <MUSART_vTransmit>
-			MUSART_vTransmitString(local_u8EnteredPassword, PASSWORD_SIZE);
- 292:	65 e0       	ldi	r22, 0x05	; 5
- 294:	ce 01       	movw	r24, r28
- 296:	8a 55       	subi	r24, 0x5A	; 90
- 298:	9f 4f       	sbci	r25, 0xFF	; 255
- 29a:	0e 94 d9 04 	call	0x9b2	; 0x9b2 <MUSART_vTransmitString>
-			MUSART_vTransmitString(local_u8ReEnteredPassword, PASSWORD_SIZE);
- 29e:	65 e0       	ldi	r22, 0x05	; 5
- 2a0:	ce 01       	movw	r24, r28
- 2a2:	8f 55       	subi	r24, 0x5F	; 95
- 2a4:	9f 4f       	sbci	r25, 0xFF	; 255
- 2a6:	0e 94 d9 04 	call	0x9b2	; 0x9b2 <MUSART_vTransmitString>
-			while(!MUSART_u8UnreadDate());
- 2aa:	0e 94 d4 04 	call	0x9a8	; 0x9a8 <MUSART_u8UnreadDate>
- 2ae:	88 23       	and	r24, r24
- 2b0:	e1 f3       	breq	.-8      	; 0x2aa <main+0xa6>
-			local_u8SlaveStatus = MUSART_u8Receive();
- 2b2:	0e 94 c4 04 	call	0x988	; 0x988 <MUSART_u8Receive>
-			if (local_u8SlaveStatus == SUCCEEDED)
- 2b6:	86 30       	cpi	r24, 0x06	; 6
- 2b8:	b1 f4       	brne	.+44     	; 0x2e6 <main+0xe2>
-			{
-				Function_vWaitingScreen();
- 2ba:	0e 94 8f 00 	call	0x11e	; 0x11e <Function_vWaitingScreen>
-				HLCD_vMoveTo(1, 0);
- 2be:	60 e0       	ldi	r22, 0x00	; 0
- 2c0:	81 e0       	ldi	r24, 0x01	; 1
- 2c2:	0e 94 42 03 	call	0x684	; 0x684 <HLCD_vMoveTo>
-				HLCD_vSendString(local_u8LCDScreens[3]);
- 2c6:	ce 01       	movw	r24, r28
- 2c8:	c1 96       	adiw	r24, 0x31	; 49
- 2ca:	0e 94 2f 03 	call	0x65e	; 0x65e <HLCD_vSendString>
- 2ce:	2f e3       	ldi	r18, 0x3F	; 63
- 2d0:	82 e4       	ldi	r24, 0x42	; 66
- 2d2:	9f e0       	ldi	r25, 0x0F	; 15
- 2d4:	21 50       	subi	r18, 0x01	; 1
- 2d6:	80 40       	sbci	r24, 0x00	; 0
- 2d8:	90 40       	sbci	r25, 0x00	; 0
- 2da:	e1 f7       	brne	.-8      	; 0x2d4 <main+0xd0>
- 2dc:	00 c0       	rjmp	.+0      	; 0x2de <main+0xda>
- 2de:	00 00       	nop
-				_delay_ms(5000);
-				HLCD_vDisplayClear();
- 2e0:	0e 94 51 03 	call	0x6a2	; 0x6a2 <HLCD_vDisplayClear>
- 2e4:	bc cf       	rjmp	.-136    	; 0x25e <main+0x5a>
-				
-			}
-			else if(local_u8SlaveStatus == ERROR)
- 2e6:	87 30       	cpi	r24, 0x07	; 7
- 2e8:	09 f0       	breq	.+2      	; 0x2ec <main+0xe8>
- 2ea:	b9 cf       	rjmp	.-142    	; 0x25e <main+0x5a>
-			{
-				Function_vWaitingScreen();
- 2ec:	0e 94 8f 00 	call	0x11e	; 0x11e <Function_vWaitingScreen>
-				HLCD_vMoveTo(1, 0);
- 2f0:	60 e0       	ldi	r22, 0x00	; 0
- 2f2:	81 e0       	ldi	r24, 0x01	; 1
- 2f4:	0e 94 42 03 	call	0x684	; 0x684 <HLCD_vMoveTo>
-				HLCD_vSendString(local_u8LCDScreens[4]);
- 2f8:	ce 01       	movw	r24, r28
- 2fa:	8f 5b       	subi	r24, 0xBF	; 191
- 2fc:	9f 4f       	sbci	r25, 0xFF	; 255
- 2fe:	0e 94 2f 03 	call	0x65e	; 0x65e <HLCD_vSendString>
- 302:	2f e3       	ldi	r18, 0x3F	; 63
- 304:	82 e4       	ldi	r24, 0x42	; 66
- 306:	9f e0       	ldi	r25, 0x0F	; 15
- 308:	21 50       	subi	r18, 0x01	; 1
- 30a:	80 40       	sbci	r24, 0x00	; 0
- 30c:	90 40       	sbci	r25, 0x00	; 0
- 30e:	e1 f7       	brne	.-8      	; 0x308 <main+0x104>
- 310:	00 c0       	rjmp	.+0      	; 0x312 <main+0x10e>
- 312:	00 00       	nop
-				_delay_ms(5000);
-				HLCD_vDisplayClear();
- 314:	0e 94 51 03 	call	0x6a2	; 0x6a2 <HLCD_vDisplayClear>
- 318:	a2 cf       	rjmp	.-188    	; 0x25e <main+0x5a>
-			}
-			
-			
-			
-		}
-		else if (local_u8SlaveStatus == 0x00)// system is already used
- 31a:	81 11       	cpse	r24, r1
- 31c:	a0 cf       	rjmp	.-192    	; 0x25e <main+0x5a>
-		{
-			HLCD_vSendString(local_u8LCDScreens[5]);
- 31e:	ce 01       	movw	r24, r28
- 320:	8f 5a       	subi	r24, 0xAF	; 175
- 322:	9f 4f       	sbci	r25, 0xFF	; 255
- 324:	0e 94 2f 03 	call	0x65e	; 0x65e <HLCD_vSendString>
-			HLCD_vMoveTo(1, 0);
- 328:	60 e0       	ldi	r22, 0x00	; 0
- 32a:	81 e0       	ldi	r24, 0x01	; 1
- 32c:	0e 94 42 03 	call	0x684	; 0x684 <HLCD_vMoveTo>
-			HLCD_vSendString(local_u8LCDScreens[6]);
- 330:	ce 01       	movw	r24, r28
- 332:	8f 59       	subi	r24, 0x9F	; 159
- 334:	9f 4f       	sbci	r25, 0xFF	; 255
- 336:	0e 94 2f 03 	call	0x65e	; 0x65e <HLCD_vSendString>
-			
-			u8 local_u8Option[1];
-			Function_vGetOption(local_u8Option);
- 33a:	ce 01       	movw	r24, r28
- 33c:	8a 55       	subi	r24, 0x5A	; 90
- 33e:	9f 4f       	sbci	r25, 0xFF	; 255
- 340:	0e 94 ef 00 	call	0x1de	; 0x1de <Function_vGetOption>
-			
-			HLCD_vDisplayClear();
- 344:	0e 94 51 03 	call	0x6a2	; 0x6a2 <HLCD_vDisplayClear>
-			u8 local_u8EnterPassword[5];
-			Function_vGetPassword(local_u8LCDScreens[0], local_u8EnterPassword);
- 348:	be 01       	movw	r22, r28
- 34a:	6f 55       	subi	r22, 0x5F	; 95
- 34c:	7f 4f       	sbci	r23, 0xFF	; 255
- 34e:	ce 01       	movw	r24, r28
- 350:	01 96       	adiw	r24, 0x01	; 1
- 352:	0e 94 49 00 	call	0x92	; 0x92 <Function_vGetPassword>
-			
-			if (*local_u8Option == '1')
- 356:	ca 55       	subi	r28, 0x5A	; 90
- 358:	df 4f       	sbci	r29, 0xFF	; 255
- 35a:	88 81       	ld	r24, Y
- 35c:	c6 5a       	subi	r28, 0xA6	; 166
- 35e:	d0 40       	sbci	r29, 0x00	; 0
- 360:	81 33       	cpi	r24, 0x31	; 49
- 362:	21 f4       	brne	.+8      	; 0x36c <main+0x168>
-			{
-				MUSART_vTransmit(OPEN_DOOR);
- 364:	88 e0       	ldi	r24, 0x08	; 8
- 366:	0e 94 c0 04 	call	0x980	; 0x980 <MUSART_vTransmit>
- 36a:	05 c0       	rjmp	.+10     	; 0x376 <main+0x172>
-			}else if(*local_u8Option == '2')
- 36c:	82 33       	cpi	r24, 0x32	; 50
- 36e:	19 f4       	brne	.+6      	; 0x376 <main+0x172>
-			{
-				MUSART_vTransmit(CHANGE_PASSWORD);
- 370:	85 e0       	ldi	r24, 0x05	; 5
- 372:	0e 94 c0 04 	call	0x980	; 0x980 <MUSART_vTransmit>
-			}
-			MUSART_vTransmitString(local_u8EnterPassword, PASSWORD_SIZE);
- 376:	65 e0       	ldi	r22, 0x05	; 5
- 378:	ce 01       	movw	r24, r28
- 37a:	8f 55       	subi	r24, 0x5F	; 95
- 37c:	9f 4f       	sbci	r25, 0xFF	; 255
- 37e:	0e 94 d9 04 	call	0x9b2	; 0x9b2 <MUSART_vTransmitString>
-			while(!MUSART_u8UnreadDate());
- 382:	0e 94 d4 04 	call	0x9a8	; 0x9a8 <MUSART_u8UnreadDate>
- 386:	88 23       	and	r24, r24
- 388:	e1 f3       	breq	.-8      	; 0x382 <main+0x17e>
-			local_u8SlaveStatus = MUSART_u8Receive();
- 38a:	0e 94 c4 04 	call	0x988	; 0x988 <MUSART_u8Receive>
- 38e:	18 2f       	mov	r17, r24
-			if (local_u8SlaveStatus == ERROR)
- 390:	87 30       	cpi	r24, 0x07	; 7
- 392:	21 f4       	brne	.+8      	; 0x39c <main+0x198>
-			{
-				HLCD_vSendString(local_u8LCDScreens[2]);
- 394:	ce 01       	movw	r24, r28
- 396:	81 96       	adiw	r24, 0x21	; 33
- 398:	0e 94 2f 03 	call	0x65e	; 0x65e <HLCD_vSendString>
-				
-			}
-			
-			
-			if (*local_u8Option == '1' && local_u8SlaveStatus == SUCCEEDED)
- 39c:	ca 55       	subi	r28, 0x5A	; 90
- 39e:	df 4f       	sbci	r29, 0xFF	; 255
- 3a0:	88 81       	ld	r24, Y
- 3a2:	c6 5a       	subi	r28, 0xA6	; 166
- 3a4:	d0 40       	sbci	r29, 0x00	; 0
- 3a6:	81 33       	cpi	r24, 0x31	; 49
- 3a8:	09 f0       	breq	.+2      	; 0x3ac <main+0x1a8>
- 3aa:	59 cf       	rjmp	.-334    	; 0x25e <main+0x5a>
- 3ac:	16 30       	cpi	r17, 0x06	; 6
- 3ae:	09 f0       	breq	.+2      	; 0x3b2 <main+0x1ae>
- 3b0:	56 cf       	rjmp	.-340    	; 0x25e <main+0x5a>
-			{
-				// Open Door CW for 15 seconds
-				HLCD_vSendString(local_u8LCDScreens[7]);
- 3b2:	ce 01       	movw	r24, r28
- 3b4:	8f 58       	subi	r24, 0x8F	; 143
- 3b6:	9f 4f       	sbci	r25, 0xFF	; 255
- 3b8:	0e 94 2f 03 	call	0x65e	; 0x65e <HLCD_vSendString>
- 3bc:	2f eb       	ldi	r18, 0xBF	; 191
- 3be:	86 ec       	ldi	r24, 0xC6	; 198
- 3c0:	9d e2       	ldi	r25, 0x2D	; 45
- 3c2:	21 50       	subi	r18, 0x01	; 1
- 3c4:	80 40       	sbci	r24, 0x00	; 0
- 3c6:	90 40       	sbci	r25, 0x00	; 0
- 3c8:	e1 f7       	brne	.-8      	; 0x3c2 <main+0x1be>
- 3ca:	00 c0       	rjmp	.+0      	; 0x3cc <main+0x1c8>
- 3cc:	00 00       	nop
-				_delay_ms(15000);
-				HLCD_vDisplayClear();
- 3ce:	0e 94 51 03 	call	0x6a2	; 0x6a2 <HLCD_vDisplayClear>
-				// Wait for 3 seconds
-				HLCD_vSendString(local_u8LCDScreens[8]);
- 3d2:	ce 01       	movw	r24, r28
- 3d4:	8f 57       	subi	r24, 0x7F	; 127
- 3d6:	9f 4f       	sbci	r25, 0xFF	; 255
- 3d8:	0e 94 2f 03 	call	0x65e	; 0x65e <HLCD_vSendString>
- 3dc:	2f eb       	ldi	r18, 0xBF	; 191
- 3de:	87 e2       	ldi	r24, 0x27	; 39
- 3e0:	99 e0       	ldi	r25, 0x09	; 9
- 3e2:	21 50       	subi	r18, 0x01	; 1
- 3e4:	80 40       	sbci	r24, 0x00	; 0
- 3e6:	90 40       	sbci	r25, 0x00	; 0
- 3e8:	e1 f7       	brne	.-8      	; 0x3e2 <main+0x1de>
- 3ea:	00 c0       	rjmp	.+0      	; 0x3ec <main+0x1e8>
- 3ec:	00 00       	nop
-				_delay_ms(3000);
-				HLCD_vDisplayClear();
- 3ee:	0e 94 51 03 	call	0x6a2	; 0x6a2 <HLCD_vDisplayClear>
-				// Close Door ACW for 15 seconds
-				HLCD_vSendString(local_u8LCDScreens[9]);
- 3f2:	ce 01       	movw	r24, r28
- 3f4:	8f 56       	subi	r24, 0x6F	; 111
- 3f6:	9f 4f       	sbci	r25, 0xFF	; 255
- 3f8:	0e 94 2f 03 	call	0x65e	; 0x65e <HLCD_vSendString>
- 3fc:	2f eb       	ldi	r18, 0xBF	; 191
- 3fe:	86 ec       	ldi	r24, 0xC6	; 198
- 400:	9d e2       	ldi	r25, 0x2D	; 45
- 402:	21 50       	subi	r18, 0x01	; 1
- 404:	80 40       	sbci	r24, 0x00	; 0
- 406:	90 40       	sbci	r25, 0x00	; 0
- 408:	e1 f7       	brne	.-8      	; 0x402 <__EEPROM_REGION_LENGTH__+0x2>
- 40a:	00 c0       	rjmp	.+0      	; 0x40c <__EEPROM_REGION_LENGTH__+0xc>
- 40c:	00 00       	nop
-				_delay_ms(15000);
-				HLCD_vDisplayClear();
- 40e:	0e 94 51 03 	call	0x6a2	; 0x6a2 <HLCD_vDisplayClear>
- 412:	25 cf       	rjmp	.-438    	; 0x25e <main+0x5a>
+ 354:	0e 94 16 06 	call	0xc2c	; 0xc2c <MUSART_u8Receive>
 
-00000414 <HKPD_vInit>:
+		// Handle the CREATE_PASSWORD operation
+		if (local_u8SlaveStatus == 0xFF) {
+ 358:	8f 3f       	cpi	r24, 0xFF	; 255
+ 35a:	51 f5       	brne	.+84     	; 0x3b0 <main+0xbe>
+			
+			MUSART_vTransmit(CREATE_PASSWORD);
+ 35c:	83 e0       	ldi	r24, 0x03	; 3
+ 35e:	0e 94 12 06 	call	0xc24	; 0xc24 <MUSART_vTransmit>
+			
+			// Create Passwords
+			Function_vCreatePassword(local_u8LCDScreens);
+ 362:	ce 01       	movw	r24, r28
+ 364:	01 96       	adiw	r24, 0x01	; 1
+ 366:	0e 94 ed 00 	call	0x1da	; 0x1da <Function_vCreatePassword>
+			
+			// Wait for the Slave MCU to process the request
+			while (!MUSART_u8UnreadDate());
+ 36a:	0e 94 26 06 	call	0xc4c	; 0xc4c <MUSART_u8UnreadDate>
+ 36e:	88 23       	and	r24, r24
+ 370:	e1 f3       	breq	.-8      	; 0x36a <main+0x78>
+			local_u8SlaveStatus = MUSART_u8Receive();
+ 372:	0e 94 16 06 	call	0xc2c	; 0xc2c <MUSART_u8Receive>
+ 376:	18 2f       	mov	r17, r24
+
+			// Display success or error message
+			Function_vWaitingScreen();
+ 378:	0e 94 a3 00 	call	0x146	; 0x146 <Function_vWaitingScreen>
+			HLCD_vMoveTo(1, 0);
+ 37c:	60 e0       	ldi	r22, 0x00	; 0
+ 37e:	81 e0       	ldi	r24, 0x01	; 1
+ 380:	0e 94 a7 03 	call	0x74e	; 0x74e <HLCD_vMoveTo>
+			HLCD_vSendString(local_u8SlaveStatus == SUCCEEDED ? local_u8LCDScreens[3] : local_u8LCDScreens[4]);
+ 384:	16 30       	cpi	r17, 0x06	; 6
+ 386:	19 f4       	brne	.+6      	; 0x38e <main+0x9c>
+ 388:	ce 01       	movw	r24, r28
+ 38a:	c1 96       	adiw	r24, 0x31	; 49
+ 38c:	03 c0       	rjmp	.+6      	; 0x394 <main+0xa2>
+ 38e:	ce 01       	movw	r24, r28
+ 390:	8f 5b       	subi	r24, 0xBF	; 191
+ 392:	9f 4f       	sbci	r25, 0xFF	; 255
+ 394:	0e 94 94 03 	call	0x728	; 0x728 <HLCD_vSendString>
+ 398:	2f e3       	ldi	r18, 0x3F	; 63
+ 39a:	82 e4       	ldi	r24, 0x42	; 66
+ 39c:	9f e0       	ldi	r25, 0x0F	; 15
+ 39e:	21 50       	subi	r18, 0x01	; 1
+ 3a0:	80 40       	sbci	r24, 0x00	; 0
+ 3a2:	90 40       	sbci	r25, 0x00	; 0
+ 3a4:	e1 f7       	brne	.-8      	; 0x39e <main+0xac>
+ 3a6:	00 c0       	rjmp	.+0      	; 0x3a8 <main+0xb6>
+ 3a8:	00 00       	nop
+			_delay_ms(5000);
+			HLCD_vDisplayClear();
+ 3aa:	0e 94 b6 03 	call	0x76c	; 0x76c <HLCD_vDisplayClear>
+ 3ae:	ce cf       	rjmp	.-100    	; 0x34c <main+0x5a>
+		}
+
+		// Handle the existing password scenario
+		else if (local_u8SlaveStatus != 0xFF) {
+ 3b0:	8f 3f       	cpi	r24, 0xFF	; 255
+ 3b2:	61 f2       	breq	.-104    	; 0x34c <main+0x5a>
+			HLCD_vSendString(local_u8LCDScreens[5]);
+ 3b4:	ce 01       	movw	r24, r28
+ 3b6:	8f 5a       	subi	r24, 0xAF	; 175
+ 3b8:	9f 4f       	sbci	r25, 0xFF	; 255
+ 3ba:	0e 94 94 03 	call	0x728	; 0x728 <HLCD_vSendString>
+			HLCD_vMoveTo(1, 0);
+ 3be:	60 e0       	ldi	r22, 0x00	; 0
+ 3c0:	81 e0       	ldi	r24, 0x01	; 1
+ 3c2:	0e 94 a7 03 	call	0x74e	; 0x74e <HLCD_vMoveTo>
+			HLCD_vSendString(local_u8LCDScreens[6]);
+ 3c6:	ce 01       	movw	r24, r28
+ 3c8:	8f 59       	subi	r24, 0x9F	; 159
+ 3ca:	9f 4f       	sbci	r25, 0xFF	; 255
+ 3cc:	0e 94 94 03 	call	0x728	; 0x728 <HLCD_vSendString>
+
+			u8 local_u8Option[1];
+			Function_vGetOption(local_u8Option); // Get the user's option
+ 3d0:	ce 01       	movw	r24, r28
+ 3d2:	89 52       	subi	r24, 0x29	; 41
+ 3d4:	9f 4f       	sbci	r25, 0xFF	; 255
+ 3d6:	0e 94 da 00 	call	0x1b4	; 0x1b4 <Function_vGetOption>
+
+			HLCD_vDisplayClear();
+ 3da:	0e 94 b6 03 	call	0x76c	; 0x76c <HLCD_vDisplayClear>
+			u8 local_u8EnterPassword[PASSWORD_SIZE];
+			Function_vGetPassword(local_u8LCDScreens[0], local_u8EnterPassword); // Get the password
+ 3de:	be 01       	movw	r22, r28
+ 3e0:	6f 52       	subi	r22, 0x2F	; 47
+ 3e2:	7f 4f       	sbci	r23, 0xFF	; 255
+ 3e4:	ce 01       	movw	r24, r28
+ 3e6:	01 96       	adiw	r24, 0x01	; 1
+ 3e8:	0e 94 59 00 	call	0xb2	; 0xb2 <Function_vGetPassword>
+
+			// Handle OPEN_DOOR or CHANGE_PASSWORD
+			MUSART_vTransmit(*local_u8Option == '1' ? OPEN_DOOR : CHANGE_PASSWORD);
+ 3ec:	c9 52       	subi	r28, 0x29	; 41
+ 3ee:	df 4f       	sbci	r29, 0xFF	; 255
+ 3f0:	88 81       	ld	r24, Y
+ 3f2:	c7 5d       	subi	r28, 0xD7	; 215
+ 3f4:	d0 40       	sbci	r29, 0x00	; 0
+ 3f6:	81 33       	cpi	r24, 0x31	; 49
+ 3f8:	11 f4       	brne	.+4      	; 0x3fe <main+0x10c>
+ 3fa:	88 e0       	ldi	r24, 0x08	; 8
+ 3fc:	01 c0       	rjmp	.+2      	; 0x400 <__EEPROM_REGION_LENGTH__>
+ 3fe:	85 e0       	ldi	r24, 0x05	; 5
+ 400:	0e 94 12 06 	call	0xc24	; 0xc24 <MUSART_vTransmit>
+			MUSART_vTransmitString(local_u8EnterPassword, PASSWORD_SIZE);
+ 404:	66 e0       	ldi	r22, 0x06	; 6
+ 406:	ce 01       	movw	r24, r28
+ 408:	8f 52       	subi	r24, 0x2F	; 47
+ 40a:	9f 4f       	sbci	r25, 0xFF	; 255
+ 40c:	0e 94 2b 06 	call	0xc56	; 0xc56 <MUSART_vTransmitString>
+
+			// Wait for the Slave MCU's response
+			while (!MUSART_u8UnreadDate());
+ 410:	0e 94 26 06 	call	0xc4c	; 0xc4c <MUSART_u8UnreadDate>
+ 414:	88 23       	and	r24, r24
+ 416:	e1 f3       	breq	.-8      	; 0x410 <__EEPROM_REGION_LENGTH__+0x10>
+			local_u8SlaveStatus = MUSART_u8Receive();
+ 418:	0e 94 16 06 	call	0xc2c	; 0xc2c <MUSART_u8Receive>
+
+			if (local_u8SlaveStatus == ERROR && global_u8FailureCounter<2) {
+ 41c:	87 30       	cpi	r24, 0x07	; 7
+ 41e:	09 f5       	brne	.+66     	; 0x462 <__EEPROM_REGION_LENGTH__+0x62>
+ 420:	90 91 4e 01 	lds	r25, 0x014E	; 0x80014e <__data_end>
+ 424:	92 30       	cpi	r25, 0x02	; 2
+ 426:	e8 f4       	brcc	.+58     	; 0x462 <__EEPROM_REGION_LENGTH__+0x62>
+				global_u8FailureCounter++;
+ 428:	9f 5f       	subi	r25, 0xFF	; 255
+ 42a:	90 93 4e 01 	sts	0x014E, r25	; 0x80014e <__data_end>
+				HLCD_vSendString(local_u8LCDScreens[10]);
+ 42e:	ce 01       	movw	r24, r28
+ 430:	8f 55       	subi	r24, 0x5F	; 95
+ 432:	9f 4f       	sbci	r25, 0xFF	; 255
+ 434:	0e 94 94 03 	call	0x728	; 0x728 <HLCD_vSendString>
+				HLCD_vMoveTo(1,0);
+ 438:	60 e0       	ldi	r22, 0x00	; 0
+ 43a:	81 e0       	ldi	r24, 0x01	; 1
+ 43c:	0e 94 a7 03 	call	0x74e	; 0x74e <HLCD_vMoveTo>
+				HLCD_vSendString(local_u8LCDScreens[11]);
+ 440:	ce 01       	movw	r24, r28
+ 442:	8f 54       	subi	r24, 0x4F	; 79
+ 444:	9f 4f       	sbci	r25, 0xFF	; 255
+ 446:	0e 94 94 03 	call	0x728	; 0x728 <HLCD_vSendString>
+ 44a:	2f e3       	ldi	r18, 0x3F	; 63
+ 44c:	82 e4       	ldi	r24, 0x42	; 66
+ 44e:	9f e0       	ldi	r25, 0x0F	; 15
+ 450:	21 50       	subi	r18, 0x01	; 1
+ 452:	80 40       	sbci	r24, 0x00	; 0
+ 454:	90 40       	sbci	r25, 0x00	; 0
+ 456:	e1 f7       	brne	.-8      	; 0x450 <__EEPROM_REGION_LENGTH__+0x50>
+ 458:	00 c0       	rjmp	.+0      	; 0x45a <__EEPROM_REGION_LENGTH__+0x5a>
+ 45a:	00 00       	nop
+				_delay_ms(5000);
+				HLCD_vDisplayClear();
+ 45c:	0e 94 b6 03 	call	0x76c	; 0x76c <HLCD_vDisplayClear>
+ 460:	75 cf       	rjmp	.-278    	; 0x34c <main+0x5a>
+			} else if (*local_u8Option == '1' && local_u8SlaveStatus == SUCCEEDED) {
+ 462:	c9 52       	subi	r28, 0x29	; 41
+ 464:	df 4f       	sbci	r29, 0xFF	; 255
+ 466:	98 81       	ld	r25, Y
+ 468:	c7 5d       	subi	r28, 0xD7	; 215
+ 46a:	d0 40       	sbci	r29, 0x00	; 0
+ 46c:	91 33       	cpi	r25, 0x31	; 49
+ 46e:	39 f4       	brne	.+14     	; 0x47e <__EEPROM_REGION_LENGTH__+0x7e>
+ 470:	86 30       	cpi	r24, 0x06	; 6
+ 472:	29 f4       	brne	.+10     	; 0x47e <__EEPROM_REGION_LENGTH__+0x7e>
+				Function_vOpenDoor(local_u8LCDScreens);
+ 474:	ce 01       	movw	r24, r28
+ 476:	01 96       	adiw	r24, 0x01	; 1
+ 478:	0e 94 40 01 	call	0x280	; 0x280 <Function_vOpenDoor>
+ 47c:	67 cf       	rjmp	.-306    	; 0x34c <main+0x5a>
+			} else if (*local_u8Option == '2' && local_u8SlaveStatus == SUCCEEDED) {
+ 47e:	92 33       	cpi	r25, 0x32	; 50
+ 480:	49 f5       	brne	.+82     	; 0x4d4 <__EEPROM_REGION_LENGTH__+0xd4>
+ 482:	86 30       	cpi	r24, 0x06	; 6
+ 484:	39 f5       	brne	.+78     	; 0x4d4 <__EEPROM_REGION_LENGTH__+0xd4>
+				// Create Passwords
+				Function_vCreatePassword(local_u8LCDScreens);
+ 486:	ce 01       	movw	r24, r28
+ 488:	01 96       	adiw	r24, 0x01	; 1
+ 48a:	0e 94 ed 00 	call	0x1da	; 0x1da <Function_vCreatePassword>
+							
+				// Wait for the Slave MCU to process the request
+				while (!MUSART_u8UnreadDate());
+ 48e:	0e 94 26 06 	call	0xc4c	; 0xc4c <MUSART_u8UnreadDate>
+ 492:	88 23       	and	r24, r24
+ 494:	e1 f3       	breq	.-8      	; 0x48e <__EEPROM_REGION_LENGTH__+0x8e>
+				local_u8SlaveStatus = MUSART_u8Receive();
+ 496:	0e 94 16 06 	call	0xc2c	; 0xc2c <MUSART_u8Receive>
+ 49a:	18 2f       	mov	r17, r24
+
+				// Display success or error message
+				Function_vWaitingScreen();
+ 49c:	0e 94 a3 00 	call	0x146	; 0x146 <Function_vWaitingScreen>
+				HLCD_vMoveTo(1, 0);
+ 4a0:	60 e0       	ldi	r22, 0x00	; 0
+ 4a2:	81 e0       	ldi	r24, 0x01	; 1
+ 4a4:	0e 94 a7 03 	call	0x74e	; 0x74e <HLCD_vMoveTo>
+				HLCD_vSendString(local_u8SlaveStatus == SUCCEEDED ? local_u8LCDScreens[3] : local_u8LCDScreens[4]);
+ 4a8:	16 30       	cpi	r17, 0x06	; 6
+ 4aa:	19 f4       	brne	.+6      	; 0x4b2 <__EEPROM_REGION_LENGTH__+0xb2>
+ 4ac:	ce 01       	movw	r24, r28
+ 4ae:	c1 96       	adiw	r24, 0x31	; 49
+ 4b0:	03 c0       	rjmp	.+6      	; 0x4b8 <__EEPROM_REGION_LENGTH__+0xb8>
+ 4b2:	ce 01       	movw	r24, r28
+ 4b4:	8f 5b       	subi	r24, 0xBF	; 191
+ 4b6:	9f 4f       	sbci	r25, 0xFF	; 255
+ 4b8:	0e 94 94 03 	call	0x728	; 0x728 <HLCD_vSendString>
+ 4bc:	2f e3       	ldi	r18, 0x3F	; 63
+ 4be:	82 e4       	ldi	r24, 0x42	; 66
+ 4c0:	9f e0       	ldi	r25, 0x0F	; 15
+ 4c2:	21 50       	subi	r18, 0x01	; 1
+ 4c4:	80 40       	sbci	r24, 0x00	; 0
+ 4c6:	90 40       	sbci	r25, 0x00	; 0
+ 4c8:	e1 f7       	brne	.-8      	; 0x4c2 <__EEPROM_REGION_LENGTH__+0xc2>
+ 4ca:	00 c0       	rjmp	.+0      	; 0x4cc <__EEPROM_REGION_LENGTH__+0xcc>
+ 4cc:	00 00       	nop
+				_delay_ms(5000);
+				HLCD_vDisplayClear();
+ 4ce:	0e 94 b6 03 	call	0x76c	; 0x76c <HLCD_vDisplayClear>
+ 4d2:	3c cf       	rjmp	.-392    	; 0x34c <main+0x5a>
+			}else{
+				Function_vSystemFreeze(local_u8LCDScreens);
+ 4d4:	ce 01       	movw	r24, r28
+ 4d6:	01 96       	adiw	r24, 0x01	; 1
+ 4d8:	0e 94 1b 01 	call	0x236	; 0x236 <Function_vSystemFreeze>
+ 4dc:	37 cf       	rjmp	.-402    	; 0x34c <main+0x5a>
+
+000004de <HKPD_vInit>:
 #include "KPD_Interface.h"
 
 void HKPD_vInit(void)
 {
 	/* SET Rows pins as input high */
 	MDIO_vSetPinDirection(KPD_PORT,KPD_ROW1, LOW);
- 414:	40 e0       	ldi	r20, 0x00	; 0
- 416:	60 e0       	ldi	r22, 0x00	; 0
- 418:	82 e0       	ldi	r24, 0x02	; 2
- 41a:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
+ 4de:	40 e0       	ldi	r20, 0x00	; 0
+ 4e0:	60 e0       	ldi	r22, 0x00	; 0
+ 4e2:	82 e0       	ldi	r24, 0x02	; 2
+ 4e4:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
 	MDIO_vSetPinDirection(KPD_PORT,KPD_ROW2, LOW);
- 41e:	40 e0       	ldi	r20, 0x00	; 0
- 420:	61 e0       	ldi	r22, 0x01	; 1
- 422:	82 e0       	ldi	r24, 0x02	; 2
- 424:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
+ 4e8:	40 e0       	ldi	r20, 0x00	; 0
+ 4ea:	61 e0       	ldi	r22, 0x01	; 1
+ 4ec:	82 e0       	ldi	r24, 0x02	; 2
+ 4ee:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
 	MDIO_vSetPinDirection(KPD_PORT,KPD_ROW3, LOW);
- 428:	40 e0       	ldi	r20, 0x00	; 0
- 42a:	62 e0       	ldi	r22, 0x02	; 2
- 42c:	82 e0       	ldi	r24, 0x02	; 2
- 42e:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
+ 4f2:	40 e0       	ldi	r20, 0x00	; 0
+ 4f4:	62 e0       	ldi	r22, 0x02	; 2
+ 4f6:	82 e0       	ldi	r24, 0x02	; 2
+ 4f8:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
 	MDIO_vSetPinDirection(KPD_PORT,KPD_ROW4, LOW);
- 432:	40 e0       	ldi	r20, 0x00	; 0
- 434:	63 e0       	ldi	r22, 0x03	; 3
- 436:	82 e0       	ldi	r24, 0x02	; 2
- 438:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
+ 4fc:	40 e0       	ldi	r20, 0x00	; 0
+ 4fe:	63 e0       	ldi	r22, 0x03	; 3
+ 500:	82 e0       	ldi	r24, 0x02	; 2
+ 502:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
 
 	MDIO_vSetPinValue(KPD_PORT, KPD_ROW1, HIGH);
- 43c:	41 e0       	ldi	r20, 0x01	; 1
- 43e:	60 e0       	ldi	r22, 0x00	; 0
- 440:	82 e0       	ldi	r24, 0x02	; 2
- 442:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
+ 506:	41 e0       	ldi	r20, 0x01	; 1
+ 508:	60 e0       	ldi	r22, 0x00	; 0
+ 50a:	82 e0       	ldi	r24, 0x02	; 2
+ 50c:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
 	MDIO_vSetPinValue(KPD_PORT, KPD_ROW2, HIGH);
- 446:	41 e0       	ldi	r20, 0x01	; 1
- 448:	61 e0       	ldi	r22, 0x01	; 1
- 44a:	82 e0       	ldi	r24, 0x02	; 2
- 44c:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
+ 510:	41 e0       	ldi	r20, 0x01	; 1
+ 512:	61 e0       	ldi	r22, 0x01	; 1
+ 514:	82 e0       	ldi	r24, 0x02	; 2
+ 516:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
 	MDIO_vSetPinValue(KPD_PORT, KPD_ROW3, HIGH);
- 450:	41 e0       	ldi	r20, 0x01	; 1
- 452:	62 e0       	ldi	r22, 0x02	; 2
- 454:	82 e0       	ldi	r24, 0x02	; 2
- 456:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
+ 51a:	41 e0       	ldi	r20, 0x01	; 1
+ 51c:	62 e0       	ldi	r22, 0x02	; 2
+ 51e:	82 e0       	ldi	r24, 0x02	; 2
+ 520:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
 	MDIO_vSetPinValue(KPD_PORT, KPD_ROW4, HIGH);
- 45a:	41 e0       	ldi	r20, 0x01	; 1
- 45c:	63 e0       	ldi	r22, 0x03	; 3
- 45e:	82 e0       	ldi	r24, 0x02	; 2
- 460:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
+ 524:	41 e0       	ldi	r20, 0x01	; 1
+ 526:	63 e0       	ldi	r22, 0x03	; 3
+ 528:	82 e0       	ldi	r24, 0x02	; 2
+ 52a:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
 
 	/* SET Columns pins as output high */
 	MDIO_vSetPinDirection(KPD_PORT,KPD_COL1, HIGH);
- 464:	41 e0       	ldi	r20, 0x01	; 1
- 466:	64 e0       	ldi	r22, 0x04	; 4
- 468:	82 e0       	ldi	r24, 0x02	; 2
- 46a:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
+ 52e:	41 e0       	ldi	r20, 0x01	; 1
+ 530:	64 e0       	ldi	r22, 0x04	; 4
+ 532:	82 e0       	ldi	r24, 0x02	; 2
+ 534:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
 	MDIO_vSetPinDirection(KPD_PORT,KPD_COL2, HIGH);
- 46e:	41 e0       	ldi	r20, 0x01	; 1
- 470:	65 e0       	ldi	r22, 0x05	; 5
- 472:	82 e0       	ldi	r24, 0x02	; 2
- 474:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
+ 538:	41 e0       	ldi	r20, 0x01	; 1
+ 53a:	65 e0       	ldi	r22, 0x05	; 5
+ 53c:	82 e0       	ldi	r24, 0x02	; 2
+ 53e:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
 	MDIO_vSetPinDirection(KPD_PORT,KPD_COL3, HIGH);
- 478:	41 e0       	ldi	r20, 0x01	; 1
- 47a:	66 e0       	ldi	r22, 0x06	; 6
- 47c:	82 e0       	ldi	r24, 0x02	; 2
- 47e:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
+ 542:	41 e0       	ldi	r20, 0x01	; 1
+ 544:	66 e0       	ldi	r22, 0x06	; 6
+ 546:	82 e0       	ldi	r24, 0x02	; 2
+ 548:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
 	MDIO_vSetPinDirection(KPD_PORT,KPD_COL4, HIGH);
- 482:	41 e0       	ldi	r20, 0x01	; 1
- 484:	67 e0       	ldi	r22, 0x07	; 7
- 486:	82 e0       	ldi	r24, 0x02	; 2
- 488:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
+ 54c:	41 e0       	ldi	r20, 0x01	; 1
+ 54e:	67 e0       	ldi	r22, 0x07	; 7
+ 550:	82 e0       	ldi	r24, 0x02	; 2
+ 552:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
 
 	MDIO_vSetPinValue(KPD_PORT, KPD_COL1, HIGH);
- 48c:	41 e0       	ldi	r20, 0x01	; 1
- 48e:	64 e0       	ldi	r22, 0x04	; 4
- 490:	82 e0       	ldi	r24, 0x02	; 2
- 492:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
+ 556:	41 e0       	ldi	r20, 0x01	; 1
+ 558:	64 e0       	ldi	r22, 0x04	; 4
+ 55a:	82 e0       	ldi	r24, 0x02	; 2
+ 55c:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
 	MDIO_vSetPinValue(KPD_PORT, KPD_COL2, HIGH);
- 496:	41 e0       	ldi	r20, 0x01	; 1
- 498:	65 e0       	ldi	r22, 0x05	; 5
- 49a:	82 e0       	ldi	r24, 0x02	; 2
- 49c:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
+ 560:	41 e0       	ldi	r20, 0x01	; 1
+ 562:	65 e0       	ldi	r22, 0x05	; 5
+ 564:	82 e0       	ldi	r24, 0x02	; 2
+ 566:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
 	MDIO_vSetPinValue(KPD_PORT, KPD_COL3, HIGH);
- 4a0:	41 e0       	ldi	r20, 0x01	; 1
- 4a2:	66 e0       	ldi	r22, 0x06	; 6
- 4a4:	82 e0       	ldi	r24, 0x02	; 2
- 4a6:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
+ 56a:	41 e0       	ldi	r20, 0x01	; 1
+ 56c:	66 e0       	ldi	r22, 0x06	; 6
+ 56e:	82 e0       	ldi	r24, 0x02	; 2
+ 570:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
 	MDIO_vSetPinValue(KPD_PORT, KPD_COL4, HIGH);
- 4aa:	41 e0       	ldi	r20, 0x01	; 1
- 4ac:	67 e0       	ldi	r22, 0x07	; 7
- 4ae:	82 e0       	ldi	r24, 0x02	; 2
- 4b0:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
- 4b4:	08 95       	ret
+ 574:	41 e0       	ldi	r20, 0x01	; 1
+ 576:	67 e0       	ldi	r22, 0x07	; 7
+ 578:	82 e0       	ldi	r24, 0x02	; 2
+ 57a:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
+ 57e:	08 95       	ret
 
-000004b6 <HKPD_u8GetPressedKey>:
+00000580 <HKPD_u8GetPressedKey>:
 }
 u8 *HKPD_u8GetPressedKey(void)
 {
- 4b6:	cf 93       	push	r28
- 4b8:	df 93       	push	r29
+ 580:	cf 93       	push	r28
+ 582:	df 93       	push	r29
     static u8 local_u8Value = NOT_PRESSED; // Static variable to retain value across function calls
     u8 local_u8Status;
 
     for (u8 local_u8Columns = KPD_COL1; local_u8Columns <= KPD_COL4; local_u8Columns++) {
- 4ba:	d4 e0       	ldi	r29, 0x04	; 4
- 4bc:	3b c0       	rjmp	.+118    	; 0x534 <HKPD_u8GetPressedKey+0x7e>
+ 584:	d4 e0       	ldi	r29, 0x04	; 4
+ 586:	3b c0       	rjmp	.+118    	; 0x5fe <HKPD_u8GetPressedKey+0x7e>
 
         MDIO_vSetPinValue(KPD_PORT, local_u8Columns, LOW);
- 4be:	40 e0       	ldi	r20, 0x00	; 0
- 4c0:	6d 2f       	mov	r22, r29
- 4c2:	82 e0       	ldi	r24, 0x02	; 2
- 4c4:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
- 4c8:	81 ee       	ldi	r24, 0xE1	; 225
- 4ca:	94 e0       	ldi	r25, 0x04	; 4
- 4cc:	01 97       	sbiw	r24, 0x01	; 1
- 4ce:	f1 f7       	brne	.-4      	; 0x4cc <HKPD_u8GetPressedKey+0x16>
- 4d0:	00 c0       	rjmp	.+0      	; 0x4d2 <HKPD_u8GetPressedKey+0x1c>
- 4d2:	00 00       	nop
+ 588:	40 e0       	ldi	r20, 0x00	; 0
+ 58a:	6d 2f       	mov	r22, r29
+ 58c:	82 e0       	ldi	r24, 0x02	; 2
+ 58e:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
+ 592:	81 ee       	ldi	r24, 0xE1	; 225
+ 594:	94 e0       	ldi	r25, 0x04	; 4
+ 596:	01 97       	sbiw	r24, 0x01	; 1
+ 598:	f1 f7       	brne	.-4      	; 0x596 <HKPD_u8GetPressedKey+0x16>
+ 59a:	00 c0       	rjmp	.+0      	; 0x59c <HKPD_u8GetPressedKey+0x1c>
+ 59c:	00 00       	nop
         _delay_ms(5); // Reduced delay for column activation
 
         for(u8 local_u8Rows = KPD_ROW1; local_u8Rows <= KPD_ROW4; local_u8Rows++) // Fixed variable increment in loop
- 4d4:	c0 e0       	ldi	r28, 0x00	; 0
- 4d6:	26 c0       	rjmp	.+76     	; 0x524 <HKPD_u8GetPressedKey+0x6e>
+ 59e:	c0 e0       	ldi	r28, 0x00	; 0
+ 5a0:	26 c0       	rjmp	.+76     	; 0x5ee <HKPD_u8GetPressedKey+0x6e>
         {
             local_u8Status = MDIO_u8GetPinValue(KPD_PORT, local_u8Rows);
- 4d8:	6c 2f       	mov	r22, r28
- 4da:	82 e0       	ldi	r24, 0x02	; 2
- 4dc:	0e 94 5b 04 	call	0x8b6	; 0x8b6 <MDIO_u8GetPinValue>
+ 5a2:	6c 2f       	mov	r22, r28
+ 5a4:	82 e0       	ldi	r24, 0x02	; 2
+ 5a6:	0e 94 c0 04 	call	0x980	; 0x980 <MDIO_u8GetPinValue>
 
             if (local_u8Status == 0)
- 4e0:	81 11       	cpse	r24, r1
- 4e2:	1f c0       	rjmp	.+62     	; 0x522 <HKPD_u8GetPressedKey+0x6c>
+ 5aa:	81 11       	cpse	r24, r1
+ 5ac:	1f c0       	rjmp	.+62     	; 0x5ec <HKPD_u8GetPressedKey+0x6c>
             {
                 local_u8Value = KPD_Buttions[local_u8Rows - KPD_ROW1][local_u8Columns - KPD_COL1]; // Adjusted array indexing
- 4e4:	8c 2f       	mov	r24, r28
- 4e6:	90 e0       	ldi	r25, 0x00	; 0
- 4e8:	2d 2f       	mov	r18, r29
- 4ea:	30 e0       	ldi	r19, 0x00	; 0
- 4ec:	24 50       	subi	r18, 0x04	; 4
- 4ee:	31 09       	sbc	r19, r1
- 4f0:	88 0f       	add	r24, r24
- 4f2:	99 1f       	adc	r25, r25
- 4f4:	88 0f       	add	r24, r24
- 4f6:	99 1f       	adc	r25, r25
- 4f8:	83 5f       	subi	r24, 0xF3	; 243
- 4fa:	9e 4f       	sbci	r25, 0xFE	; 254
- 4fc:	fc 01       	movw	r30, r24
- 4fe:	e2 0f       	add	r30, r18
- 500:	f3 1f       	adc	r31, r19
- 502:	80 81       	ld	r24, Z
- 504:	80 93 1e 01 	sts	0x011E, r24	; 0x80011e <__data_end>
+ 5ae:	8c 2f       	mov	r24, r28
+ 5b0:	90 e0       	ldi	r25, 0x00	; 0
+ 5b2:	2d 2f       	mov	r18, r29
+ 5b4:	30 e0       	ldi	r19, 0x00	; 0
+ 5b6:	24 50       	subi	r18, 0x04	; 4
+ 5b8:	31 09       	sbc	r19, r1
+ 5ba:	88 0f       	add	r24, r24
+ 5bc:	99 1f       	adc	r25, r25
+ 5be:	88 0f       	add	r24, r24
+ 5c0:	99 1f       	adc	r25, r25
+ 5c2:	83 5c       	subi	r24, 0xC3	; 195
+ 5c4:	9e 4f       	sbci	r25, 0xFE	; 254
+ 5c6:	fc 01       	movw	r30, r24
+ 5c8:	e2 0f       	add	r30, r18
+ 5ca:	f3 1f       	adc	r31, r19
+ 5cc:	80 81       	ld	r24, Z
+ 5ce:	80 93 51 01 	sts	0x0151, r24	; 0x800151 <local_u8Value.1968>
 
                 // Wait for key release
                 while (MDIO_u8GetPinValue(KPD_PORT, local_u8Rows) == LOW)
- 508:	06 c0       	rjmp	.+12     	; 0x516 <HKPD_u8GetPressedKey+0x60>
- 50a:	81 ee       	ldi	r24, 0xE1	; 225
- 50c:	94 e0       	ldi	r25, 0x04	; 4
- 50e:	01 97       	sbiw	r24, 0x01	; 1
- 510:	f1 f7       	brne	.-4      	; 0x50e <HKPD_u8GetPressedKey+0x58>
- 512:	00 c0       	rjmp	.+0      	; 0x514 <HKPD_u8GetPressedKey+0x5e>
- 514:	00 00       	nop
- 516:	6c 2f       	mov	r22, r28
- 518:	82 e0       	ldi	r24, 0x02	; 2
- 51a:	0e 94 5b 04 	call	0x8b6	; 0x8b6 <MDIO_u8GetPinValue>
- 51e:	88 23       	and	r24, r24
- 520:	a1 f3       	breq	.-24     	; 0x50a <HKPD_u8GetPressedKey+0x54>
+ 5d2:	06 c0       	rjmp	.+12     	; 0x5e0 <HKPD_u8GetPressedKey+0x60>
+ 5d4:	81 ee       	ldi	r24, 0xE1	; 225
+ 5d6:	94 e0       	ldi	r25, 0x04	; 4
+ 5d8:	01 97       	sbiw	r24, 0x01	; 1
+ 5da:	f1 f7       	brne	.-4      	; 0x5d8 <HKPD_u8GetPressedKey+0x58>
+ 5dc:	00 c0       	rjmp	.+0      	; 0x5de <HKPD_u8GetPressedKey+0x5e>
+ 5de:	00 00       	nop
+ 5e0:	6c 2f       	mov	r22, r28
+ 5e2:	82 e0       	ldi	r24, 0x02	; 2
+ 5e4:	0e 94 c0 04 	call	0x980	; 0x980 <MDIO_u8GetPinValue>
+ 5e8:	88 23       	and	r24, r24
+ 5ea:	a1 f3       	breq	.-24     	; 0x5d4 <HKPD_u8GetPressedKey+0x54>
     for (u8 local_u8Columns = KPD_COL1; local_u8Columns <= KPD_COL4; local_u8Columns++) {
 
         MDIO_vSetPinValue(KPD_PORT, local_u8Columns, LOW);
         _delay_ms(5); // Reduced delay for column activation
 
         for(u8 local_u8Rows = KPD_ROW1; local_u8Rows <= KPD_ROW4; local_u8Rows++) // Fixed variable increment in loop
- 522:	cf 5f       	subi	r28, 0xFF	; 255
- 524:	c4 30       	cpi	r28, 0x04	; 4
- 526:	c0 f2       	brcs	.-80     	; 0x4d8 <HKPD_u8GetPressedKey+0x22>
+ 5ec:	cf 5f       	subi	r28, 0xFF	; 255
+ 5ee:	c4 30       	cpi	r28, 0x04	; 4
+ 5f0:	c0 f2       	brcs	.-80     	; 0x5a2 <HKPD_u8GetPressedKey+0x22>
                 {
                     _delay_ms(5); // Adjusted delay for debounce
                 }
             }
         }
         MDIO_vSetPinValue(KPD_PORT, local_u8Columns, HIGH);
- 528:	41 e0       	ldi	r20, 0x01	; 1
- 52a:	6d 2f       	mov	r22, r29
- 52c:	82 e0       	ldi	r24, 0x02	; 2
- 52e:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
+ 5f2:	41 e0       	ldi	r20, 0x01	; 1
+ 5f4:	6d 2f       	mov	r22, r29
+ 5f6:	82 e0       	ldi	r24, 0x02	; 2
+ 5f8:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
 u8 *HKPD_u8GetPressedKey(void)
 {
     static u8 local_u8Value = NOT_PRESSED; // Static variable to retain value across function calls
     u8 local_u8Status;
 
     for (u8 local_u8Columns = KPD_COL1; local_u8Columns <= KPD_COL4; local_u8Columns++) {
- 532:	df 5f       	subi	r29, 0xFF	; 255
- 534:	d8 30       	cpi	r29, 0x08	; 8
- 536:	18 f2       	brcs	.-122    	; 0x4be <HKPD_u8GetPressedKey+0x8>
+ 5fc:	df 5f       	subi	r29, 0xFF	; 255
+ 5fe:	d8 30       	cpi	r29, 0x08	; 8
+ 600:	18 f2       	brcs	.-122    	; 0x588 <HKPD_u8GetPressedKey+0x8>
             }
         }
         MDIO_vSetPinValue(KPD_PORT, local_u8Columns, HIGH);
     }
     return &local_u8Value; // Return value of static variable
 }
- 538:	8e e1       	ldi	r24, 0x1E	; 30
- 53a:	91 e0       	ldi	r25, 0x01	; 1
- 53c:	df 91       	pop	r29
- 53e:	cf 91       	pop	r28
- 540:	08 95       	ret
+ 602:	81 e5       	ldi	r24, 0x51	; 81
+ 604:	91 e0       	ldi	r25, 0x01	; 1
+ 606:	df 91       	pop	r29
+ 608:	cf 91       	pop	r28
+ 60a:	08 95       	ret
 
-00000542 <HLCD_vSendCommand>:
+0000060c <HLCD_vSendCommand>:
  * @brief Send a command to the LCD.
  *
  * @param A_u8Command: Command to be sent.
  */
 void HLCD_vSendCommand(u8 A_u8Command)
 {
- 542:	cf 93       	push	r28
- 544:	c8 2f       	mov	r28, r24
+ 60c:	cf 93       	push	r28
+ 60e:	c8 2f       	mov	r28, r24
     // Set RS to 0 (Command Mode)
     MDIO_vSetPinValue(CONTROL_PORT, RS, LOW);
- 546:	40 e0       	ldi	r20, 0x00	; 0
- 548:	60 e0       	ldi	r22, 0x00	; 0
- 54a:	81 e0       	ldi	r24, 0x01	; 1
- 54c:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
+ 610:	40 e0       	ldi	r20, 0x00	; 0
+ 612:	60 e0       	ldi	r22, 0x00	; 0
+ 614:	81 e0       	ldi	r24, 0x01	; 1
+ 616:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
 
     // Set RW to 0 (Write Mode)
     MDIO_vSetPinValue(CONTROL_PORT, RW, LOW);
- 550:	40 e0       	ldi	r20, 0x00	; 0
- 552:	61 e0       	ldi	r22, 0x01	; 1
- 554:	81 e0       	ldi	r24, 0x01	; 1
- 556:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
+ 61a:	40 e0       	ldi	r20, 0x00	; 0
+ 61c:	61 e0       	ldi	r22, 0x01	; 1
+ 61e:	81 e0       	ldi	r24, 0x01	; 1
+ 620:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
 
     // Send command on data bus (data port)
     MDIO_vSetPortValue(DATA_PORT, A_u8Command);
- 55a:	6c 2f       	mov	r22, r28
- 55c:	80 e0       	ldi	r24, 0x00	; 0
- 55e:	0e 94 4b 04 	call	0x896	; 0x896 <MDIO_vSetPortValue>
+ 624:	6c 2f       	mov	r22, r28
+ 626:	80 e0       	ldi	r24, 0x00	; 0
+ 628:	0e 94 b0 04 	call	0x960	; 0x960 <MDIO_vSetPortValue>
 
     // Enable pulse (E = 1 then E = 0)
     MDIO_vSetPinValue(CONTROL_PORT, EN, HIGH);
- 562:	41 e0       	ldi	r20, 0x01	; 1
- 564:	62 e0       	ldi	r22, 0x02	; 2
- 566:	81 e0       	ldi	r24, 0x01	; 1
- 568:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
- 56c:	89 ef       	ldi	r24, 0xF9	; 249
- 56e:	90 e0       	ldi	r25, 0x00	; 0
- 570:	01 97       	sbiw	r24, 0x01	; 1
- 572:	f1 f7       	brne	.-4      	; 0x570 <HLCD_vSendCommand+0x2e>
- 574:	00 c0       	rjmp	.+0      	; 0x576 <HLCD_vSendCommand+0x34>
- 576:	00 00       	nop
+ 62c:	41 e0       	ldi	r20, 0x01	; 1
+ 62e:	62 e0       	ldi	r22, 0x02	; 2
+ 630:	81 e0       	ldi	r24, 0x01	; 1
+ 632:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
+ 636:	89 ef       	ldi	r24, 0xF9	; 249
+ 638:	90 e0       	ldi	r25, 0x00	; 0
+ 63a:	01 97       	sbiw	r24, 0x01	; 1
+ 63c:	f1 f7       	brne	.-4      	; 0x63a <HLCD_vSendCommand+0x2e>
+ 63e:	00 c0       	rjmp	.+0      	; 0x640 <HLCD_vSendCommand+0x34>
+ 640:	00 00       	nop
     _delay_ms(1);
     MDIO_vSetPinValue(CONTROL_PORT, EN, LOW);
- 578:	40 e0       	ldi	r20, 0x00	; 0
- 57a:	62 e0       	ldi	r22, 0x02	; 2
- 57c:	81 e0       	ldi	r24, 0x01	; 1
- 57e:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
- 582:	89 ef       	ldi	r24, 0xF9	; 249
- 584:	90 e0       	ldi	r25, 0x00	; 0
- 586:	01 97       	sbiw	r24, 0x01	; 1
- 588:	f1 f7       	brne	.-4      	; 0x586 <HLCD_vSendCommand+0x44>
- 58a:	00 c0       	rjmp	.+0      	; 0x58c <HLCD_vSendCommand+0x4a>
- 58c:	00 00       	nop
+ 642:	40 e0       	ldi	r20, 0x00	; 0
+ 644:	62 e0       	ldi	r22, 0x02	; 2
+ 646:	81 e0       	ldi	r24, 0x01	; 1
+ 648:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
+ 64c:	89 ef       	ldi	r24, 0xF9	; 249
+ 64e:	90 e0       	ldi	r25, 0x00	; 0
+ 650:	01 97       	sbiw	r24, 0x01	; 1
+ 652:	f1 f7       	brne	.-4      	; 0x650 <HLCD_vSendCommand+0x44>
+ 654:	00 c0       	rjmp	.+0      	; 0x656 <HLCD_vSendCommand+0x4a>
+ 656:	00 00       	nop
     _delay_ms(1);
 }
- 58e:	cf 91       	pop	r28
- 590:	08 95       	ret
+ 658:	cf 91       	pop	r28
+ 65a:	08 95       	ret
 
-00000592 <HLCD_vInit>:
+0000065c <HLCD_vInit>:
  * @brief Initialize the LCD module.
  */
 void HLCD_vInit(void)
 {
     // Set control pins direction as OUTPUT
     MDIO_vSetPinDirection(CONTROL_PORT, RS, OUTPUT);
- 592:	41 e0       	ldi	r20, 0x01	; 1
- 594:	60 e0       	ldi	r22, 0x00	; 0
- 596:	81 e0       	ldi	r24, 0x01	; 1
- 598:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
+ 65c:	41 e0       	ldi	r20, 0x01	; 1
+ 65e:	60 e0       	ldi	r22, 0x00	; 0
+ 660:	81 e0       	ldi	r24, 0x01	; 1
+ 662:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
     MDIO_vSetPinDirection(CONTROL_PORT, RW, OUTPUT);
- 59c:	41 e0       	ldi	r20, 0x01	; 1
- 59e:	61 e0       	ldi	r22, 0x01	; 1
- 5a0:	81 e0       	ldi	r24, 0x01	; 1
- 5a2:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
+ 666:	41 e0       	ldi	r20, 0x01	; 1
+ 668:	61 e0       	ldi	r22, 0x01	; 1
+ 66a:	81 e0       	ldi	r24, 0x01	; 1
+ 66c:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
     MDIO_vSetPinDirection(CONTROL_PORT, EN, OUTPUT);
- 5a6:	41 e0       	ldi	r20, 0x01	; 1
- 5a8:	62 e0       	ldi	r22, 0x02	; 2
- 5aa:	81 e0       	ldi	r24, 0x01	; 1
- 5ac:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <MDIO_vSetPinDirection>
+ 670:	41 e0       	ldi	r20, 0x01	; 1
+ 672:	62 e0       	ldi	r22, 0x02	; 2
+ 674:	81 e0       	ldi	r24, 0x01	; 1
+ 676:	0e 94 c0 03 	call	0x780	; 0x780 <MDIO_vSetPinDirection>
 
     // Set data port direction as OUTPUT (all pins)
     MDIO_vSetPortDirection(DATA_PORT, 0xFF);
- 5b0:	6f ef       	ldi	r22, 0xFF	; 255
- 5b2:	80 e0       	ldi	r24, 0x00	; 0
- 5b4:	0e 94 cb 03 	call	0x796	; 0x796 <MDIO_vSetPortDirection>
- 5b8:	8f e0       	ldi	r24, 0x0F	; 15
- 5ba:	97 e2       	ldi	r25, 0x27	; 39
- 5bc:	01 97       	sbiw	r24, 0x01	; 1
- 5be:	f1 f7       	brne	.-4      	; 0x5bc <HLCD_vInit+0x2a>
- 5c0:	00 c0       	rjmp	.+0      	; 0x5c2 <HLCD_vInit+0x30>
- 5c2:	00 00       	nop
+ 67a:	6f ef       	ldi	r22, 0xFF	; 255
+ 67c:	80 e0       	ldi	r24, 0x00	; 0
+ 67e:	0e 94 30 04 	call	0x860	; 0x860 <MDIO_vSetPortDirection>
+ 682:	8f e0       	ldi	r24, 0x0F	; 15
+ 684:	97 e2       	ldi	r25, 0x27	; 39
+ 686:	01 97       	sbiw	r24, 0x01	; 1
+ 688:	f1 f7       	brne	.-4      	; 0x686 <HLCD_vInit+0x2a>
+ 68a:	00 c0       	rjmp	.+0      	; 0x68c <HLCD_vInit+0x30>
+ 68c:	00 00       	nop
 
     // Wait for LCD to power up
     _delay_ms(40);
 
     // Send LCD initialization commands
     HLCD_vSendCommand(FUNCTION_SET);
- 5c4:	88 e3       	ldi	r24, 0x38	; 56
- 5c6:	0e 94 a1 02 	call	0x542	; 0x542 <HLCD_vSendCommand>
- 5ca:	89 ef       	ldi	r24, 0xF9	; 249
- 5cc:	90 e0       	ldi	r25, 0x00	; 0
- 5ce:	01 97       	sbiw	r24, 0x01	; 1
- 5d0:	f1 f7       	brne	.-4      	; 0x5ce <HLCD_vInit+0x3c>
- 5d2:	00 c0       	rjmp	.+0      	; 0x5d4 <HLCD_vInit+0x42>
- 5d4:	00 00       	nop
+ 68e:	88 e3       	ldi	r24, 0x38	; 56
+ 690:	0e 94 06 03 	call	0x60c	; 0x60c <HLCD_vSendCommand>
+ 694:	89 ef       	ldi	r24, 0xF9	; 249
+ 696:	90 e0       	ldi	r25, 0x00	; 0
+ 698:	01 97       	sbiw	r24, 0x01	; 1
+ 69a:	f1 f7       	brne	.-4      	; 0x698 <HLCD_vInit+0x3c>
+ 69c:	00 c0       	rjmp	.+0      	; 0x69e <HLCD_vInit+0x42>
+ 69e:	00 00       	nop
     _delay_ms(1);
     HLCD_vSendCommand(DISPLAY_ON_OFF);
- 5d6:	8f e0       	ldi	r24, 0x0F	; 15
- 5d8:	0e 94 a1 02 	call	0x542	; 0x542 <HLCD_vSendCommand>
- 5dc:	89 ef       	ldi	r24, 0xF9	; 249
- 5de:	90 e0       	ldi	r25, 0x00	; 0
- 5e0:	01 97       	sbiw	r24, 0x01	; 1
- 5e2:	f1 f7       	brne	.-4      	; 0x5e0 <HLCD_vInit+0x4e>
- 5e4:	00 c0       	rjmp	.+0      	; 0x5e6 <HLCD_vInit+0x54>
- 5e6:	00 00       	nop
+ 6a0:	8f e0       	ldi	r24, 0x0F	; 15
+ 6a2:	0e 94 06 03 	call	0x60c	; 0x60c <HLCD_vSendCommand>
+ 6a6:	89 ef       	ldi	r24, 0xF9	; 249
+ 6a8:	90 e0       	ldi	r25, 0x00	; 0
+ 6aa:	01 97       	sbiw	r24, 0x01	; 1
+ 6ac:	f1 f7       	brne	.-4      	; 0x6aa <HLCD_vInit+0x4e>
+ 6ae:	00 c0       	rjmp	.+0      	; 0x6b0 <HLCD_vInit+0x54>
+ 6b0:	00 00       	nop
     _delay_ms(1);
     HLCD_vSendCommand(DISPLAY_CLEAR);
- 5e8:	81 e0       	ldi	r24, 0x01	; 1
- 5ea:	0e 94 a1 02 	call	0x542	; 0x542 <HLCD_vSendCommand>
- 5ee:	8d ee       	ldi	r24, 0xED	; 237
- 5f0:	92 e0       	ldi	r25, 0x02	; 2
- 5f2:	01 97       	sbiw	r24, 0x01	; 1
- 5f4:	f1 f7       	brne	.-4      	; 0x5f2 <HLCD_vInit+0x60>
- 5f6:	00 c0       	rjmp	.+0      	; 0x5f8 <HLCD_vInit+0x66>
- 5f8:	00 00       	nop
+ 6b2:	81 e0       	ldi	r24, 0x01	; 1
+ 6b4:	0e 94 06 03 	call	0x60c	; 0x60c <HLCD_vSendCommand>
+ 6b8:	8d ee       	ldi	r24, 0xED	; 237
+ 6ba:	92 e0       	ldi	r25, 0x02	; 2
+ 6bc:	01 97       	sbiw	r24, 0x01	; 1
+ 6be:	f1 f7       	brne	.-4      	; 0x6bc <HLCD_vInit+0x60>
+ 6c0:	00 c0       	rjmp	.+0      	; 0x6c2 <HLCD_vInit+0x66>
+ 6c2:	00 00       	nop
     _delay_ms(3);
     HLCD_vSendCommand(ENTRY_MODE_SET);
- 5fa:	86 e0       	ldi	r24, 0x06	; 6
- 5fc:	0e 94 a1 02 	call	0x542	; 0x542 <HLCD_vSendCommand>
- 600:	8d ee       	ldi	r24, 0xED	; 237
- 602:	92 e0       	ldi	r25, 0x02	; 2
- 604:	01 97       	sbiw	r24, 0x01	; 1
- 606:	f1 f7       	brne	.-4      	; 0x604 <HLCD_vInit+0x72>
- 608:	00 c0       	rjmp	.+0      	; 0x60a <HLCD_vInit+0x78>
- 60a:	00 00       	nop
- 60c:	08 95       	ret
+ 6c4:	86 e0       	ldi	r24, 0x06	; 6
+ 6c6:	0e 94 06 03 	call	0x60c	; 0x60c <HLCD_vSendCommand>
+ 6ca:	8d ee       	ldi	r24, 0xED	; 237
+ 6cc:	92 e0       	ldi	r25, 0x02	; 2
+ 6ce:	01 97       	sbiw	r24, 0x01	; 1
+ 6d0:	f1 f7       	brne	.-4      	; 0x6ce <HLCD_vInit+0x72>
+ 6d2:	00 c0       	rjmp	.+0      	; 0x6d4 <HLCD_vInit+0x78>
+ 6d4:	00 00       	nop
+ 6d6:	08 95       	ret
 
-0000060e <HLCD_vSendData>:
+000006d8 <HLCD_vSendData>:
  * @brief Send data (character) to the LCD.
  *
  * @param A_u8Data: Data (character) to be sent.
  */
 void HLCD_vSendData(u8 A_u8Data)
 {
- 60e:	cf 93       	push	r28
- 610:	c8 2f       	mov	r28, r24
+ 6d8:	cf 93       	push	r28
+ 6da:	c8 2f       	mov	r28, r24
     // Set RS to 1 (Data Mode)
     MDIO_vSetPinValue(CONTROL_PORT, RS, HIGH);
- 612:	41 e0       	ldi	r20, 0x01	; 1
- 614:	60 e0       	ldi	r22, 0x00	; 0
- 616:	81 e0       	ldi	r24, 0x01	; 1
- 618:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
+ 6dc:	41 e0       	ldi	r20, 0x01	; 1
+ 6de:	60 e0       	ldi	r22, 0x00	; 0
+ 6e0:	81 e0       	ldi	r24, 0x01	; 1
+ 6e2:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
 
     // Set RW to 0 (Write Mode)
     MDIO_vSetPinValue(CONTROL_PORT, RW, LOW);
- 61c:	40 e0       	ldi	r20, 0x00	; 0
- 61e:	61 e0       	ldi	r22, 0x01	; 1
- 620:	81 e0       	ldi	r24, 0x01	; 1
- 622:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
+ 6e6:	40 e0       	ldi	r20, 0x00	; 0
+ 6e8:	61 e0       	ldi	r22, 0x01	; 1
+ 6ea:	81 e0       	ldi	r24, 0x01	; 1
+ 6ec:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
 
     // Send data on data bus (data port)
     MDIO_vSetPortValue(DATA_PORT, A_u8Data);
- 626:	6c 2f       	mov	r22, r28
- 628:	80 e0       	ldi	r24, 0x00	; 0
- 62a:	0e 94 4b 04 	call	0x896	; 0x896 <MDIO_vSetPortValue>
+ 6f0:	6c 2f       	mov	r22, r28
+ 6f2:	80 e0       	ldi	r24, 0x00	; 0
+ 6f4:	0e 94 b0 04 	call	0x960	; 0x960 <MDIO_vSetPortValue>
 
     // Enable pulse (E = 1 then E = 0)
     MDIO_vSetPinValue(CONTROL_PORT, EN, HIGH);
- 62e:	41 e0       	ldi	r20, 0x01	; 1
- 630:	62 e0       	ldi	r22, 0x02	; 2
- 632:	81 e0       	ldi	r24, 0x01	; 1
- 634:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
- 638:	81 ee       	ldi	r24, 0xE1	; 225
- 63a:	94 e0       	ldi	r25, 0x04	; 4
- 63c:	01 97       	sbiw	r24, 0x01	; 1
- 63e:	f1 f7       	brne	.-4      	; 0x63c <HLCD_vSendData+0x2e>
- 640:	00 c0       	rjmp	.+0      	; 0x642 <HLCD_vSendData+0x34>
- 642:	00 00       	nop
+ 6f8:	41 e0       	ldi	r20, 0x01	; 1
+ 6fa:	62 e0       	ldi	r22, 0x02	; 2
+ 6fc:	81 e0       	ldi	r24, 0x01	; 1
+ 6fe:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
+ 702:	81 ee       	ldi	r24, 0xE1	; 225
+ 704:	94 e0       	ldi	r25, 0x04	; 4
+ 706:	01 97       	sbiw	r24, 0x01	; 1
+ 708:	f1 f7       	brne	.-4      	; 0x706 <HLCD_vSendData+0x2e>
+ 70a:	00 c0       	rjmp	.+0      	; 0x70c <HLCD_vSendData+0x34>
+ 70c:	00 00       	nop
     _delay_ms(5);
     MDIO_vSetPinValue(CONTROL_PORT, EN, LOW);
- 644:	40 e0       	ldi	r20, 0x00	; 0
- 646:	62 e0       	ldi	r22, 0x02	; 2
- 648:	81 e0       	ldi	r24, 0x01	; 1
- 64a:	0e 94 db 03 	call	0x7b6	; 0x7b6 <MDIO_vSetPinValue>
- 64e:	81 ee       	ldi	r24, 0xE1	; 225
- 650:	94 e0       	ldi	r25, 0x04	; 4
- 652:	01 97       	sbiw	r24, 0x01	; 1
- 654:	f1 f7       	brne	.-4      	; 0x652 <HLCD_vSendData+0x44>
- 656:	00 c0       	rjmp	.+0      	; 0x658 <HLCD_vSendData+0x4a>
- 658:	00 00       	nop
+ 70e:	40 e0       	ldi	r20, 0x00	; 0
+ 710:	62 e0       	ldi	r22, 0x02	; 2
+ 712:	81 e0       	ldi	r24, 0x01	; 1
+ 714:	0e 94 40 04 	call	0x880	; 0x880 <MDIO_vSetPinValue>
+ 718:	81 ee       	ldi	r24, 0xE1	; 225
+ 71a:	94 e0       	ldi	r25, 0x04	; 4
+ 71c:	01 97       	sbiw	r24, 0x01	; 1
+ 71e:	f1 f7       	brne	.-4      	; 0x71c <HLCD_vSendData+0x44>
+ 720:	00 c0       	rjmp	.+0      	; 0x722 <HLCD_vSendData+0x4a>
+ 722:	00 00       	nop
     _delay_ms(5);
 }
- 65a:	cf 91       	pop	r28
- 65c:	08 95       	ret
+ 724:	cf 91       	pop	r28
+ 726:	08 95       	ret
 
-0000065e <HLCD_vSendString>:
+00000728 <HLCD_vSendString>:
  * @brief Send a string to display on the LCD.
  *
  * @param A_u8String: Pointer to the string to be displayed.
  */
 void HLCD_vSendString(u8 *A_u8String)
 {
- 65e:	0f 93       	push	r16
- 660:	1f 93       	push	r17
- 662:	cf 93       	push	r28
- 664:	8c 01       	movw	r16, r24
+ 728:	0f 93       	push	r16
+ 72a:	1f 93       	push	r17
+ 72c:	cf 93       	push	r28
+ 72e:	8c 01       	movw	r16, r24
     // Loop through each character in the string until null terminator is encountered
     for (u8 Local_u8Index = 0; A_u8String[Local_u8Index] != '\0'; Local_u8Index++)
- 666:	c0 e0       	ldi	r28, 0x00	; 0
- 668:	03 c0       	rjmp	.+6      	; 0x670 <HLCD_vSendString+0x12>
+ 730:	c0 e0       	ldi	r28, 0x00	; 0
+ 732:	03 c0       	rjmp	.+6      	; 0x73a <HLCD_vSendString+0x12>
     {
         // Send each character to the LCD
         HLCD_vSendData(A_u8String[Local_u8Index]);
- 66a:	0e 94 07 03 	call	0x60e	; 0x60e <HLCD_vSendData>
+ 734:	0e 94 6c 03 	call	0x6d8	; 0x6d8 <HLCD_vSendData>
  * @param A_u8String: Pointer to the string to be displayed.
  */
 void HLCD_vSendString(u8 *A_u8String)
 {
     // Loop through each character in the string until null terminator is encountered
     for (u8 Local_u8Index = 0; A_u8String[Local_u8Index] != '\0'; Local_u8Index++)
- 66e:	cf 5f       	subi	r28, 0xFF	; 255
- 670:	f8 01       	movw	r30, r16
- 672:	ec 0f       	add	r30, r28
- 674:	f1 1d       	adc	r31, r1
- 676:	80 81       	ld	r24, Z
- 678:	81 11       	cpse	r24, r1
- 67a:	f7 cf       	rjmp	.-18     	; 0x66a <HLCD_vSendString+0xc>
+ 738:	cf 5f       	subi	r28, 0xFF	; 255
+ 73a:	f8 01       	movw	r30, r16
+ 73c:	ec 0f       	add	r30, r28
+ 73e:	f1 1d       	adc	r31, r1
+ 740:	80 81       	ld	r24, Z
+ 742:	81 11       	cpse	r24, r1
+ 744:	f7 cf       	rjmp	.-18     	; 0x734 <HLCD_vSendString+0xc>
     {
         // Send each character to the LCD
         HLCD_vSendData(A_u8String[Local_u8Index]);
     }
 }
- 67c:	cf 91       	pop	r28
- 67e:	1f 91       	pop	r17
- 680:	0f 91       	pop	r16
- 682:	08 95       	ret
+ 746:	cf 91       	pop	r28
+ 748:	1f 91       	pop	r17
+ 74a:	0f 91       	pop	r16
+ 74c:	08 95       	ret
 
-00000684 <HLCD_vMoveTo>:
+0000074e <HLCD_vMoveTo>:
  * @param A_u8Col: Column number (0 to 15).
  */
 void HLCD_vMoveTo(u8 A_u8Row, u8 A_u8Col)
 {
     // Calculate cursor position based on row and column
     switch (A_u8Row)
- 684:	88 23       	and	r24, r24
- 686:	19 f0       	breq	.+6      	; 0x68e <HLCD_vMoveTo+0xa>
- 688:	81 30       	cpi	r24, 0x01	; 1
- 68a:	31 f0       	breq	.+12     	; 0x698 <HLCD_vMoveTo+0x14>
- 68c:	08 95       	ret
+ 74e:	88 23       	and	r24, r24
+ 750:	19 f0       	breq	.+6      	; 0x758 <HLCD_vMoveTo+0xa>
+ 752:	81 30       	cpi	r24, 0x01	; 1
+ 754:	31 f0       	breq	.+12     	; 0x762 <HLCD_vMoveTo+0x14>
+ 756:	08 95       	ret
     {
         case 0:
             HLCD_vSendCommand(A_u8Col + 128); // Move to 1st row
- 68e:	80 e8       	ldi	r24, 0x80	; 128
- 690:	86 0f       	add	r24, r22
- 692:	0e 94 a1 02 	call	0x542	; 0x542 <HLCD_vSendCommand>
+ 758:	80 e8       	ldi	r24, 0x80	; 128
+ 75a:	86 0f       	add	r24, r22
+ 75c:	0e 94 06 03 	call	0x60c	; 0x60c <HLCD_vSendCommand>
             break;
- 696:	08 95       	ret
+ 760:	08 95       	ret
         case 1:
             HLCD_vSendCommand(A_u8Col + 192); // Move to 2nd row
- 698:	80 ec       	ldi	r24, 0xC0	; 192
- 69a:	86 0f       	add	r24, r22
- 69c:	0e 94 a1 02 	call	0x542	; 0x542 <HLCD_vSendCommand>
- 6a0:	08 95       	ret
+ 762:	80 ec       	ldi	r24, 0xC0	; 192
+ 764:	86 0f       	add	r24, r22
+ 766:	0e 94 06 03 	call	0x60c	; 0x60c <HLCD_vSendCommand>
+ 76a:	08 95       	ret
 
-000006a2 <HLCD_vDisplayClear>:
+0000076c <HLCD_vDisplayClear>:
  * @brief Clear the display of the LCD.
  */
 void HLCD_vDisplayClear(void)
 {
     // Send clear display command
     HLCD_vSendCommand(DISPLAY_CLEAR);
- 6a2:	81 e0       	ldi	r24, 0x01	; 1
- 6a4:	0e 94 a1 02 	call	0x542	; 0x542 <HLCD_vSendCommand>
- 6a8:	87 e8       	ldi	r24, 0x87	; 135
- 6aa:	93 e1       	ldi	r25, 0x13	; 19
- 6ac:	01 97       	sbiw	r24, 0x01	; 1
- 6ae:	f1 f7       	brne	.-4      	; 0x6ac <HLCD_vDisplayClear+0xa>
- 6b0:	00 c0       	rjmp	.+0      	; 0x6b2 <HLCD_vDisplayClear+0x10>
- 6b2:	00 00       	nop
- 6b4:	08 95       	ret
+ 76c:	81 e0       	ldi	r24, 0x01	; 1
+ 76e:	0e 94 06 03 	call	0x60c	; 0x60c <HLCD_vSendCommand>
+ 772:	87 e8       	ldi	r24, 0x87	; 135
+ 774:	93 e1       	ldi	r25, 0x13	; 19
+ 776:	01 97       	sbiw	r24, 0x01	; 1
+ 778:	f1 f7       	brne	.-4      	; 0x776 <HLCD_vDisplayClear+0xa>
+ 77a:	00 c0       	rjmp	.+0      	; 0x77c <HLCD_vDisplayClear+0x10>
+ 77c:	00 00       	nop
+ 77e:	08 95       	ret
 
-000006b6 <MDIO_vSetPinDirection>:
+00000780 <MDIO_vSetPinDirection>:
 #include "DIO_Private.h"
 #include "DIO_Config.h"
 
 void MDIO_vSetPinDirection(u8 A_u8PortNumber,u8 A_u8PinNumber, u8 A_u8Dir )
 {
 	if(A_u8Dir == INPUT)
- 6b6:	41 11       	cpse	r20, r1
- 6b8:	38 c0       	rjmp	.+112    	; 0x72a <MDIO_vSetPinDirection+0x74>
+ 780:	41 11       	cpse	r20, r1
+ 782:	38 c0       	rjmp	.+112    	; 0x7f4 <MDIO_vSetPinDirection+0x74>
 	{
 		switch (A_u8PortNumber)
- 6ba:	81 30       	cpi	r24, 0x01	; 1
- 6bc:	91 f0       	breq	.+36     	; 0x6e2 <MDIO_vSetPinDirection+0x2c>
- 6be:	28 f0       	brcs	.+10     	; 0x6ca <MDIO_vSetPinDirection+0x14>
- 6c0:	82 30       	cpi	r24, 0x02	; 2
- 6c2:	d9 f0       	breq	.+54     	; 0x6fa <MDIO_vSetPinDirection+0x44>
- 6c4:	83 30       	cpi	r24, 0x03	; 3
- 6c6:	29 f1       	breq	.+74     	; 0x712 <MDIO_vSetPinDirection+0x5c>
- 6c8:	08 95       	ret
+ 784:	81 30       	cpi	r24, 0x01	; 1
+ 786:	91 f0       	breq	.+36     	; 0x7ac <MDIO_vSetPinDirection+0x2c>
+ 788:	28 f0       	brcs	.+10     	; 0x794 <MDIO_vSetPinDirection+0x14>
+ 78a:	82 30       	cpi	r24, 0x02	; 2
+ 78c:	d9 f0       	breq	.+54     	; 0x7c4 <MDIO_vSetPinDirection+0x44>
+ 78e:	83 30       	cpi	r24, 0x03	; 3
+ 790:	29 f1       	breq	.+74     	; 0x7dc <MDIO_vSetPinDirection+0x5c>
+ 792:	08 95       	ret
 		{
 		case PORT_A: CLR_BIT(DDRA, A_u8PinNumber); break;
- 6ca:	2a b3       	in	r18, 0x1a	; 26
- 6cc:	81 e0       	ldi	r24, 0x01	; 1
- 6ce:	90 e0       	ldi	r25, 0x00	; 0
- 6d0:	02 c0       	rjmp	.+4      	; 0x6d6 <MDIO_vSetPinDirection+0x20>
- 6d2:	88 0f       	add	r24, r24
- 6d4:	99 1f       	adc	r25, r25
- 6d6:	6a 95       	dec	r22
- 6d8:	e2 f7       	brpl	.-8      	; 0x6d2 <MDIO_vSetPinDirection+0x1c>
- 6da:	80 95       	com	r24
- 6dc:	82 23       	and	r24, r18
- 6de:	8a bb       	out	0x1a, r24	; 26
- 6e0:	08 95       	ret
+ 794:	2a b3       	in	r18, 0x1a	; 26
+ 796:	81 e0       	ldi	r24, 0x01	; 1
+ 798:	90 e0       	ldi	r25, 0x00	; 0
+ 79a:	02 c0       	rjmp	.+4      	; 0x7a0 <MDIO_vSetPinDirection+0x20>
+ 79c:	88 0f       	add	r24, r24
+ 79e:	99 1f       	adc	r25, r25
+ 7a0:	6a 95       	dec	r22
+ 7a2:	e2 f7       	brpl	.-8      	; 0x79c <MDIO_vSetPinDirection+0x1c>
+ 7a4:	80 95       	com	r24
+ 7a6:	82 23       	and	r24, r18
+ 7a8:	8a bb       	out	0x1a, r24	; 26
+ 7aa:	08 95       	ret
 		case PORT_B: CLR_BIT(DDRB, A_u8PinNumber); break;
- 6e2:	27 b3       	in	r18, 0x17	; 23
- 6e4:	81 e0       	ldi	r24, 0x01	; 1
- 6e6:	90 e0       	ldi	r25, 0x00	; 0
- 6e8:	02 c0       	rjmp	.+4      	; 0x6ee <MDIO_vSetPinDirection+0x38>
- 6ea:	88 0f       	add	r24, r24
- 6ec:	99 1f       	adc	r25, r25
- 6ee:	6a 95       	dec	r22
- 6f0:	e2 f7       	brpl	.-8      	; 0x6ea <MDIO_vSetPinDirection+0x34>
- 6f2:	80 95       	com	r24
- 6f4:	82 23       	and	r24, r18
- 6f6:	87 bb       	out	0x17, r24	; 23
- 6f8:	08 95       	ret
+ 7ac:	27 b3       	in	r18, 0x17	; 23
+ 7ae:	81 e0       	ldi	r24, 0x01	; 1
+ 7b0:	90 e0       	ldi	r25, 0x00	; 0
+ 7b2:	02 c0       	rjmp	.+4      	; 0x7b8 <MDIO_vSetPinDirection+0x38>
+ 7b4:	88 0f       	add	r24, r24
+ 7b6:	99 1f       	adc	r25, r25
+ 7b8:	6a 95       	dec	r22
+ 7ba:	e2 f7       	brpl	.-8      	; 0x7b4 <MDIO_vSetPinDirection+0x34>
+ 7bc:	80 95       	com	r24
+ 7be:	82 23       	and	r24, r18
+ 7c0:	87 bb       	out	0x17, r24	; 23
+ 7c2:	08 95       	ret
 		case PORT_C: CLR_BIT(DDRC, A_u8PinNumber); break;
- 6fa:	24 b3       	in	r18, 0x14	; 20
- 6fc:	81 e0       	ldi	r24, 0x01	; 1
- 6fe:	90 e0       	ldi	r25, 0x00	; 0
- 700:	02 c0       	rjmp	.+4      	; 0x706 <MDIO_vSetPinDirection+0x50>
- 702:	88 0f       	add	r24, r24
- 704:	99 1f       	adc	r25, r25
- 706:	6a 95       	dec	r22
- 708:	e2 f7       	brpl	.-8      	; 0x702 <MDIO_vSetPinDirection+0x4c>
- 70a:	80 95       	com	r24
- 70c:	82 23       	and	r24, r18
- 70e:	84 bb       	out	0x14, r24	; 20
- 710:	08 95       	ret
+ 7c4:	24 b3       	in	r18, 0x14	; 20
+ 7c6:	81 e0       	ldi	r24, 0x01	; 1
+ 7c8:	90 e0       	ldi	r25, 0x00	; 0
+ 7ca:	02 c0       	rjmp	.+4      	; 0x7d0 <MDIO_vSetPinDirection+0x50>
+ 7cc:	88 0f       	add	r24, r24
+ 7ce:	99 1f       	adc	r25, r25
+ 7d0:	6a 95       	dec	r22
+ 7d2:	e2 f7       	brpl	.-8      	; 0x7cc <MDIO_vSetPinDirection+0x4c>
+ 7d4:	80 95       	com	r24
+ 7d6:	82 23       	and	r24, r18
+ 7d8:	84 bb       	out	0x14, r24	; 20
+ 7da:	08 95       	ret
 		case PORT_D: CLR_BIT(DDRD, A_u8PinNumber); break;
- 712:	21 b3       	in	r18, 0x11	; 17
- 714:	81 e0       	ldi	r24, 0x01	; 1
- 716:	90 e0       	ldi	r25, 0x00	; 0
- 718:	02 c0       	rjmp	.+4      	; 0x71e <MDIO_vSetPinDirection+0x68>
- 71a:	88 0f       	add	r24, r24
- 71c:	99 1f       	adc	r25, r25
- 71e:	6a 95       	dec	r22
- 720:	e2 f7       	brpl	.-8      	; 0x71a <MDIO_vSetPinDirection+0x64>
- 722:	80 95       	com	r24
- 724:	82 23       	and	r24, r18
- 726:	81 bb       	out	0x11, r24	; 17
- 728:	08 95       	ret
+ 7dc:	21 b3       	in	r18, 0x11	; 17
+ 7de:	81 e0       	ldi	r24, 0x01	; 1
+ 7e0:	90 e0       	ldi	r25, 0x00	; 0
+ 7e2:	02 c0       	rjmp	.+4      	; 0x7e8 <MDIO_vSetPinDirection+0x68>
+ 7e4:	88 0f       	add	r24, r24
+ 7e6:	99 1f       	adc	r25, r25
+ 7e8:	6a 95       	dec	r22
+ 7ea:	e2 f7       	brpl	.-8      	; 0x7e4 <MDIO_vSetPinDirection+0x64>
+ 7ec:	80 95       	com	r24
+ 7ee:	82 23       	and	r24, r18
+ 7f0:	81 bb       	out	0x11, r24	; 17
+ 7f2:	08 95       	ret
 		}
 	}else if (A_u8Dir == OUTPUT)
- 72a:	41 30       	cpi	r20, 0x01	; 1
- 72c:	99 f5       	brne	.+102    	; 0x794 <MDIO_vSetPinDirection+0xde>
+ 7f4:	41 30       	cpi	r20, 0x01	; 1
+ 7f6:	99 f5       	brne	.+102    	; 0x85e <__DATA_REGION_LENGTH__+0x5e>
 	{
 		switch (A_u8PortNumber)
- 72e:	81 30       	cpi	r24, 0x01	; 1
- 730:	89 f0       	breq	.+34     	; 0x754 <MDIO_vSetPinDirection+0x9e>
- 732:	28 f0       	brcs	.+10     	; 0x73e <MDIO_vSetPinDirection+0x88>
- 734:	82 30       	cpi	r24, 0x02	; 2
- 736:	c9 f0       	breq	.+50     	; 0x76a <MDIO_vSetPinDirection+0xb4>
- 738:	83 30       	cpi	r24, 0x03	; 3
- 73a:	11 f1       	breq	.+68     	; 0x780 <MDIO_vSetPinDirection+0xca>
- 73c:	08 95       	ret
+ 7f8:	81 30       	cpi	r24, 0x01	; 1
+ 7fa:	89 f0       	breq	.+34     	; 0x81e <__DATA_REGION_LENGTH__+0x1e>
+ 7fc:	28 f0       	brcs	.+10     	; 0x808 <__DATA_REGION_LENGTH__+0x8>
+ 7fe:	82 30       	cpi	r24, 0x02	; 2
+ 800:	c9 f0       	breq	.+50     	; 0x834 <__DATA_REGION_LENGTH__+0x34>
+ 802:	83 30       	cpi	r24, 0x03	; 3
+ 804:	11 f1       	breq	.+68     	; 0x84a <__DATA_REGION_LENGTH__+0x4a>
+ 806:	08 95       	ret
 		{
 		case PORT_A: SET_BIT(DDRA, A_u8PinNumber); break;
- 73e:	2a b3       	in	r18, 0x1a	; 26
- 740:	81 e0       	ldi	r24, 0x01	; 1
- 742:	90 e0       	ldi	r25, 0x00	; 0
- 744:	02 c0       	rjmp	.+4      	; 0x74a <MDIO_vSetPinDirection+0x94>
- 746:	88 0f       	add	r24, r24
- 748:	99 1f       	adc	r25, r25
- 74a:	6a 95       	dec	r22
- 74c:	e2 f7       	brpl	.-8      	; 0x746 <MDIO_vSetPinDirection+0x90>
- 74e:	82 2b       	or	r24, r18
- 750:	8a bb       	out	0x1a, r24	; 26
- 752:	08 95       	ret
+ 808:	2a b3       	in	r18, 0x1a	; 26
+ 80a:	81 e0       	ldi	r24, 0x01	; 1
+ 80c:	90 e0       	ldi	r25, 0x00	; 0
+ 80e:	02 c0       	rjmp	.+4      	; 0x814 <__DATA_REGION_LENGTH__+0x14>
+ 810:	88 0f       	add	r24, r24
+ 812:	99 1f       	adc	r25, r25
+ 814:	6a 95       	dec	r22
+ 816:	e2 f7       	brpl	.-8      	; 0x810 <__DATA_REGION_LENGTH__+0x10>
+ 818:	82 2b       	or	r24, r18
+ 81a:	8a bb       	out	0x1a, r24	; 26
+ 81c:	08 95       	ret
 		case PORT_B: SET_BIT(DDRB, A_u8PinNumber); break;
- 754:	27 b3       	in	r18, 0x17	; 23
- 756:	81 e0       	ldi	r24, 0x01	; 1
- 758:	90 e0       	ldi	r25, 0x00	; 0
- 75a:	02 c0       	rjmp	.+4      	; 0x760 <MDIO_vSetPinDirection+0xaa>
- 75c:	88 0f       	add	r24, r24
- 75e:	99 1f       	adc	r25, r25
- 760:	6a 95       	dec	r22
- 762:	e2 f7       	brpl	.-8      	; 0x75c <MDIO_vSetPinDirection+0xa6>
- 764:	82 2b       	or	r24, r18
- 766:	87 bb       	out	0x17, r24	; 23
- 768:	08 95       	ret
+ 81e:	27 b3       	in	r18, 0x17	; 23
+ 820:	81 e0       	ldi	r24, 0x01	; 1
+ 822:	90 e0       	ldi	r25, 0x00	; 0
+ 824:	02 c0       	rjmp	.+4      	; 0x82a <__DATA_REGION_LENGTH__+0x2a>
+ 826:	88 0f       	add	r24, r24
+ 828:	99 1f       	adc	r25, r25
+ 82a:	6a 95       	dec	r22
+ 82c:	e2 f7       	brpl	.-8      	; 0x826 <__DATA_REGION_LENGTH__+0x26>
+ 82e:	82 2b       	or	r24, r18
+ 830:	87 bb       	out	0x17, r24	; 23
+ 832:	08 95       	ret
 		case PORT_C: SET_BIT(DDRC, A_u8PinNumber); break;
- 76a:	24 b3       	in	r18, 0x14	; 20
- 76c:	81 e0       	ldi	r24, 0x01	; 1
- 76e:	90 e0       	ldi	r25, 0x00	; 0
- 770:	02 c0       	rjmp	.+4      	; 0x776 <MDIO_vSetPinDirection+0xc0>
- 772:	88 0f       	add	r24, r24
- 774:	99 1f       	adc	r25, r25
- 776:	6a 95       	dec	r22
- 778:	e2 f7       	brpl	.-8      	; 0x772 <MDIO_vSetPinDirection+0xbc>
- 77a:	82 2b       	or	r24, r18
- 77c:	84 bb       	out	0x14, r24	; 20
- 77e:	08 95       	ret
+ 834:	24 b3       	in	r18, 0x14	; 20
+ 836:	81 e0       	ldi	r24, 0x01	; 1
+ 838:	90 e0       	ldi	r25, 0x00	; 0
+ 83a:	02 c0       	rjmp	.+4      	; 0x840 <__DATA_REGION_LENGTH__+0x40>
+ 83c:	88 0f       	add	r24, r24
+ 83e:	99 1f       	adc	r25, r25
+ 840:	6a 95       	dec	r22
+ 842:	e2 f7       	brpl	.-8      	; 0x83c <__DATA_REGION_LENGTH__+0x3c>
+ 844:	82 2b       	or	r24, r18
+ 846:	84 bb       	out	0x14, r24	; 20
+ 848:	08 95       	ret
 		case PORT_D: SET_BIT(DDRD, A_u8PinNumber); break;
- 780:	21 b3       	in	r18, 0x11	; 17
- 782:	81 e0       	ldi	r24, 0x01	; 1
- 784:	90 e0       	ldi	r25, 0x00	; 0
- 786:	02 c0       	rjmp	.+4      	; 0x78c <MDIO_vSetPinDirection+0xd6>
- 788:	88 0f       	add	r24, r24
- 78a:	99 1f       	adc	r25, r25
- 78c:	6a 95       	dec	r22
- 78e:	e2 f7       	brpl	.-8      	; 0x788 <MDIO_vSetPinDirection+0xd2>
- 790:	82 2b       	or	r24, r18
- 792:	81 bb       	out	0x11, r24	; 17
- 794:	08 95       	ret
+ 84a:	21 b3       	in	r18, 0x11	; 17
+ 84c:	81 e0       	ldi	r24, 0x01	; 1
+ 84e:	90 e0       	ldi	r25, 0x00	; 0
+ 850:	02 c0       	rjmp	.+4      	; 0x856 <__DATA_REGION_LENGTH__+0x56>
+ 852:	88 0f       	add	r24, r24
+ 854:	99 1f       	adc	r25, r25
+ 856:	6a 95       	dec	r22
+ 858:	e2 f7       	brpl	.-8      	; 0x852 <__DATA_REGION_LENGTH__+0x52>
+ 85a:	82 2b       	or	r24, r18
+ 85c:	81 bb       	out	0x11, r24	; 17
+ 85e:	08 95       	ret
 
-00000796 <MDIO_vSetPortDirection>:
+00000860 <MDIO_vSetPortDirection>:
 		//Do Nothing.
 	}
 }
 
 void MDIO_vSetPortDirection(u8 A_u8PortNumber, u8 A_u8Dir){
 	switch (A_u8PortNumber){
- 796:	81 30       	cpi	r24, 0x01	; 1
- 798:	41 f0       	breq	.+16     	; 0x7aa <MDIO_vSetPortDirection+0x14>
- 79a:	28 f0       	brcs	.+10     	; 0x7a6 <MDIO_vSetPortDirection+0x10>
- 79c:	82 30       	cpi	r24, 0x02	; 2
- 79e:	39 f0       	breq	.+14     	; 0x7ae <MDIO_vSetPortDirection+0x18>
- 7a0:	83 30       	cpi	r24, 0x03	; 3
- 7a2:	39 f0       	breq	.+14     	; 0x7b2 <MDIO_vSetPortDirection+0x1c>
- 7a4:	08 95       	ret
+ 860:	81 30       	cpi	r24, 0x01	; 1
+ 862:	41 f0       	breq	.+16     	; 0x874 <MDIO_vSetPortDirection+0x14>
+ 864:	28 f0       	brcs	.+10     	; 0x870 <MDIO_vSetPortDirection+0x10>
+ 866:	82 30       	cpi	r24, 0x02	; 2
+ 868:	39 f0       	breq	.+14     	; 0x878 <MDIO_vSetPortDirection+0x18>
+ 86a:	83 30       	cpi	r24, 0x03	; 3
+ 86c:	39 f0       	breq	.+14     	; 0x87c <MDIO_vSetPortDirection+0x1c>
+ 86e:	08 95       	ret
 	case PORT_A: DDRA = A_u8Dir; break;
- 7a6:	6a bb       	out	0x1a, r22	; 26
- 7a8:	08 95       	ret
+ 870:	6a bb       	out	0x1a, r22	; 26
+ 872:	08 95       	ret
 	case PORT_B: DDRB = A_u8Dir; break;
- 7aa:	67 bb       	out	0x17, r22	; 23
- 7ac:	08 95       	ret
+ 874:	67 bb       	out	0x17, r22	; 23
+ 876:	08 95       	ret
 	case PORT_C: DDRC = A_u8Dir; break;
- 7ae:	64 bb       	out	0x14, r22	; 20
- 7b0:	08 95       	ret
+ 878:	64 bb       	out	0x14, r22	; 20
+ 87a:	08 95       	ret
 	case PORT_D: DDRD = A_u8Dir; break;
- 7b2:	61 bb       	out	0x11, r22	; 17
- 7b4:	08 95       	ret
+ 87c:	61 bb       	out	0x11, r22	; 17
+ 87e:	08 95       	ret
 
-000007b6 <MDIO_vSetPinValue>:
+00000880 <MDIO_vSetPinValue>:
 	}
 }
 
 void MDIO_vSetPinValue(u8 A_u8PortNumber, u8 A_u8PinNumber, u8 A_u8Value)
 {
 	if(A_u8Value == HIGH)
- 7b6:	41 30       	cpi	r20, 0x01	; 1
- 7b8:	a1 f5       	brne	.+104    	; 0x822 <__DATA_REGION_LENGTH__+0x22>
+ 880:	41 30       	cpi	r20, 0x01	; 1
+ 882:	a1 f5       	brne	.+104    	; 0x8ec <MDIO_vSetPinValue+0x6c>
 	{
 		switch (A_u8PortNumber)
- 7ba:	81 30       	cpi	r24, 0x01	; 1
- 7bc:	89 f0       	breq	.+34     	; 0x7e0 <MDIO_vSetPinValue+0x2a>
- 7be:	28 f0       	brcs	.+10     	; 0x7ca <MDIO_vSetPinValue+0x14>
- 7c0:	82 30       	cpi	r24, 0x02	; 2
- 7c2:	c9 f0       	breq	.+50     	; 0x7f6 <MDIO_vSetPinValue+0x40>
- 7c4:	83 30       	cpi	r24, 0x03	; 3
- 7c6:	11 f1       	breq	.+68     	; 0x80c <__DATA_REGION_LENGTH__+0xc>
- 7c8:	08 95       	ret
+ 884:	81 30       	cpi	r24, 0x01	; 1
+ 886:	89 f0       	breq	.+34     	; 0x8aa <MDIO_vSetPinValue+0x2a>
+ 888:	28 f0       	brcs	.+10     	; 0x894 <MDIO_vSetPinValue+0x14>
+ 88a:	82 30       	cpi	r24, 0x02	; 2
+ 88c:	c9 f0       	breq	.+50     	; 0x8c0 <MDIO_vSetPinValue+0x40>
+ 88e:	83 30       	cpi	r24, 0x03	; 3
+ 890:	11 f1       	breq	.+68     	; 0x8d6 <MDIO_vSetPinValue+0x56>
+ 892:	08 95       	ret
 		{
 		case PORT_A: SET_BIT(PORTA, A_u8PinNumber); break;
- 7ca:	2b b3       	in	r18, 0x1b	; 27
- 7cc:	81 e0       	ldi	r24, 0x01	; 1
- 7ce:	90 e0       	ldi	r25, 0x00	; 0
- 7d0:	02 c0       	rjmp	.+4      	; 0x7d6 <MDIO_vSetPinValue+0x20>
- 7d2:	88 0f       	add	r24, r24
- 7d4:	99 1f       	adc	r25, r25
- 7d6:	6a 95       	dec	r22
- 7d8:	e2 f7       	brpl	.-8      	; 0x7d2 <MDIO_vSetPinValue+0x1c>
- 7da:	82 2b       	or	r24, r18
- 7dc:	8b bb       	out	0x1b, r24	; 27
- 7de:	08 95       	ret
+ 894:	2b b3       	in	r18, 0x1b	; 27
+ 896:	81 e0       	ldi	r24, 0x01	; 1
+ 898:	90 e0       	ldi	r25, 0x00	; 0
+ 89a:	02 c0       	rjmp	.+4      	; 0x8a0 <MDIO_vSetPinValue+0x20>
+ 89c:	88 0f       	add	r24, r24
+ 89e:	99 1f       	adc	r25, r25
+ 8a0:	6a 95       	dec	r22
+ 8a2:	e2 f7       	brpl	.-8      	; 0x89c <MDIO_vSetPinValue+0x1c>
+ 8a4:	82 2b       	or	r24, r18
+ 8a6:	8b bb       	out	0x1b, r24	; 27
+ 8a8:	08 95       	ret
 		case PORT_B: SET_BIT(PORTB, A_u8PinNumber); break;
- 7e0:	28 b3       	in	r18, 0x18	; 24
- 7e2:	81 e0       	ldi	r24, 0x01	; 1
- 7e4:	90 e0       	ldi	r25, 0x00	; 0
- 7e6:	02 c0       	rjmp	.+4      	; 0x7ec <MDIO_vSetPinValue+0x36>
- 7e8:	88 0f       	add	r24, r24
- 7ea:	99 1f       	adc	r25, r25
- 7ec:	6a 95       	dec	r22
- 7ee:	e2 f7       	brpl	.-8      	; 0x7e8 <MDIO_vSetPinValue+0x32>
- 7f0:	82 2b       	or	r24, r18
- 7f2:	88 bb       	out	0x18, r24	; 24
- 7f4:	08 95       	ret
+ 8aa:	28 b3       	in	r18, 0x18	; 24
+ 8ac:	81 e0       	ldi	r24, 0x01	; 1
+ 8ae:	90 e0       	ldi	r25, 0x00	; 0
+ 8b0:	02 c0       	rjmp	.+4      	; 0x8b6 <MDIO_vSetPinValue+0x36>
+ 8b2:	88 0f       	add	r24, r24
+ 8b4:	99 1f       	adc	r25, r25
+ 8b6:	6a 95       	dec	r22
+ 8b8:	e2 f7       	brpl	.-8      	; 0x8b2 <MDIO_vSetPinValue+0x32>
+ 8ba:	82 2b       	or	r24, r18
+ 8bc:	88 bb       	out	0x18, r24	; 24
+ 8be:	08 95       	ret
 		case PORT_C: SET_BIT(PORTC, A_u8PinNumber); break;
- 7f6:	25 b3       	in	r18, 0x15	; 21
- 7f8:	81 e0       	ldi	r24, 0x01	; 1
- 7fa:	90 e0       	ldi	r25, 0x00	; 0
- 7fc:	02 c0       	rjmp	.+4      	; 0x802 <__DATA_REGION_LENGTH__+0x2>
- 7fe:	88 0f       	add	r24, r24
- 800:	99 1f       	adc	r25, r25
- 802:	6a 95       	dec	r22
- 804:	e2 f7       	brpl	.-8      	; 0x7fe <MDIO_vSetPinValue+0x48>
- 806:	82 2b       	or	r24, r18
- 808:	85 bb       	out	0x15, r24	; 21
- 80a:	08 95       	ret
+ 8c0:	25 b3       	in	r18, 0x15	; 21
+ 8c2:	81 e0       	ldi	r24, 0x01	; 1
+ 8c4:	90 e0       	ldi	r25, 0x00	; 0
+ 8c6:	02 c0       	rjmp	.+4      	; 0x8cc <MDIO_vSetPinValue+0x4c>
+ 8c8:	88 0f       	add	r24, r24
+ 8ca:	99 1f       	adc	r25, r25
+ 8cc:	6a 95       	dec	r22
+ 8ce:	e2 f7       	brpl	.-8      	; 0x8c8 <MDIO_vSetPinValue+0x48>
+ 8d0:	82 2b       	or	r24, r18
+ 8d2:	85 bb       	out	0x15, r24	; 21
+ 8d4:	08 95       	ret
 		case PORT_D: SET_BIT(PORTD, A_u8PinNumber); break;
- 80c:	22 b3       	in	r18, 0x12	; 18
- 80e:	81 e0       	ldi	r24, 0x01	; 1
- 810:	90 e0       	ldi	r25, 0x00	; 0
- 812:	02 c0       	rjmp	.+4      	; 0x818 <__DATA_REGION_LENGTH__+0x18>
- 814:	88 0f       	add	r24, r24
- 816:	99 1f       	adc	r25, r25
- 818:	6a 95       	dec	r22
- 81a:	e2 f7       	brpl	.-8      	; 0x814 <__DATA_REGION_LENGTH__+0x14>
- 81c:	82 2b       	or	r24, r18
- 81e:	82 bb       	out	0x12, r24	; 18
- 820:	08 95       	ret
+ 8d6:	22 b3       	in	r18, 0x12	; 18
+ 8d8:	81 e0       	ldi	r24, 0x01	; 1
+ 8da:	90 e0       	ldi	r25, 0x00	; 0
+ 8dc:	02 c0       	rjmp	.+4      	; 0x8e2 <MDIO_vSetPinValue+0x62>
+ 8de:	88 0f       	add	r24, r24
+ 8e0:	99 1f       	adc	r25, r25
+ 8e2:	6a 95       	dec	r22
+ 8e4:	e2 f7       	brpl	.-8      	; 0x8de <MDIO_vSetPinValue+0x5e>
+ 8e6:	82 2b       	or	r24, r18
+ 8e8:	82 bb       	out	0x12, r24	; 18
+ 8ea:	08 95       	ret
 		}
 	}else if (A_u8Value == LOW)
- 822:	41 11       	cpse	r20, r1
- 824:	37 c0       	rjmp	.+110    	; 0x894 <__stack+0x35>
+ 8ec:	41 11       	cpse	r20, r1
+ 8ee:	37 c0       	rjmp	.+110    	; 0x95e <MDIO_vSetPinValue+0xde>
 	{
 		switch (A_u8PortNumber)
- 826:	81 30       	cpi	r24, 0x01	; 1
- 828:	91 f0       	breq	.+36     	; 0x84e <__DATA_REGION_LENGTH__+0x4e>
- 82a:	28 f0       	brcs	.+10     	; 0x836 <__DATA_REGION_LENGTH__+0x36>
- 82c:	82 30       	cpi	r24, 0x02	; 2
- 82e:	d9 f0       	breq	.+54     	; 0x866 <__stack+0x7>
- 830:	83 30       	cpi	r24, 0x03	; 3
- 832:	29 f1       	breq	.+74     	; 0x87e <__stack+0x1f>
- 834:	08 95       	ret
+ 8f0:	81 30       	cpi	r24, 0x01	; 1
+ 8f2:	91 f0       	breq	.+36     	; 0x918 <MDIO_vSetPinValue+0x98>
+ 8f4:	28 f0       	brcs	.+10     	; 0x900 <MDIO_vSetPinValue+0x80>
+ 8f6:	82 30       	cpi	r24, 0x02	; 2
+ 8f8:	d9 f0       	breq	.+54     	; 0x930 <MDIO_vSetPinValue+0xb0>
+ 8fa:	83 30       	cpi	r24, 0x03	; 3
+ 8fc:	29 f1       	breq	.+74     	; 0x948 <MDIO_vSetPinValue+0xc8>
+ 8fe:	08 95       	ret
 		{
 		case PORT_A: CLR_BIT(PORTA, A_u8PinNumber); break;
- 836:	2b b3       	in	r18, 0x1b	; 27
- 838:	81 e0       	ldi	r24, 0x01	; 1
- 83a:	90 e0       	ldi	r25, 0x00	; 0
- 83c:	02 c0       	rjmp	.+4      	; 0x842 <__DATA_REGION_LENGTH__+0x42>
- 83e:	88 0f       	add	r24, r24
- 840:	99 1f       	adc	r25, r25
- 842:	6a 95       	dec	r22
- 844:	e2 f7       	brpl	.-8      	; 0x83e <__DATA_REGION_LENGTH__+0x3e>
- 846:	80 95       	com	r24
- 848:	82 23       	and	r24, r18
- 84a:	8b bb       	out	0x1b, r24	; 27
- 84c:	08 95       	ret
+ 900:	2b b3       	in	r18, 0x1b	; 27
+ 902:	81 e0       	ldi	r24, 0x01	; 1
+ 904:	90 e0       	ldi	r25, 0x00	; 0
+ 906:	02 c0       	rjmp	.+4      	; 0x90c <MDIO_vSetPinValue+0x8c>
+ 908:	88 0f       	add	r24, r24
+ 90a:	99 1f       	adc	r25, r25
+ 90c:	6a 95       	dec	r22
+ 90e:	e2 f7       	brpl	.-8      	; 0x908 <MDIO_vSetPinValue+0x88>
+ 910:	80 95       	com	r24
+ 912:	82 23       	and	r24, r18
+ 914:	8b bb       	out	0x1b, r24	; 27
+ 916:	08 95       	ret
 		case PORT_B: CLR_BIT(PORTB, A_u8PinNumber); break;
- 84e:	28 b3       	in	r18, 0x18	; 24
- 850:	81 e0       	ldi	r24, 0x01	; 1
- 852:	90 e0       	ldi	r25, 0x00	; 0
- 854:	02 c0       	rjmp	.+4      	; 0x85a <__DATA_REGION_LENGTH__+0x5a>
- 856:	88 0f       	add	r24, r24
- 858:	99 1f       	adc	r25, r25
- 85a:	6a 95       	dec	r22
- 85c:	e2 f7       	brpl	.-8      	; 0x856 <__DATA_REGION_LENGTH__+0x56>
- 85e:	80 95       	com	r24
- 860:	82 23       	and	r24, r18
- 862:	88 bb       	out	0x18, r24	; 24
- 864:	08 95       	ret
+ 918:	28 b3       	in	r18, 0x18	; 24
+ 91a:	81 e0       	ldi	r24, 0x01	; 1
+ 91c:	90 e0       	ldi	r25, 0x00	; 0
+ 91e:	02 c0       	rjmp	.+4      	; 0x924 <MDIO_vSetPinValue+0xa4>
+ 920:	88 0f       	add	r24, r24
+ 922:	99 1f       	adc	r25, r25
+ 924:	6a 95       	dec	r22
+ 926:	e2 f7       	brpl	.-8      	; 0x920 <MDIO_vSetPinValue+0xa0>
+ 928:	80 95       	com	r24
+ 92a:	82 23       	and	r24, r18
+ 92c:	88 bb       	out	0x18, r24	; 24
+ 92e:	08 95       	ret
 		case PORT_C: CLR_BIT(PORTC, A_u8PinNumber); break;
- 866:	25 b3       	in	r18, 0x15	; 21
- 868:	81 e0       	ldi	r24, 0x01	; 1
- 86a:	90 e0       	ldi	r25, 0x00	; 0
- 86c:	02 c0       	rjmp	.+4      	; 0x872 <__stack+0x13>
- 86e:	88 0f       	add	r24, r24
- 870:	99 1f       	adc	r25, r25
- 872:	6a 95       	dec	r22
- 874:	e2 f7       	brpl	.-8      	; 0x86e <__stack+0xf>
- 876:	80 95       	com	r24
- 878:	82 23       	and	r24, r18
- 87a:	85 bb       	out	0x15, r24	; 21
- 87c:	08 95       	ret
+ 930:	25 b3       	in	r18, 0x15	; 21
+ 932:	81 e0       	ldi	r24, 0x01	; 1
+ 934:	90 e0       	ldi	r25, 0x00	; 0
+ 936:	02 c0       	rjmp	.+4      	; 0x93c <MDIO_vSetPinValue+0xbc>
+ 938:	88 0f       	add	r24, r24
+ 93a:	99 1f       	adc	r25, r25
+ 93c:	6a 95       	dec	r22
+ 93e:	e2 f7       	brpl	.-8      	; 0x938 <MDIO_vSetPinValue+0xb8>
+ 940:	80 95       	com	r24
+ 942:	82 23       	and	r24, r18
+ 944:	85 bb       	out	0x15, r24	; 21
+ 946:	08 95       	ret
 		case PORT_D: CLR_BIT(PORTD, A_u8PinNumber); break;
- 87e:	22 b3       	in	r18, 0x12	; 18
- 880:	81 e0       	ldi	r24, 0x01	; 1
- 882:	90 e0       	ldi	r25, 0x00	; 0
- 884:	02 c0       	rjmp	.+4      	; 0x88a <__stack+0x2b>
- 886:	88 0f       	add	r24, r24
- 888:	99 1f       	adc	r25, r25
- 88a:	6a 95       	dec	r22
- 88c:	e2 f7       	brpl	.-8      	; 0x886 <__stack+0x27>
- 88e:	80 95       	com	r24
- 890:	82 23       	and	r24, r18
- 892:	82 bb       	out	0x12, r24	; 18
- 894:	08 95       	ret
+ 948:	22 b3       	in	r18, 0x12	; 18
+ 94a:	81 e0       	ldi	r24, 0x01	; 1
+ 94c:	90 e0       	ldi	r25, 0x00	; 0
+ 94e:	02 c0       	rjmp	.+4      	; 0x954 <MDIO_vSetPinValue+0xd4>
+ 950:	88 0f       	add	r24, r24
+ 952:	99 1f       	adc	r25, r25
+ 954:	6a 95       	dec	r22
+ 956:	e2 f7       	brpl	.-8      	; 0x950 <MDIO_vSetPinValue+0xd0>
+ 958:	80 95       	com	r24
+ 95a:	82 23       	and	r24, r18
+ 95c:	82 bb       	out	0x12, r24	; 18
+ 95e:	08 95       	ret
 
-00000896 <MDIO_vSetPortValue>:
+00000960 <MDIO_vSetPortValue>:
 		//DO Nothing
 	}
 }
 
 void MDIO_vSetPortValue(u8 A_u8PortNumber, u8 A_u8Value){
 	switch (A_u8PortNumber){
- 896:	81 30       	cpi	r24, 0x01	; 1
- 898:	41 f0       	breq	.+16     	; 0x8aa <MDIO_vSetPortValue+0x14>
- 89a:	28 f0       	brcs	.+10     	; 0x8a6 <MDIO_vSetPortValue+0x10>
- 89c:	82 30       	cpi	r24, 0x02	; 2
- 89e:	39 f0       	breq	.+14     	; 0x8ae <MDIO_vSetPortValue+0x18>
- 8a0:	83 30       	cpi	r24, 0x03	; 3
- 8a2:	39 f0       	breq	.+14     	; 0x8b2 <MDIO_vSetPortValue+0x1c>
- 8a4:	08 95       	ret
+ 960:	81 30       	cpi	r24, 0x01	; 1
+ 962:	41 f0       	breq	.+16     	; 0x974 <MDIO_vSetPortValue+0x14>
+ 964:	28 f0       	brcs	.+10     	; 0x970 <MDIO_vSetPortValue+0x10>
+ 966:	82 30       	cpi	r24, 0x02	; 2
+ 968:	39 f0       	breq	.+14     	; 0x978 <MDIO_vSetPortValue+0x18>
+ 96a:	83 30       	cpi	r24, 0x03	; 3
+ 96c:	39 f0       	breq	.+14     	; 0x97c <MDIO_vSetPortValue+0x1c>
+ 96e:	08 95       	ret
 	case PORT_A: PORTA = A_u8Value; break;
- 8a6:	6b bb       	out	0x1b, r22	; 27
- 8a8:	08 95       	ret
+ 970:	6b bb       	out	0x1b, r22	; 27
+ 972:	08 95       	ret
 	case PORT_B: PORTB = A_u8Value; break;
- 8aa:	68 bb       	out	0x18, r22	; 24
- 8ac:	08 95       	ret
+ 974:	68 bb       	out	0x18, r22	; 24
+ 976:	08 95       	ret
 	case PORT_C: PORTC = A_u8Value; break;
- 8ae:	65 bb       	out	0x15, r22	; 21
- 8b0:	08 95       	ret
+ 978:	65 bb       	out	0x15, r22	; 21
+ 97a:	08 95       	ret
 	case PORT_D: PORTD = A_u8Value; break;
- 8b2:	62 bb       	out	0x12, r22	; 18
- 8b4:	08 95       	ret
+ 97c:	62 bb       	out	0x12, r22	; 18
+ 97e:	08 95       	ret
 
-000008b6 <MDIO_u8GetPinValue>:
+00000980 <MDIO_u8GetPinValue>:
 }
 
 u8 MDIO_u8GetPinValue(u8 A_u8PortNumber, u8 A_u8PinNumber)
 {
 	u8 Local_u8PinValue = WRONG_VALUE;
 	switch (A_u8PortNumber){
- 8b6:	81 30       	cpi	r24, 0x01	; 1
- 8b8:	79 f0       	breq	.+30     	; 0x8d8 <MDIO_u8GetPinValue+0x22>
- 8ba:	28 f0       	brcs	.+10     	; 0x8c6 <MDIO_u8GetPinValue+0x10>
- 8bc:	82 30       	cpi	r24, 0x02	; 2
- 8be:	a9 f0       	breq	.+42     	; 0x8ea <MDIO_u8GetPinValue+0x34>
- 8c0:	83 30       	cpi	r24, 0x03	; 3
- 8c2:	e1 f0       	breq	.+56     	; 0x8fc <MDIO_u8GetPinValue+0x46>
- 8c4:	24 c0       	rjmp	.+72     	; 0x90e <MDIO_u8GetPinValue+0x58>
+ 980:	81 30       	cpi	r24, 0x01	; 1
+ 982:	79 f0       	breq	.+30     	; 0x9a2 <MDIO_u8GetPinValue+0x22>
+ 984:	28 f0       	brcs	.+10     	; 0x990 <MDIO_u8GetPinValue+0x10>
+ 986:	82 30       	cpi	r24, 0x02	; 2
+ 988:	a9 f0       	breq	.+42     	; 0x9b4 <MDIO_u8GetPinValue+0x34>
+ 98a:	83 30       	cpi	r24, 0x03	; 3
+ 98c:	e1 f0       	breq	.+56     	; 0x9c6 <MDIO_u8GetPinValue+0x46>
+ 98e:	24 c0       	rjmp	.+72     	; 0x9d8 <MDIO_u8GetPinValue+0x58>
 		case PORT_A: Local_u8PinValue = GET_BIT(PINA, A_u8PinNumber); break;
- 8c6:	89 b3       	in	r24, 0x19	; 25
- 8c8:	90 e0       	ldi	r25, 0x00	; 0
- 8ca:	02 c0       	rjmp	.+4      	; 0x8d0 <MDIO_u8GetPinValue+0x1a>
- 8cc:	95 95       	asr	r25
- 8ce:	87 95       	ror	r24
- 8d0:	6a 95       	dec	r22
- 8d2:	e2 f7       	brpl	.-8      	; 0x8cc <MDIO_u8GetPinValue+0x16>
- 8d4:	81 70       	andi	r24, 0x01	; 1
- 8d6:	08 95       	ret
+ 990:	89 b3       	in	r24, 0x19	; 25
+ 992:	90 e0       	ldi	r25, 0x00	; 0
+ 994:	02 c0       	rjmp	.+4      	; 0x99a <MDIO_u8GetPinValue+0x1a>
+ 996:	95 95       	asr	r25
+ 998:	87 95       	ror	r24
+ 99a:	6a 95       	dec	r22
+ 99c:	e2 f7       	brpl	.-8      	; 0x996 <MDIO_u8GetPinValue+0x16>
+ 99e:	81 70       	andi	r24, 0x01	; 1
+ 9a0:	08 95       	ret
 		case PORT_B: Local_u8PinValue = GET_BIT(PINB, A_u8PinNumber); break;
- 8d8:	86 b3       	in	r24, 0x16	; 22
- 8da:	90 e0       	ldi	r25, 0x00	; 0
- 8dc:	02 c0       	rjmp	.+4      	; 0x8e2 <MDIO_u8GetPinValue+0x2c>
- 8de:	95 95       	asr	r25
- 8e0:	87 95       	ror	r24
- 8e2:	6a 95       	dec	r22
- 8e4:	e2 f7       	brpl	.-8      	; 0x8de <MDIO_u8GetPinValue+0x28>
- 8e6:	81 70       	andi	r24, 0x01	; 1
- 8e8:	08 95       	ret
+ 9a2:	86 b3       	in	r24, 0x16	; 22
+ 9a4:	90 e0       	ldi	r25, 0x00	; 0
+ 9a6:	02 c0       	rjmp	.+4      	; 0x9ac <MDIO_u8GetPinValue+0x2c>
+ 9a8:	95 95       	asr	r25
+ 9aa:	87 95       	ror	r24
+ 9ac:	6a 95       	dec	r22
+ 9ae:	e2 f7       	brpl	.-8      	; 0x9a8 <MDIO_u8GetPinValue+0x28>
+ 9b0:	81 70       	andi	r24, 0x01	; 1
+ 9b2:	08 95       	ret
 		case PORT_C: Local_u8PinValue = GET_BIT(PINC, A_u8PinNumber); break;
- 8ea:	83 b3       	in	r24, 0x13	; 19
- 8ec:	90 e0       	ldi	r25, 0x00	; 0
- 8ee:	02 c0       	rjmp	.+4      	; 0x8f4 <MDIO_u8GetPinValue+0x3e>
- 8f0:	95 95       	asr	r25
- 8f2:	87 95       	ror	r24
- 8f4:	6a 95       	dec	r22
- 8f6:	e2 f7       	brpl	.-8      	; 0x8f0 <MDIO_u8GetPinValue+0x3a>
- 8f8:	81 70       	andi	r24, 0x01	; 1
- 8fa:	08 95       	ret
+ 9b4:	83 b3       	in	r24, 0x13	; 19
+ 9b6:	90 e0       	ldi	r25, 0x00	; 0
+ 9b8:	02 c0       	rjmp	.+4      	; 0x9be <MDIO_u8GetPinValue+0x3e>
+ 9ba:	95 95       	asr	r25
+ 9bc:	87 95       	ror	r24
+ 9be:	6a 95       	dec	r22
+ 9c0:	e2 f7       	brpl	.-8      	; 0x9ba <MDIO_u8GetPinValue+0x3a>
+ 9c2:	81 70       	andi	r24, 0x01	; 1
+ 9c4:	08 95       	ret
 		case PORT_D: Local_u8PinValue = GET_BIT(PIND, A_u8PinNumber); break;
- 8fc:	80 b3       	in	r24, 0x10	; 16
- 8fe:	90 e0       	ldi	r25, 0x00	; 0
- 900:	02 c0       	rjmp	.+4      	; 0x906 <MDIO_u8GetPinValue+0x50>
- 902:	95 95       	asr	r25
- 904:	87 95       	ror	r24
- 906:	6a 95       	dec	r22
- 908:	e2 f7       	brpl	.-8      	; 0x902 <MDIO_u8GetPinValue+0x4c>
- 90a:	81 70       	andi	r24, 0x01	; 1
- 90c:	08 95       	ret
+ 9c6:	80 b3       	in	r24, 0x10	; 16
+ 9c8:	90 e0       	ldi	r25, 0x00	; 0
+ 9ca:	02 c0       	rjmp	.+4      	; 0x9d0 <MDIO_u8GetPinValue+0x50>
+ 9cc:	95 95       	asr	r25
+ 9ce:	87 95       	ror	r24
+ 9d0:	6a 95       	dec	r22
+ 9d2:	e2 f7       	brpl	.-8      	; 0x9cc <MDIO_u8GetPinValue+0x4c>
+ 9d4:	81 70       	andi	r24, 0x01	; 1
+ 9d6:	08 95       	ret
 	}
 }
 
 u8 MDIO_u8GetPinValue(u8 A_u8PortNumber, u8 A_u8PinNumber)
 {
 	u8 Local_u8PinValue = WRONG_VALUE;
- 90e:	82 e3       	ldi	r24, 0x32	; 50
+ 9d8:	82 e3       	ldi	r24, 0x32	; 50
 		case PORT_B: Local_u8PinValue = GET_BIT(PINB, A_u8PinNumber); break;
 		case PORT_C: Local_u8PinValue = GET_BIT(PINC, A_u8PinNumber); break;
 		case PORT_D: Local_u8PinValue = GET_BIT(PIND, A_u8PinNumber); break;
 		}
 	return Local_u8PinValue;
 }
- 910:	08 95       	ret
+ 9da:	08 95       	ret
 
-00000912 <__vector_17>:
+000009dc <__vector_17>:
 	if (ptr_to_fun != NULL) {
 		EEPROM_Call_Back = ptr_to_fun;
 	}
 }
 
 void __vector_17(void) {
- 912:	1f 92       	push	r1
- 914:	0f 92       	push	r0
- 916:	0f b6       	in	r0, 0x3f	; 63
- 918:	0f 92       	push	r0
- 91a:	11 24       	eor	r1, r1
- 91c:	2f 93       	push	r18
- 91e:	3f 93       	push	r19
- 920:	4f 93       	push	r20
- 922:	5f 93       	push	r21
- 924:	6f 93       	push	r22
- 926:	7f 93       	push	r23
- 928:	8f 93       	push	r24
- 92a:	9f 93       	push	r25
- 92c:	af 93       	push	r26
- 92e:	bf 93       	push	r27
- 930:	ef 93       	push	r30
- 932:	ff 93       	push	r31
+ 9dc:	1f 92       	push	r1
+ 9de:	0f 92       	push	r0
+ 9e0:	0f b6       	in	r0, 0x3f	; 63
+ 9e2:	0f 92       	push	r0
+ 9e4:	11 24       	eor	r1, r1
+ 9e6:	2f 93       	push	r18
+ 9e8:	3f 93       	push	r19
+ 9ea:	4f 93       	push	r20
+ 9ec:	5f 93       	push	r21
+ 9ee:	6f 93       	push	r22
+ 9f0:	7f 93       	push	r23
+ 9f2:	8f 93       	push	r24
+ 9f4:	9f 93       	push	r25
+ 9f6:	af 93       	push	r26
+ 9f8:	bf 93       	push	r27
+ 9fa:	ef 93       	push	r30
+ 9fc:	ff 93       	push	r31
 	if (EEPROM_Call_Back != NULL)
- 934:	e0 91 1f 01 	lds	r30, 0x011F	; 0x80011f <EEPROM_Call_Back>
- 938:	f0 91 20 01 	lds	r31, 0x0120	; 0x800120 <EEPROM_Call_Back+0x1>
- 93c:	30 97       	sbiw	r30, 0x00	; 0
- 93e:	09 f0       	breq	.+2      	; 0x942 <__vector_17+0x30>
+ 9fe:	e0 91 52 01 	lds	r30, 0x0152	; 0x800152 <EEPROM_Call_Back>
+ a02:	f0 91 53 01 	lds	r31, 0x0153	; 0x800153 <EEPROM_Call_Back+0x1>
+ a06:	30 97       	sbiw	r30, 0x00	; 0
+ a08:	09 f0       	breq	.+2      	; 0xa0c <__vector_17+0x30>
 		EEPROM_Call_Back();
- 940:	09 95       	icall
+ a0a:	09 95       	icall
 }
- 942:	ff 91       	pop	r31
- 944:	ef 91       	pop	r30
- 946:	bf 91       	pop	r27
- 948:	af 91       	pop	r26
- 94a:	9f 91       	pop	r25
- 94c:	8f 91       	pop	r24
- 94e:	7f 91       	pop	r23
- 950:	6f 91       	pop	r22
- 952:	5f 91       	pop	r21
- 954:	4f 91       	pop	r20
- 956:	3f 91       	pop	r19
- 958:	2f 91       	pop	r18
- 95a:	0f 90       	pop	r0
- 95c:	0f be       	out	0x3f, r0	; 63
- 95e:	0f 90       	pop	r0
- 960:	1f 90       	pop	r1
- 962:	18 95       	reti
+ a0c:	ff 91       	pop	r31
+ a0e:	ef 91       	pop	r30
+ a10:	bf 91       	pop	r27
+ a12:	af 91       	pop	r26
+ a14:	9f 91       	pop	r25
+ a16:	8f 91       	pop	r24
+ a18:	7f 91       	pop	r23
+ a1a:	6f 91       	pop	r22
+ a1c:	5f 91       	pop	r21
+ a1e:	4f 91       	pop	r20
+ a20:	3f 91       	pop	r19
+ a22:	2f 91       	pop	r18
+ a24:	0f 90       	pop	r0
+ a26:	0f be       	out	0x3f, r0	; 63
+ a28:	0f 90       	pop	r0
+ a2a:	1f 90       	pop	r1
+ a2c:	18 95       	reti
 
-00000964 <MUSART_vInit>:
+00000a2e <MGIE_vEnableInterrupts>:
+// 0 disable
+
+
+void MGIE_vEnableInterrupts(void)
+{
+	SET_BIT(SREG, I);
+ a2e:	8f b7       	in	r24, 0x3f	; 63
+ a30:	80 68       	ori	r24, 0x80	; 128
+ a32:	8f bf       	out	0x3f, r24	; 63
+ a34:	08 95       	ret
+
+00000a36 <MTIMER1_vInit>:
+		TIMER1B_CTC_Call_Back = CallBack;
+	}
+}
+void MTIMER1_vSetInputCaptureCallBack(void (*CallBack)(void)) {
+	if (CallBack != NULL) {
+		TIMER1_ICU_Call_Back = CallBack;
+ a36:	8f b5       	in	r24, 0x2f	; 47
+ a38:	8e 7f       	andi	r24, 0xFE	; 254
+ a3a:	8f bd       	out	0x2f, r24	; 47
+ a3c:	8f b5       	in	r24, 0x2f	; 47
+ a3e:	8d 7f       	andi	r24, 0xFD	; 253
+ a40:	8f bd       	out	0x2f, r24	; 47
+ a42:	8e b5       	in	r24, 0x2e	; 46
+ a44:	88 60       	ori	r24, 0x08	; 8
+ a46:	8e bd       	out	0x2e, r24	; 46
+ a48:	8e b5       	in	r24, 0x2e	; 46
+ a4a:	8f 7e       	andi	r24, 0xEF	; 239
+ a4c:	8e bd       	out	0x2e, r24	; 46
+ a4e:	8f b5       	in	r24, 0x2f	; 47
+ a50:	8f 7b       	andi	r24, 0xBF	; 191
+ a52:	8f bd       	out	0x2f, r24	; 47
+ a54:	8f b5       	in	r24, 0x2f	; 47
+ a56:	8f 77       	andi	r24, 0x7F	; 127
+ a58:	8f bd       	out	0x2f, r24	; 47
+ a5a:	8e b5       	in	r24, 0x2e	; 46
+ a5c:	8e 7f       	andi	r24, 0xFE	; 254
+ a5e:	8e bd       	out	0x2e, r24	; 46
+ a60:	8e b5       	in	r24, 0x2e	; 46
+ a62:	82 60       	ori	r24, 0x02	; 2
+ a64:	8e bd       	out	0x2e, r24	; 46
+ a66:	8e b5       	in	r24, 0x2e	; 46
+ a68:	8b 7f       	andi	r24, 0xFB	; 251
+ a6a:	8e bd       	out	0x2e, r24	; 46
+ a6c:	08 95       	ret
+
+00000a6e <MTIMER1_vDisInit>:
+ a6e:	1f bc       	out	0x2f, r1	; 47
+ a70:	1e bc       	out	0x2e, r1	; 46
+ a72:	08 95       	ret
+
+00000a74 <MTIMER1_vChannelASetCTCRegister>:
+ a74:	9b bd       	out	0x2b, r25	; 43
+ a76:	8a bd       	out	0x2a, r24	; 42
+ a78:	08 95       	ret
+
+00000a7a <MTIMER1_vClearOVFFlag>:
+ a7a:	88 b7       	in	r24, 0x38	; 56
+ a7c:	84 60       	ori	r24, 0x04	; 4
+ a7e:	88 bf       	out	0x38, r24	; 56
+ a80:	08 95       	ret
+
+00000a82 <MTIMER1_vChannelAEnableCTCINT>:
+ a82:	89 b7       	in	r24, 0x39	; 57
+ a84:	80 61       	ori	r24, 0x10	; 16
+ a86:	89 bf       	out	0x39, r24	; 57
+ a88:	08 95       	ret
+
+00000a8a <MTIMER1_vChannelAClearCTCFlag>:
+ a8a:	88 b7       	in	r24, 0x38	; 56
+ a8c:	80 61       	ori	r24, 0x10	; 16
+ a8e:	88 bf       	out	0x38, r24	; 56
+ a90:	08 95       	ret
+
+00000a92 <MTIMER1_vChannelBClearCTCFlag>:
+ a92:	88 b7       	in	r24, 0x38	; 56
+ a94:	88 60       	ori	r24, 0x08	; 8
+ a96:	88 bf       	out	0x38, r24	; 56
+ a98:	08 95       	ret
+
+00000a9a <MTIMER1_vClearInputCaptureFlag>:
+ a9a:	88 b7       	in	r24, 0x38	; 56
+ a9c:	80 62       	ori	r24, 0x20	; 32
+ a9e:	88 bf       	out	0x38, r24	; 56
+ aa0:	08 95       	ret
+
+00000aa2 <MTIMER1_vChannelASetCTCCallBack>:
+ aa2:	00 97       	sbiw	r24, 0x00	; 0
+ aa4:	21 f0       	breq	.+8      	; 0xaae <MTIMER1_vChannelASetCTCCallBack+0xc>
+ aa6:	90 93 5b 01 	sts	0x015B, r25	; 0x80015b <TIMER1A_CTC_Call_Back+0x1>
+ aaa:	80 93 5a 01 	sts	0x015A, r24	; 0x80015a <TIMER1A_CTC_Call_Back>
+ aae:	08 95       	ret
+
+00000ab0 <__vector_6>:
+	}
+}
+
+void __vector_6(void) {
+ ab0:	1f 92       	push	r1
+ ab2:	0f 92       	push	r0
+ ab4:	0f b6       	in	r0, 0x3f	; 63
+ ab6:	0f 92       	push	r0
+ ab8:	11 24       	eor	r1, r1
+ aba:	2f 93       	push	r18
+ abc:	3f 93       	push	r19
+ abe:	4f 93       	push	r20
+ ac0:	5f 93       	push	r21
+ ac2:	6f 93       	push	r22
+ ac4:	7f 93       	push	r23
+ ac6:	8f 93       	push	r24
+ ac8:	9f 93       	push	r25
+ aca:	af 93       	push	r26
+ acc:	bf 93       	push	r27
+ ace:	ef 93       	push	r30
+ ad0:	ff 93       	push	r31
+	if (TIMER1_ICU_Call_Back != NULL)
+ ad2:	e0 91 54 01 	lds	r30, 0x0154	; 0x800154 <TIMER1_ICU_Call_Back>
+ ad6:	f0 91 55 01 	lds	r31, 0x0155	; 0x800155 <TIMER1_ICU_Call_Back+0x1>
+ ada:	30 97       	sbiw	r30, 0x00	; 0
+ adc:	09 f0       	breq	.+2      	; 0xae0 <__vector_6+0x30>
+		TIMER1_ICU_Call_Back();
+ ade:	09 95       	icall
+	MTIMER1_vClearInputCaptureFlag();
+ ae0:	0e 94 4d 05 	call	0xa9a	; 0xa9a <MTIMER1_vClearInputCaptureFlag>
+}
+ ae4:	ff 91       	pop	r31
+ ae6:	ef 91       	pop	r30
+ ae8:	bf 91       	pop	r27
+ aea:	af 91       	pop	r26
+ aec:	9f 91       	pop	r25
+ aee:	8f 91       	pop	r24
+ af0:	7f 91       	pop	r23
+ af2:	6f 91       	pop	r22
+ af4:	5f 91       	pop	r21
+ af6:	4f 91       	pop	r20
+ af8:	3f 91       	pop	r19
+ afa:	2f 91       	pop	r18
+ afc:	0f 90       	pop	r0
+ afe:	0f be       	out	0x3f, r0	; 63
+ b00:	0f 90       	pop	r0
+ b02:	1f 90       	pop	r1
+ b04:	18 95       	reti
+
+00000b06 <__vector_7>:
+
+void __vector_7(void) {
+ b06:	1f 92       	push	r1
+ b08:	0f 92       	push	r0
+ b0a:	0f b6       	in	r0, 0x3f	; 63
+ b0c:	0f 92       	push	r0
+ b0e:	11 24       	eor	r1, r1
+ b10:	2f 93       	push	r18
+ b12:	3f 93       	push	r19
+ b14:	4f 93       	push	r20
+ b16:	5f 93       	push	r21
+ b18:	6f 93       	push	r22
+ b1a:	7f 93       	push	r23
+ b1c:	8f 93       	push	r24
+ b1e:	9f 93       	push	r25
+ b20:	af 93       	push	r26
+ b22:	bf 93       	push	r27
+ b24:	ef 93       	push	r30
+ b26:	ff 93       	push	r31
+	if (TIMER1A_CTC_Call_Back != NULL)
+ b28:	e0 91 5a 01 	lds	r30, 0x015A	; 0x80015a <TIMER1A_CTC_Call_Back>
+ b2c:	f0 91 5b 01 	lds	r31, 0x015B	; 0x80015b <TIMER1A_CTC_Call_Back+0x1>
+ b30:	30 97       	sbiw	r30, 0x00	; 0
+ b32:	09 f0       	breq	.+2      	; 0xb36 <__vector_7+0x30>
+		TIMER1A_CTC_Call_Back();
+ b34:	09 95       	icall
+	MTIMER1_vChannelAClearCTCFlag();
+ b36:	0e 94 45 05 	call	0xa8a	; 0xa8a <MTIMER1_vChannelAClearCTCFlag>
+}
+ b3a:	ff 91       	pop	r31
+ b3c:	ef 91       	pop	r30
+ b3e:	bf 91       	pop	r27
+ b40:	af 91       	pop	r26
+ b42:	9f 91       	pop	r25
+ b44:	8f 91       	pop	r24
+ b46:	7f 91       	pop	r23
+ b48:	6f 91       	pop	r22
+ b4a:	5f 91       	pop	r21
+ b4c:	4f 91       	pop	r20
+ b4e:	3f 91       	pop	r19
+ b50:	2f 91       	pop	r18
+ b52:	0f 90       	pop	r0
+ b54:	0f be       	out	0x3f, r0	; 63
+ b56:	0f 90       	pop	r0
+ b58:	1f 90       	pop	r1
+ b5a:	18 95       	reti
+
+00000b5c <__vector_8>:
+
+void __vector_8(void) {
+ b5c:	1f 92       	push	r1
+ b5e:	0f 92       	push	r0
+ b60:	0f b6       	in	r0, 0x3f	; 63
+ b62:	0f 92       	push	r0
+ b64:	11 24       	eor	r1, r1
+ b66:	2f 93       	push	r18
+ b68:	3f 93       	push	r19
+ b6a:	4f 93       	push	r20
+ b6c:	5f 93       	push	r21
+ b6e:	6f 93       	push	r22
+ b70:	7f 93       	push	r23
+ b72:	8f 93       	push	r24
+ b74:	9f 93       	push	r25
+ b76:	af 93       	push	r26
+ b78:	bf 93       	push	r27
+ b7a:	ef 93       	push	r30
+ b7c:	ff 93       	push	r31
+	if (TIMER1B_CTC_Call_Back != NULL)
+ b7e:	e0 91 56 01 	lds	r30, 0x0156	; 0x800156 <TIMER1B_CTC_Call_Back>
+ b82:	f0 91 57 01 	lds	r31, 0x0157	; 0x800157 <TIMER1B_CTC_Call_Back+0x1>
+ b86:	30 97       	sbiw	r30, 0x00	; 0
+ b88:	09 f0       	breq	.+2      	; 0xb8c <__vector_8+0x30>
+		TIMER1B_CTC_Call_Back();
+ b8a:	09 95       	icall
+	MTIMER1_vChannelBClearCTCFlag();
+ b8c:	0e 94 49 05 	call	0xa92	; 0xa92 <MTIMER1_vChannelBClearCTCFlag>
+}
+ b90:	ff 91       	pop	r31
+ b92:	ef 91       	pop	r30
+ b94:	bf 91       	pop	r27
+ b96:	af 91       	pop	r26
+ b98:	9f 91       	pop	r25
+ b9a:	8f 91       	pop	r24
+ b9c:	7f 91       	pop	r23
+ b9e:	6f 91       	pop	r22
+ ba0:	5f 91       	pop	r21
+ ba2:	4f 91       	pop	r20
+ ba4:	3f 91       	pop	r19
+ ba6:	2f 91       	pop	r18
+ ba8:	0f 90       	pop	r0
+ baa:	0f be       	out	0x3f, r0	; 63
+ bac:	0f 90       	pop	r0
+ bae:	1f 90       	pop	r1
+ bb0:	18 95       	reti
+
+00000bb2 <__vector_9>:
+
+void __vector_9(void) {
+ bb2:	1f 92       	push	r1
+ bb4:	0f 92       	push	r0
+ bb6:	0f b6       	in	r0, 0x3f	; 63
+ bb8:	0f 92       	push	r0
+ bba:	11 24       	eor	r1, r1
+ bbc:	2f 93       	push	r18
+ bbe:	3f 93       	push	r19
+ bc0:	4f 93       	push	r20
+ bc2:	5f 93       	push	r21
+ bc4:	6f 93       	push	r22
+ bc6:	7f 93       	push	r23
+ bc8:	8f 93       	push	r24
+ bca:	9f 93       	push	r25
+ bcc:	af 93       	push	r26
+ bce:	bf 93       	push	r27
+ bd0:	ef 93       	push	r30
+ bd2:	ff 93       	push	r31
+	if (TIMER1_OVF_Call_Back != NULL)
+ bd4:	e0 91 58 01 	lds	r30, 0x0158	; 0x800158 <TIMER1_OVF_Call_Back>
+ bd8:	f0 91 59 01 	lds	r31, 0x0159	; 0x800159 <TIMER1_OVF_Call_Back+0x1>
+ bdc:	30 97       	sbiw	r30, 0x00	; 0
+ bde:	09 f0       	breq	.+2      	; 0xbe2 <__vector_9+0x30>
+		TIMER1_OVF_Call_Back();
+ be0:	09 95       	icall
+	MTIMER1_vClearOVFFlag();
+ be2:	0e 94 3d 05 	call	0xa7a	; 0xa7a <MTIMER1_vClearOVFFlag>
+}
+ be6:	ff 91       	pop	r31
+ be8:	ef 91       	pop	r30
+ bea:	bf 91       	pop	r27
+ bec:	af 91       	pop	r26
+ bee:	9f 91       	pop	r25
+ bf0:	8f 91       	pop	r24
+ bf2:	7f 91       	pop	r23
+ bf4:	6f 91       	pop	r22
+ bf6:	5f 91       	pop	r21
+ bf8:	4f 91       	pop	r20
+ bfa:	3f 91       	pop	r19
+ bfc:	2f 91       	pop	r18
+ bfe:	0f 90       	pop	r0
+ c00:	0f be       	out	0x3f, r0	; 63
+ c02:	0f 90       	pop	r0
+ c04:	1f 90       	pop	r1
+ c06:	18 95       	reti
+
+00000c08 <MUSART_vInit>:
 		USART_TXC_Call_Back = CallBack;
 	}
 }
 void MUSART_vSetUDRECallBack(void (*CallBack)(void)) {
 	if (CallBack != NULL) {
 		USART_UDRE_Call_Back = CallBack;
- 964:	89 b9       	out	0x09, r24	; 9
- 966:	90 bd       	out	0x20, r25	; 32
- 968:	8a b1       	in	r24, 0x0a	; 10
- 96a:	8b 7f       	andi	r24, 0xFB	; 251
- 96c:	8a b9       	out	0x0a, r24	; 10
- 96e:	86 e8       	ldi	r24, 0x86	; 134
- 970:	80 bd       	out	0x20, r24	; 32
- 972:	8a b1       	in	r24, 0x0a	; 10
- 974:	80 61       	ori	r24, 0x10	; 16
- 976:	8a b9       	out	0x0a, r24	; 10
- 978:	8a b1       	in	r24, 0x0a	; 10
- 97a:	88 60       	ori	r24, 0x08	; 8
- 97c:	8a b9       	out	0x0a, r24	; 10
- 97e:	08 95       	ret
+ c08:	89 b9       	out	0x09, r24	; 9
+ c0a:	90 bd       	out	0x20, r25	; 32
+ c0c:	8a b1       	in	r24, 0x0a	; 10
+ c0e:	8b 7f       	andi	r24, 0xFB	; 251
+ c10:	8a b9       	out	0x0a, r24	; 10
+ c12:	86 e8       	ldi	r24, 0x86	; 134
+ c14:	80 bd       	out	0x20, r24	; 32
+ c16:	8a b1       	in	r24, 0x0a	; 10
+ c18:	80 61       	ori	r24, 0x10	; 16
+ c1a:	8a b9       	out	0x0a, r24	; 10
+ c1c:	8a b1       	in	r24, 0x0a	; 10
+ c1e:	88 60       	ori	r24, 0x08	; 8
+ c20:	8a b9       	out	0x0a, r24	; 10
+ c22:	08 95       	ret
 
-00000980 <MUSART_vTransmit>:
- 980:	5d 9b       	sbis	0x0b, 5	; 11
- 982:	fe cf       	rjmp	.-4      	; 0x980 <MUSART_vTransmit>
- 984:	8c b9       	out	0x0c, r24	; 12
- 986:	08 95       	ret
+00000c24 <MUSART_vTransmit>:
+ c24:	5d 9b       	sbis	0x0b, 5	; 11
+ c26:	fe cf       	rjmp	.-4      	; 0xc24 <MUSART_vTransmit>
+ c28:	8c b9       	out	0x0c, r24	; 12
+ c2a:	08 95       	ret
 
-00000988 <MUSART_u8Receive>:
- 988:	5f 9b       	sbis	0x0b, 7	; 11
- 98a:	fe cf       	rjmp	.-4      	; 0x988 <MUSART_u8Receive>
- 98c:	5c 99       	sbic	0x0b, 4	; 11
- 98e:	06 c0       	rjmp	.+12     	; 0x99c <MUSART_u8Receive+0x14>
- 990:	5b 99       	sbic	0x0b, 3	; 11
- 992:	06 c0       	rjmp	.+12     	; 0x9a0 <MUSART_u8Receive+0x18>
- 994:	5a 99       	sbic	0x0b, 2	; 11
- 996:	06 c0       	rjmp	.+12     	; 0x9a4 <MUSART_u8Receive+0x1c>
- 998:	8c b1       	in	r24, 0x0c	; 12
- 99a:	08 95       	ret
- 99c:	8f ef       	ldi	r24, 0xFF	; 255
- 99e:	08 95       	ret
- 9a0:	8f ef       	ldi	r24, 0xFF	; 255
- 9a2:	08 95       	ret
- 9a4:	8f ef       	ldi	r24, 0xFF	; 255
- 9a6:	08 95       	ret
+00000c2c <MUSART_u8Receive>:
+ c2c:	5f 9b       	sbis	0x0b, 7	; 11
+ c2e:	fe cf       	rjmp	.-4      	; 0xc2c <MUSART_u8Receive>
+ c30:	5c 99       	sbic	0x0b, 4	; 11
+ c32:	06 c0       	rjmp	.+12     	; 0xc40 <MUSART_u8Receive+0x14>
+ c34:	5b 99       	sbic	0x0b, 3	; 11
+ c36:	06 c0       	rjmp	.+12     	; 0xc44 <MUSART_u8Receive+0x18>
+ c38:	5a 99       	sbic	0x0b, 2	; 11
+ c3a:	06 c0       	rjmp	.+12     	; 0xc48 <MUSART_u8Receive+0x1c>
+ c3c:	8c b1       	in	r24, 0x0c	; 12
+ c3e:	08 95       	ret
+ c40:	8f ef       	ldi	r24, 0xFF	; 255
+ c42:	08 95       	ret
+ c44:	8f ef       	ldi	r24, 0xFF	; 255
+ c46:	08 95       	ret
+ c48:	8f ef       	ldi	r24, 0xFF	; 255
+ c4a:	08 95       	ret
 
-000009a8 <MUSART_u8UnreadDate>:
- 9a8:	8b b1       	in	r24, 0x0b	; 11
- 9aa:	88 1f       	adc	r24, r24
- 9ac:	88 27       	eor	r24, r24
- 9ae:	88 1f       	adc	r24, r24
- 9b0:	08 95       	ret
+00000c4c <MUSART_u8UnreadDate>:
+ c4c:	8b b1       	in	r24, 0x0b	; 11
+ c4e:	88 1f       	adc	r24, r24
+ c50:	88 27       	eor	r24, r24
+ c52:	88 1f       	adc	r24, r24
+ c54:	08 95       	ret
 
-000009b2 <MUSART_vTransmitString>:
- 9b2:	0f 93       	push	r16
- 9b4:	1f 93       	push	r17
- 9b6:	cf 93       	push	r28
- 9b8:	df 93       	push	r29
- 9ba:	8c 01       	movw	r16, r24
- 9bc:	d6 2f       	mov	r29, r22
- 9be:	c0 e0       	ldi	r28, 0x00	; 0
- 9c0:	07 c0       	rjmp	.+14     	; 0x9d0 <MUSART_vTransmitString+0x1e>
- 9c2:	f8 01       	movw	r30, r16
- 9c4:	ec 0f       	add	r30, r28
- 9c6:	f1 1d       	adc	r31, r1
- 9c8:	80 81       	ld	r24, Z
- 9ca:	0e 94 c0 04 	call	0x980	; 0x980 <MUSART_vTransmit>
- 9ce:	cf 5f       	subi	r28, 0xFF	; 255
- 9d0:	cd 17       	cp	r28, r29
- 9d2:	b8 f3       	brcs	.-18     	; 0x9c2 <MUSART_vTransmitString+0x10>
- 9d4:	df 91       	pop	r29
- 9d6:	cf 91       	pop	r28
- 9d8:	1f 91       	pop	r17
- 9da:	0f 91       	pop	r16
- 9dc:	08 95       	ret
+00000c56 <MUSART_vTransmitString>:
+ c56:	0f 93       	push	r16
+ c58:	1f 93       	push	r17
+ c5a:	cf 93       	push	r28
+ c5c:	df 93       	push	r29
+ c5e:	8c 01       	movw	r16, r24
+ c60:	d6 2f       	mov	r29, r22
+ c62:	c0 e0       	ldi	r28, 0x00	; 0
+ c64:	07 c0       	rjmp	.+14     	; 0xc74 <MUSART_vTransmitString+0x1e>
+ c66:	f8 01       	movw	r30, r16
+ c68:	ec 0f       	add	r30, r28
+ c6a:	f1 1d       	adc	r31, r1
+ c6c:	80 81       	ld	r24, Z
+ c6e:	0e 94 12 06 	call	0xc24	; 0xc24 <MUSART_vTransmit>
+ c72:	cf 5f       	subi	r28, 0xFF	; 255
+ c74:	cd 17       	cp	r28, r29
+ c76:	b8 f3       	brcs	.-18     	; 0xc66 <MUSART_vTransmitString+0x10>
+ c78:	df 91       	pop	r29
+ c7a:	cf 91       	pop	r28
+ c7c:	1f 91       	pop	r17
+ c7e:	0f 91       	pop	r16
+ c80:	08 95       	ret
 
-000009de <__vector_13>:
+00000c82 <__vector_13>:
 	}
 }
 
 void __vector_13(void) {
- 9de:	1f 92       	push	r1
- 9e0:	0f 92       	push	r0
- 9e2:	0f b6       	in	r0, 0x3f	; 63
- 9e4:	0f 92       	push	r0
- 9e6:	11 24       	eor	r1, r1
- 9e8:	2f 93       	push	r18
- 9ea:	3f 93       	push	r19
- 9ec:	4f 93       	push	r20
- 9ee:	5f 93       	push	r21
- 9f0:	6f 93       	push	r22
- 9f2:	7f 93       	push	r23
- 9f4:	8f 93       	push	r24
- 9f6:	9f 93       	push	r25
- 9f8:	af 93       	push	r26
- 9fa:	bf 93       	push	r27
- 9fc:	ef 93       	push	r30
- 9fe:	ff 93       	push	r31
+ c82:	1f 92       	push	r1
+ c84:	0f 92       	push	r0
+ c86:	0f b6       	in	r0, 0x3f	; 63
+ c88:	0f 92       	push	r0
+ c8a:	11 24       	eor	r1, r1
+ c8c:	2f 93       	push	r18
+ c8e:	3f 93       	push	r19
+ c90:	4f 93       	push	r20
+ c92:	5f 93       	push	r21
+ c94:	6f 93       	push	r22
+ c96:	7f 93       	push	r23
+ c98:	8f 93       	push	r24
+ c9a:	9f 93       	push	r25
+ c9c:	af 93       	push	r26
+ c9e:	bf 93       	push	r27
+ ca0:	ef 93       	push	r30
+ ca2:	ff 93       	push	r31
 	if (USART_RXC_Call_Back != NULL)
- a00:	e0 91 25 01 	lds	r30, 0x0125	; 0x800125 <USART_RXC_Call_Back>
- a04:	f0 91 26 01 	lds	r31, 0x0126	; 0x800126 <USART_RXC_Call_Back+0x1>
- a08:	30 97       	sbiw	r30, 0x00	; 0
- a0a:	09 f0       	breq	.+2      	; 0xa0e <__vector_13+0x30>
+ ca4:	e0 91 60 01 	lds	r30, 0x0160	; 0x800160 <USART_RXC_Call_Back>
+ ca8:	f0 91 61 01 	lds	r31, 0x0161	; 0x800161 <USART_RXC_Call_Back+0x1>
+ cac:	30 97       	sbiw	r30, 0x00	; 0
+ cae:	09 f0       	breq	.+2      	; 0xcb2 <__vector_13+0x30>
 		USART_RXC_Call_Back();
- a0c:	09 95       	icall
+ cb0:	09 95       	icall
 }
- a0e:	ff 91       	pop	r31
- a10:	ef 91       	pop	r30
- a12:	bf 91       	pop	r27
- a14:	af 91       	pop	r26
- a16:	9f 91       	pop	r25
- a18:	8f 91       	pop	r24
- a1a:	7f 91       	pop	r23
- a1c:	6f 91       	pop	r22
- a1e:	5f 91       	pop	r21
- a20:	4f 91       	pop	r20
- a22:	3f 91       	pop	r19
- a24:	2f 91       	pop	r18
- a26:	0f 90       	pop	r0
- a28:	0f be       	out	0x3f, r0	; 63
- a2a:	0f 90       	pop	r0
- a2c:	1f 90       	pop	r1
- a2e:	18 95       	reti
+ cb2:	ff 91       	pop	r31
+ cb4:	ef 91       	pop	r30
+ cb6:	bf 91       	pop	r27
+ cb8:	af 91       	pop	r26
+ cba:	9f 91       	pop	r25
+ cbc:	8f 91       	pop	r24
+ cbe:	7f 91       	pop	r23
+ cc0:	6f 91       	pop	r22
+ cc2:	5f 91       	pop	r21
+ cc4:	4f 91       	pop	r20
+ cc6:	3f 91       	pop	r19
+ cc8:	2f 91       	pop	r18
+ cca:	0f 90       	pop	r0
+ ccc:	0f be       	out	0x3f, r0	; 63
+ cce:	0f 90       	pop	r0
+ cd0:	1f 90       	pop	r1
+ cd2:	18 95       	reti
 
-00000a30 <__vector_14>:
+00000cd4 <__vector_14>:
 
 void __vector_14(void) {
- a30:	1f 92       	push	r1
- a32:	0f 92       	push	r0
- a34:	0f b6       	in	r0, 0x3f	; 63
- a36:	0f 92       	push	r0
- a38:	11 24       	eor	r1, r1
- a3a:	2f 93       	push	r18
- a3c:	3f 93       	push	r19
- a3e:	4f 93       	push	r20
- a40:	5f 93       	push	r21
- a42:	6f 93       	push	r22
- a44:	7f 93       	push	r23
- a46:	8f 93       	push	r24
- a48:	9f 93       	push	r25
- a4a:	af 93       	push	r26
- a4c:	bf 93       	push	r27
- a4e:	ef 93       	push	r30
- a50:	ff 93       	push	r31
+ cd4:	1f 92       	push	r1
+ cd6:	0f 92       	push	r0
+ cd8:	0f b6       	in	r0, 0x3f	; 63
+ cda:	0f 92       	push	r0
+ cdc:	11 24       	eor	r1, r1
+ cde:	2f 93       	push	r18
+ ce0:	3f 93       	push	r19
+ ce2:	4f 93       	push	r20
+ ce4:	5f 93       	push	r21
+ ce6:	6f 93       	push	r22
+ ce8:	7f 93       	push	r23
+ cea:	8f 93       	push	r24
+ cec:	9f 93       	push	r25
+ cee:	af 93       	push	r26
+ cf0:	bf 93       	push	r27
+ cf2:	ef 93       	push	r30
+ cf4:	ff 93       	push	r31
 	if (USART_UDRE_Call_Back != NULL)
- a52:	e0 91 21 01 	lds	r30, 0x0121	; 0x800121 <USART_UDRE_Call_Back>
- a56:	f0 91 22 01 	lds	r31, 0x0122	; 0x800122 <USART_UDRE_Call_Back+0x1>
- a5a:	30 97       	sbiw	r30, 0x00	; 0
- a5c:	09 f0       	breq	.+2      	; 0xa60 <__vector_14+0x30>
+ cf6:	e0 91 5c 01 	lds	r30, 0x015C	; 0x80015c <USART_UDRE_Call_Back>
+ cfa:	f0 91 5d 01 	lds	r31, 0x015D	; 0x80015d <USART_UDRE_Call_Back+0x1>
+ cfe:	30 97       	sbiw	r30, 0x00	; 0
+ d00:	09 f0       	breq	.+2      	; 0xd04 <__vector_14+0x30>
 		USART_UDRE_Call_Back();
- a5e:	09 95       	icall
+ d02:	09 95       	icall
 }
- a60:	ff 91       	pop	r31
- a62:	ef 91       	pop	r30
- a64:	bf 91       	pop	r27
- a66:	af 91       	pop	r26
- a68:	9f 91       	pop	r25
- a6a:	8f 91       	pop	r24
- a6c:	7f 91       	pop	r23
- a6e:	6f 91       	pop	r22
- a70:	5f 91       	pop	r21
- a72:	4f 91       	pop	r20
- a74:	3f 91       	pop	r19
- a76:	2f 91       	pop	r18
- a78:	0f 90       	pop	r0
- a7a:	0f be       	out	0x3f, r0	; 63
- a7c:	0f 90       	pop	r0
- a7e:	1f 90       	pop	r1
- a80:	18 95       	reti
+ d04:	ff 91       	pop	r31
+ d06:	ef 91       	pop	r30
+ d08:	bf 91       	pop	r27
+ d0a:	af 91       	pop	r26
+ d0c:	9f 91       	pop	r25
+ d0e:	8f 91       	pop	r24
+ d10:	7f 91       	pop	r23
+ d12:	6f 91       	pop	r22
+ d14:	5f 91       	pop	r21
+ d16:	4f 91       	pop	r20
+ d18:	3f 91       	pop	r19
+ d1a:	2f 91       	pop	r18
+ d1c:	0f 90       	pop	r0
+ d1e:	0f be       	out	0x3f, r0	; 63
+ d20:	0f 90       	pop	r0
+ d22:	1f 90       	pop	r1
+ d24:	18 95       	reti
 
-00000a82 <__vector_15>:
+00000d26 <__vector_15>:
 
 void __vector_15(void) {
- a82:	1f 92       	push	r1
- a84:	0f 92       	push	r0
- a86:	0f b6       	in	r0, 0x3f	; 63
- a88:	0f 92       	push	r0
- a8a:	11 24       	eor	r1, r1
- a8c:	2f 93       	push	r18
- a8e:	3f 93       	push	r19
- a90:	4f 93       	push	r20
- a92:	5f 93       	push	r21
- a94:	6f 93       	push	r22
- a96:	7f 93       	push	r23
- a98:	8f 93       	push	r24
- a9a:	9f 93       	push	r25
- a9c:	af 93       	push	r26
- a9e:	bf 93       	push	r27
- aa0:	ef 93       	push	r30
- aa2:	ff 93       	push	r31
+ d26:	1f 92       	push	r1
+ d28:	0f 92       	push	r0
+ d2a:	0f b6       	in	r0, 0x3f	; 63
+ d2c:	0f 92       	push	r0
+ d2e:	11 24       	eor	r1, r1
+ d30:	2f 93       	push	r18
+ d32:	3f 93       	push	r19
+ d34:	4f 93       	push	r20
+ d36:	5f 93       	push	r21
+ d38:	6f 93       	push	r22
+ d3a:	7f 93       	push	r23
+ d3c:	8f 93       	push	r24
+ d3e:	9f 93       	push	r25
+ d40:	af 93       	push	r26
+ d42:	bf 93       	push	r27
+ d44:	ef 93       	push	r30
+ d46:	ff 93       	push	r31
 	if (USART_TXC_Call_Back != NULL)
- aa4:	e0 91 23 01 	lds	r30, 0x0123	; 0x800123 <USART_TXC_Call_Back>
- aa8:	f0 91 24 01 	lds	r31, 0x0124	; 0x800124 <USART_TXC_Call_Back+0x1>
- aac:	30 97       	sbiw	r30, 0x00	; 0
- aae:	09 f0       	breq	.+2      	; 0xab2 <__vector_15+0x30>
+ d48:	e0 91 5e 01 	lds	r30, 0x015E	; 0x80015e <USART_TXC_Call_Back>
+ d4c:	f0 91 5f 01 	lds	r31, 0x015F	; 0x80015f <USART_TXC_Call_Back+0x1>
+ d50:	30 97       	sbiw	r30, 0x00	; 0
+ d52:	09 f0       	breq	.+2      	; 0xd56 <__vector_15+0x30>
 		USART_TXC_Call_Back();
- ab0:	09 95       	icall
+ d54:	09 95       	icall
 }
- ab2:	ff 91       	pop	r31
- ab4:	ef 91       	pop	r30
- ab6:	bf 91       	pop	r27
- ab8:	af 91       	pop	r26
- aba:	9f 91       	pop	r25
- abc:	8f 91       	pop	r24
- abe:	7f 91       	pop	r23
- ac0:	6f 91       	pop	r22
- ac2:	5f 91       	pop	r21
- ac4:	4f 91       	pop	r20
- ac6:	3f 91       	pop	r19
- ac8:	2f 91       	pop	r18
- aca:	0f 90       	pop	r0
- acc:	0f be       	out	0x3f, r0	; 63
- ace:	0f 90       	pop	r0
- ad0:	1f 90       	pop	r1
- ad2:	18 95       	reti
+ d56:	ff 91       	pop	r31
+ d58:	ef 91       	pop	r30
+ d5a:	bf 91       	pop	r27
+ d5c:	af 91       	pop	r26
+ d5e:	9f 91       	pop	r25
+ d60:	8f 91       	pop	r24
+ d62:	7f 91       	pop	r23
+ d64:	6f 91       	pop	r22
+ d66:	5f 91       	pop	r21
+ d68:	4f 91       	pop	r20
+ d6a:	3f 91       	pop	r19
+ d6c:	2f 91       	pop	r18
+ d6e:	0f 90       	pop	r0
+ d70:	0f be       	out	0x3f, r0	; 63
+ d72:	0f 90       	pop	r0
+ d74:	1f 90       	pop	r1
+ d76:	18 95       	reti
 
-00000ad4 <_exit>:
- ad4:	f8 94       	cli
+00000d78 <_exit>:
+ d78:	f8 94       	cli
 
-00000ad6 <__stop_program>:
- ad6:	ff cf       	rjmp	.-2      	; 0xad6 <__stop_program>
+00000d7a <__stop_program>:
+ d7a:	ff cf       	rjmp	.-2      	; 0xd7a <__stop_program>
