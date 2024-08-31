@@ -124,6 +124,9 @@ void Function_vCreatePassword(u8 (*A_u8LCDScreens)[16]){
 
 }
 
+/**
+ * TIMER1_CTC_INT_ISR: Timer1 Interrupt service routine for CTC Mode.
+ */
 void TIMER1_CTC_INT_ISR() {
 	if (global_u8TicksCounter == 15) {
 		global_u8SecondsCounter++;
@@ -133,6 +136,9 @@ void TIMER1_CTC_INT_ISR() {
 	}
 }
 
+/**
+ * Function_vSystemFreeze: Freeze the System for a minute if password is incorrect for 3 times.
+ */
 void Function_vSystemFreeze(u8 (*A_u8LCDScreens)[16]){
 	// Initialize Timer1 and set callback for channel A CTC interrupt
 	MTIMER1_vInit();
@@ -143,14 +149,22 @@ void Function_vSystemFreeze(u8 (*A_u8LCDScreens)[16]){
 	// Enable global interrupts
 	MGIE_vEnableInterrupts();
 	
+	// Display freeze message
 	HLCD_vSendString(A_u8LCDScreens[12]);
+	
+	// Wait for 1 minute
 	while(global_u8SecondsCounter<60);
+	
+	// Clear display, reset counters, and disable Timer1
 	HLCD_vDisplayClear();
 	global_u8FailureCounter= 0;
 	global_u8SecondsCounter =0;
 	MTIMER1_vDisInit();
 }
 
+/**
+ * Function_vOpenDoor: Handles the process of opening the door.
+ */
 void Function_vOpenDoor(u8 (*A_u8LCDScreens)[16]){
 	
 	// Initialize Timer1 and set callback for channel A CTC interrupt
